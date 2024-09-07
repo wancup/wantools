@@ -14,5 +14,10 @@
     "solid-js": "1.8.22",
     "vinxi": "0.4.2"
   },
-  "packageManager": "pnpm@9.9.0"
+  "packageManager": "pnpm@9.9.0",
+  "gitmoji": {
+    "autoAdd": false,
+    "emojiFormat": "emoji",
+    "capitalizeTitle": false
+  }
 }
