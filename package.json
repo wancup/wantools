@@ -17,7 +17,8 @@
     "vinxi": "0.4.2"
   },
   "devDependencies": {
-    "dprint": "0.47.2"
+    "dprint": "0.47.2",
+    "sass": "1.78.0"
   },
   "packageManager": "pnpm@9.9.0",
   "gitmoji": {
