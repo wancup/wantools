@@ -11,7 +11,7 @@
     "lint": "eslint --max-warnings=0 .",
     "lint:fix": "eslint --fix .",
     "typecheck": "tsc --noEmit --skipLibCheck",
-    "test:logic": "vitest"
+    "test": "vitest"
   },
   "dependencies": {
     "@solidjs/meta": "0.29.4",
