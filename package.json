@@ -8,6 +8,7 @@
     "version": "vinxi version",
     "format": "dprint fmt",
     "format:check": "dprint check",
+    "typecheck": "tsc --noEmit --skipLibCheck",
     "test:logic": "vitest"
   },
   "dependencies": {
@@ -21,6 +22,7 @@
   "devDependencies": {
     "dprint": "0.47.2",
     "sass": "1.78.0",
+    "typescript": "5.6.2",
     "vitest": "2.0.5"
   },
   "packageManager": "pnpm@9.9.0",
