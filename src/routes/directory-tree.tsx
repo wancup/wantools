@@ -1,11 +1,11 @@
 import { Title } from "@solidjs/meta";
-import { createSignal, JSX } from "solid-js";
+import { createSignal, type JSX } from "solid-js";
 import { DirectoryTree } from "~/features/directory-tree";
 import { makePageTitle, PAGES } from "~/site";
 
 const PAGE_TITLE = makePageTitle(PAGES["directory-tree"].name);
 
-export default function Home() {
+export default function Home(): JSX.Element {
   const [rawText, setRawText] = createSignal("");
   const [styledText, setStyledText] = createSignal("");
 

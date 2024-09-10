@@ -8,6 +8,8 @@
     "version": "vinxi version",
     "format": "dprint fmt",
     "format:check": "dprint check",
+    "lint": "eslint --max-warnings=0 .",
+    "lint:fix": "eslint --fix .",
     "typecheck": "tsc --noEmit --skipLibCheck",
     "test:logic": "vitest"
   },
@@ -20,9 +22,14 @@
     "vinxi": "0.4.2"
   },
   "devDependencies": {
+    "@eslint/js": "9.10.0",
     "dprint": "0.47.2",
+    "eslint": "9.10.0",
+    "eslint-plugin-solid": "0.14.3",
+    "globals": "15.9.0",
     "sass": "1.78.0",
     "typescript": "5.6.2",
+    "typescript-eslint": "8.5.0",
     "vitest": "2.0.5"
   },
   "packageManager": "pnpm@9.9.0",

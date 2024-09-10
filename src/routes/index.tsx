@@ -1,7 +1,8 @@
 import { Title } from "@solidjs/meta";
+import { type JSX } from "solid-js";
 import { SITE } from "~/site";
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <main>
       <Title>{SITE.name}</Title>
