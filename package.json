@@ -7,18 +7,21 @@
     "start": "vinxi start",
     "version": "vinxi version",
     "format": "dprint fmt",
-    "format:check": "dprint check"
+    "format:check": "dprint check",
+    "test:logic": "vitest"
   },
   "dependencies": {
     "@solidjs/meta": "0.29.4",
     "@solidjs/router": "0.14.3",
     "@solidjs/start": "1.0.6",
     "solid-js": "1.8.22",
+    "ts-pattern": "5.3.1",
     "vinxi": "0.4.2"
   },
   "devDependencies": {
     "dprint": "0.47.2",
-    "sass": "1.78.0"
+    "sass": "1.78.0",
+    "vitest": "2.0.5"
   },
   "packageManager": "pnpm@9.9.0",
   "gitmoji": {
