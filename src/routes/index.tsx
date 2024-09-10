@@ -1,9 +1,10 @@
 import { Title } from "@solidjs/meta";
+import { SITE } from "~/site";
 
 export default function Home() {
   return (
     <main>
-      <Title>Hello World</Title>
+      <Title>{SITE.name}</Title>
       <h1>Hello world!</h1>
       <p>
         Visit{" "}
