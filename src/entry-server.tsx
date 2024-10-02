@@ -12,6 +12,7 @@ export default createHandler(() => (
           {assets}
         </head>
         <body>
+          <noscript class="noscript-alert">Please Enable JavaScript!</noscript>
           <div id="app">{children}</div>
           {scripts}
         </body>

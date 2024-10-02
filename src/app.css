@@ -1,1 +1,8 @@
 @layer reset, base, tokens, recipes, utilities;
+
+.noscript-alert {
+  width: 100vw;
+  padding: 20px;
+  color: red;
+  background-color: snow;
+}
