@@ -12,8 +12,10 @@
     "noEmit": true,
     "types": ["vinxi/types/client", "vitest/globals"],
     "isolatedModules": true,
+    "baseUrl": ".",
     "paths": {
-      "~/*": ["./src/*"]
+      "~/*": ["./src/*"],
+      "$panda/*": ["./styled-system/*"]
     },
     "noImplicitOverride": true,
     "noUncheckedIndexedAccess": true

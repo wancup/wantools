@@ -1,11 +1,1 @@
-:root {
-  --color-primary: pink;
-}
-
-:root[data-theme="dark"] {
-  --color-primary: blue;
-}
-
-body {
-  color: var(--color-primary);
-}
+@layer reset, base, tokens, recipes, utilities;
