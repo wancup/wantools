@@ -4,9 +4,7 @@ import globals from "globals";
 import tseslint from "typescript-eslint";
 
 export default [
-  { files: ["**/*.{js,mjs,cjs,ts,tsx}"] },
-  pluginJs.configs.recommended,
-  ...tseslint.configs.strictTypeChecked,
+  { ignores: ["park-ui", "public", "styled-system"] },
   {
     languageOptions: {
       globals: globals.browser,
@@ -16,8 +14,10 @@ export default [
       },
     },
   },
+  pluginJs.configs.recommended,
+  ...tseslint.configs.strictTypeChecked,
   {
-    files: ["eslint.config.mjs"],
+    files: ["eslint.config.mjs", "postcss.config.mjs"],
     ...tseslint.configs.disableTypeChecked,
   },
   {

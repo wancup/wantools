@@ -1,4 +1,12 @@
 {
+  "include": [
+    "app.config.ts",
+    "panda.config.ts",
+    "vitest.config.ts",
+    "src/**/*",
+    "park-ui/**/*",
+    "styled-system/**/*"
+  ],
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
