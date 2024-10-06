@@ -11,12 +11,8 @@ export default defineConfig({
       grayColor: "mauve",
     }),
   ],
-  include: ["./src/**/*.{ts,tsx}"],
+  include: ["./park-ui/**/*.{js,jsx,ts,tsx}", "./src/**/*.{ts,tsx}"],
   exclude: [],
-  conditions: {
-    light: "[data-theme=light] &",
-    dark: "[data-theme=dark] &",
-  },
   globalCss: {},
   theme: {
     extend: {
