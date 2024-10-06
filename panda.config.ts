@@ -1,25 +1,32 @@
 import { defineConfig } from "@pandacss/dev";
+import { createPreset } from "@park-ui/panda-preset";
 
 export default defineConfig({
-  preflight: false,
+  preflight: true,
+  jsxFramework: "solid",
   outdir: "styled-system",
+  presets: [
+    createPreset({
+      accentColor: "plum",
+      grayColor: "mauve",
+    }),
+  ],
   include: ["./src/**/*.{ts,tsx}"],
   exclude: [],
   conditions: {
     light: "[data-theme=light] &",
     dark: "[data-theme=dark] &",
   },
-  globalCss: {
-    body: {
-      bg: "stone.100",
-      color: "stone.800",
-      _dark: {
-        bg: "stone.800",
-        color: "stone.100",
+  globalCss: {},
+  theme: {
+    extend: {
+      recipes: {
+        link: {
+          base: {
+            textDecoration: "underline",
+          },
+        },
       },
     },
-  },
-  theme: {
-    extend: {},
   },
 });

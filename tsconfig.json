@@ -15,6 +15,7 @@
     "baseUrl": ".",
     "paths": {
       "~/*": ["./src/*"],
+      "$park/*": ["./park-ui/*"],
       "$panda/*": ["./styled-system/*"]
     },
     "noImplicitOverride": true,
