@@ -1,16 +1,17 @@
+// @ts-check
+
 import pluginJs from "@eslint/js";
 import solid from "eslint-plugin-solid/configs/typescript";
 import globals from "globals";
 import tseslint from "typescript-eslint";
 
-export default [
+export default tseslint.config(
   { ignores: ["park-ui", "public", "styled-system"] },
   {
     languageOptions: {
       globals: globals.browser,
       parserOptions: {
         projectService: true,
-        tsconfigRootDir: import.meta.dirname,
       },
     },
   },
@@ -40,4 +41,4 @@ export default [
       ],
     },
   },
-];
+);
