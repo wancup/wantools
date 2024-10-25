@@ -44,7 +44,9 @@ export function Layout(props: ParentProps): JSX.Element {
             </Drawer.Positioner>
           </Drawer.Root>
         </div>
-        {props.children}
+        <div class={css({ flexGrow: 1, padding: "16px" })}>
+          {props.children}
+        </div>
       </div>
     </>
   );
