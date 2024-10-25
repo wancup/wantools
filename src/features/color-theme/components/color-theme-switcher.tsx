@@ -1,7 +1,6 @@
 import { css } from "$panda/css";
 import { IconButton } from "$park/icon-button";
 import { Menu } from "$park/menu";
-import { Tooltip } from "$park/tooltip";
 import { CheckIcon, MoonIcon, SunIcon, SunMoonIcon } from "lucide-solid";
 import { createSignal, Index, type JSX, onMount } from "solid-js";
 import { match } from "ts-pattern";
