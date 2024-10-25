@@ -48,23 +48,13 @@ export function ColorThemeSwitcher(): JSX.Element {
     >
       <Menu.Trigger
         asChild={(triggerProps) => (
-          <Tooltip.Root openDelay={200}>
-            <Tooltip.Trigger>
-              <IconButton {...triggerProps()} variant="ghost" size="sm">
-                {match(theme())
-                  .with("dark", () => <MoonIcon />)
-                  .with("light", () => <SunIcon />)
-                  .with("system", () => <SunMoonIcon />)
-                  .exhaustive()}
-              </IconButton>
-            </Tooltip.Trigger>
-            <Tooltip.Positioner>
-              <Tooltip.Arrow>
-                <Tooltip.ArrowTip />
-              </Tooltip.Arrow>
-              <Tooltip.Content>Change color theme</Tooltip.Content>
-            </Tooltip.Positioner>
-          </Tooltip.Root>
+          <IconButton {...triggerProps()} variant="ghost" size="sm" aria-label="Change theme color">
+            {match(theme())
+              .with("dark", () => <MoonIcon />)
+              .with("light", () => <SunIcon />)
+              .with("system", () => <SunMoonIcon />)
+              .exhaustive()}
+          </IconButton>
         )}
       />
       <Menu.Positioner class={css({ marginRight: "16px" })}>
