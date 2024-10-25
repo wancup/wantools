@@ -7,6 +7,20 @@ import { DirectoryTree } from "~/features/directory-tree";
 import { makePageTitle, PAGES } from "~/site";
 
 const PAGE_TITLE = makePageTitle(PAGES["directory-tree"].name);
+const SAMPLE_RAW_TEXT = `\
+./
+- src/
+-- features/
+-- routes/
+- test/
+-- hello.test.ts`;
+const SAMPLE_STYLED_TEXT = `\
+./
+├─ src/
+│  ├─ features/
+│  └─ routes/
+└─ test/
+   └─ hello.test.ts`;
 
 export default function Home(): JSX.Element {
   const [rawText, setRawText] = createSignal("");
@@ -47,12 +61,14 @@ export default function Home(): JSX.Element {
           value={rawText()}
           onInput={handleInputRawText}
           class={css({ resize: "none" })}
+          placeholder={SAMPLE_RAW_TEXT}
         />
         <Textarea
           rows={10}
           value={styledText()}
           onInput={handleInputStyledText}
           class={css({ resize: "none" })}
+          placeholder={SAMPLE_STYLED_TEXT}
         />
       </div>
     </main>
