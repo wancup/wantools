@@ -1,3 +1,6 @@
+import { css } from "$panda/css";
+import { Heading } from "$park/heading";
+import { Textarea } from "$park/textarea";
 import { Title } from "@solidjs/meta";
 import { createSignal, type JSX } from "solid-js";
 import { DirectoryTree } from "~/features/directory-tree";
@@ -8,7 +11,6 @@ const PAGE_TITLE = makePageTitle(PAGES["directory-tree"].name);
 export default function Home(): JSX.Element {
   const [rawText, setRawText] = createSignal("");
   const [styledText, setStyledText] = createSignal("");
-
   const handleInputRawText: JSX.EventHandler<HTMLTextAreaElement, InputEvent> = (e) => {
     setRawText(e.currentTarget.value);
 
@@ -26,9 +28,33 @@ export default function Home(): JSX.Element {
   return (
     <main>
       <Title>{PAGE_TITLE}</Title>
-      <h1>{PAGES["directory-tree"].name}</h1>
-      <textarea value={rawText()} onInput={handleInputRawText} />
-      <textarea value={styledText()} onInput={handleInputStyledText} />
+      <Heading as="h1" size="xl" class={css({ marginBottom: "1rem" })}>
+        {PAGES["directory-tree"].name}
+      </Heading>
+      <div
+        class={css({
+          width: "100%",
+          display: "flex",
+          overflow: "scroll",
+          resize: "vertical",
+          flexDirection: "column",
+          rowGap: "0.5rem",
+          md: { flexDirection: "row", justifyContent: "space-between", columnGap: "1rem" },
+        })}
+      >
+        <Textarea
+          rows={10}
+          value={rawText()}
+          onInput={handleInputRawText}
+          class={css({ resize: "none" })}
+        />
+        <Textarea
+          rows={10}
+          value={styledText()}
+          onInput={handleInputStyledText}
+          class={css({ resize: "none" })}
+        />
+      </div>
     </main>
   );
 }
