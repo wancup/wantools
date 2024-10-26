@@ -2,6 +2,7 @@ import { css } from "$panda/css";
 import { Heading } from "$park/heading";
 import { Textarea } from "$park/textarea";
 import { Title } from "@solidjs/meta";
+import { type TextareaProps } from "node_modules/@ark-ui/solid/dist/types/components/field/field";
 import { createSignal, type JSX } from "solid-js";
 import { DirectoryTree } from "~/features/directory-tree";
 import { makePageTitle, PAGES } from "~/site";
@@ -56,21 +57,27 @@ export default function Home(): JSX.Element {
           md: { flexDirection: "row", justifyContent: "space-between", columnGap: "1rem" },
         })}
       >
-        <Textarea
-          rows={10}
+        <StyledTextarea
           value={rawText()}
           onInput={handleInputRawText}
-          class={css({ resize: "none" })}
           placeholder={SAMPLE_RAW_TEXT}
         />
-        <Textarea
-          rows={10}
+        <StyledTextarea
           value={styledText()}
           onInput={handleInputStyledText}
-          class={css({ resize: "none" })}
           placeholder={SAMPLE_STYLED_TEXT}
         />
       </div>
     </main>
+  );
+}
+
+function StyledTextarea(props: Omit<TextareaProps, "rows" | "class">): JSX.Element {
+  return (
+    <Textarea
+      rows={10}
+      class={css({ resize: "none", fontFamily: "monospace, sans-serif, system-ui" })}
+      {...props}
+    />
   );
 }
