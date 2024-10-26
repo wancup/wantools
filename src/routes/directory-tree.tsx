@@ -23,9 +23,10 @@ const SAMPLE_STYLED_TEXT = `\
 └─ test/
    └─ hello.test.ts`;
 
-export default function Home(): JSX.Element {
+export default function DirectoryTreePage(): JSX.Element {
   const [rawText, setRawText] = createSignal("");
   const [styledText, setStyledText] = createSignal("");
+
   const handleInputRawText: JSX.EventHandler<HTMLTextAreaElement, InputEvent> = (e) => {
     setRawText(e.currentTarget.value);
 
