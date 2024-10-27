@@ -10,4 +10,8 @@ export const PAGES = {
     name: "Directory Tree",
     path: "/directory-tree",
   },
+  "qr-code": {
+    name: "QR code",
+    path: "/qr-code",
+  },
 } as const satisfies Pages;

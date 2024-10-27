@@ -15,6 +15,7 @@ export function SidebarContent(): JSX.Element {
                   <A
                     href={page.path}
                     class={css({
+                      display: "block",
                       padding: "8px 16px",
                       borderRadius: "l2",
                       _hover: {
