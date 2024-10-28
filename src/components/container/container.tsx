@@ -28,13 +28,13 @@ const containerRecipe = cva({
 
 type Polymophic = "div" | "section" | "article";
 type ContainerVariants = NonNullable<RecipeVariantProps<typeof containerRecipe>>;
-interface ContainerProps extends ParentProps<StylableComponentProps<Polymophic>>, ContainerVariants {
-  as?: Polymophic | undefined;
-}
+type ContainerProps<T extends Polymophic> = ParentProps<StylableComponentProps<T>> & ContainerVariants & {
+  as?: T | undefined;
+};
 
-export function Container(props: ContainerProps): JSX.Element {
+export function Container<T extends Polymophic = "div">(props: ContainerProps<T>): JSX.Element {
   const [local, restProps] = splitProps(props, ["as", "size", "css"]);
-  const element = (): ContainerProps["as"] => local.as ?? "div";
+  const element = (): Polymophic => local.as ?? "div";
 
   return (
     <Dynamic
