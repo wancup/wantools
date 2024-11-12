@@ -10,6 +10,10 @@ export const PAGES = {
     name: "Directory Tree",
     path: "/directory-tree",
   },
+  "keyboard-event": {
+    name: "Keyboard Event",
+    path: "/keyboard-event",
+  },
   "qr-code": {
     name: "QR code",
     path: "/qr-code",
