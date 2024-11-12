@@ -11,7 +11,15 @@ interface GlobalHeaderProps {
 
 export function GlobalHeader(props: GlobalHeaderProps): JSX.Element {
   return (
-    <header class={css({ display: "flex", padding: "16px", justifyContent: "space-between" })}>
+    <header
+      class={css({
+        display: "flex",
+        maxWidth: "100rem",
+        margin: "0 auto",
+        padding: "16px",
+        justifyContent: "space-between",
+      })}
+    >
       <span>{SITE.name}</span>
       <div class={css({ display: "flex", columnGap: "4px" })}>
         <ColorThemeSwitcher />
