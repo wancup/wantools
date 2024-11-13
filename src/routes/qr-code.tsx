@@ -15,10 +15,10 @@ export default function QrCodePage(): JSX.Element {
   return (
     <main>
       <Title>{PAGE_TITLE}</Title>
-      <Heading as="h1" size="xl" class={css({ marginBottom: "1rem" })}>
-        {PAGES["qr-code"].name}
-      </Heading>
       <Container size="sm">
+        <Heading as="h1" size="xl" class={css({ marginBottom: "1rem" })}>
+          {PAGES["qr-code"].name}
+        </Heading>
         <Input
           class={css({ marginBottom: "1rem" })}
           value={text()}
