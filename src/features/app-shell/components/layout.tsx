@@ -12,7 +12,14 @@ export function Layout(props: ParentProps): JSX.Element {
   return (
     <>
       <GlobalHeader onClickMenuTrigger={setIsOpen} />
-      <div class={css({ display: "flex", maxWidth: "100rem", margin: "0 auto", md: { columnGap: "2rem" } })}>
+      <div
+        class={css({
+          display: "flex",
+          maxWidth: "var(--root-layout-max-width)",
+          margin: "0 auto",
+          md: { columnGap: "2rem" },
+        })}
+      >
         <div class={css({ display: { base: "none", md: "block" }, padding: "16px" })}>
           <SidebarContent />
         </div>

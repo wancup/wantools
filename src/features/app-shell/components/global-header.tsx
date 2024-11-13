@@ -14,7 +14,7 @@ export function GlobalHeader(props: GlobalHeaderProps): JSX.Element {
     <header
       class={css({
         display: "flex",
-        maxWidth: "100rem",
+        maxWidth: "var(--root-layout-max-width)",
         margin: "0 auto",
         padding: "16px",
         justifyContent: "space-between",

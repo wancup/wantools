@@ -14,6 +14,9 @@ export default defineConfig({
   include: ["./park-ui/**/*.{js,jsx,ts,tsx}", "./src/**/*.{ts,tsx}"],
   exclude: [],
   globalCss: {},
+  globalVars: {
+    "--root-layout-max-width": "100rem",
+  },
   theme: {
     extend: {
       recipes: {
