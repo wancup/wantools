@@ -17,6 +17,7 @@ export function SidebarContent(): JSX.Element {
                     class={css({
                       display: "block",
                       padding: "8px 16px",
+                      whiteSpace: "nowrap",
                       borderRadius: "l2",
                       _hover: {
                         color: "accent.text",
