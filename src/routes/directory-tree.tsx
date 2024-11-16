@@ -76,7 +76,7 @@ export default function DirectoryTreePage(): JSX.Element {
 function StyledTextarea(props: Omit<TextareaProps, "rows" | "class">): JSX.Element {
   return (
     <Textarea
-      rows={10}
+      rows={20}
       class={css({ resize: "none", fontFamily: "monospace, sans-serif, system-ui" })}
       {...props}
     />
