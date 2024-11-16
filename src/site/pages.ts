@@ -10,6 +10,10 @@ export const PAGES = {
     name: "Directory Tree",
     path: "/directory-tree",
   },
+  "transition": {
+    name: "Transition",
+    path: "/transition",
+  },
   "pointer-event": {
     name: "Pointer Event",
     path: "/pointer-event",
