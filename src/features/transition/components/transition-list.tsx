@@ -6,7 +6,7 @@ import { NumberInput } from "$park/number-input";
 import { Select } from "$park/select";
 import { createListCollection } from "@ark-ui/solid";
 import { CheckIcon, ChevronsUpDownIcon } from "lucide-solid";
-import { createEffect, createMemo, createSignal, For, type JSX, onCleanup } from "solid-js";
+import { createEffect, createMemo, createSignal, createUniqueId, For, type JSX, onCleanup } from "solid-js";
 import { TransitionSwatch, type TransitionSwatchProps } from "./transition-swatch";
 
 type MotionVariant = TransitionSwatchProps["motion"];
@@ -28,6 +28,9 @@ export function TransitionList(): JSX.Element {
   const [duration, setDuration] = createSignal("1000");
   const [customTiming, setCustomTiming] = createSignal("cubic-bezier(0.1, 0.7, 1, 0.1)");
   const [selectedMotion, setSelectedMotion] = createSignal<MotionVariant>(TRANSITION_LIST[0].value);
+
+  const id = createUniqueId();
+  const customTimingFunctionId = `custom-timing-function-${id}`;
 
   const motionCollection = createListCollection({
     items: TRANSITION_LIST,
@@ -111,8 +114,12 @@ export function TransitionList(): JSX.Element {
           Duration
         </NumberInput>
         <div>
-          <FormLabel>Custom Timing Function</FormLabel>
-          <Input value={customTiming()} onInput={(e) => setCustomTiming(e.currentTarget.value)} />
+          <FormLabel for={customTimingFunctionId}>Custom Timing Function</FormLabel>
+          <Input
+            id={customTimingFunctionId}
+            value={customTiming()}
+            onInput={(e) => setCustomTiming(e.currentTarget.value)}
+          />
         </div>
       </div>
       <Button class={css({ width: "100%", marginTop: "0.5rem" })} onClick={() => setIsStarted(true)}>Start</Button>
