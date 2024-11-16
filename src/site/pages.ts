@@ -22,6 +22,10 @@ export const PAGES = {
     name: "Keyboard Event",
     path: "/keyboard-event",
   },
+  "faker": {
+    name: "Faker",
+    path: "/faker",
+  },
   "qr-code": {
     name: "QR code",
     path: "/qr-code",
