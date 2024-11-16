@@ -22,6 +22,10 @@ export const PAGES = {
     name: "Keyboard Event",
     path: "/keyboard-event",
   },
+  "uri-encoding": {
+    name: "URI Encoding",
+    path: "/uri-encoding",
+  },
   "faker": {
     name: "Faker",
     path: "/faker",
