@@ -18,8 +18,8 @@ export function ColorThemeSwitcher(): JSX.Element {
   const [theme, setTheme] = createSignal<ColorThemeOption>(COLOR_THEME_OPTION.system);
 
   onMount(() => {
-    const storagedTheme = localStorage.getItem(STORAGE_KEY.colorTheme);
-    const currentTheme = parseThemeOption(storagedTheme);
+    const storedTheme = localStorage.getItem(STORAGE_KEY.colorTheme);
+    const currentTheme = parseThemeOption(storedTheme);
     setTheme(currentTheme);
   });
 
