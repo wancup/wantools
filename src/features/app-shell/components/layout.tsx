@@ -37,9 +37,14 @@ export function Layout(props: ParentProps): JSX.Element {
                         {...triggerProps()}
                         size="sm"
                         variant="ghost"
-                        class={css({ marginLeft: "auto" })}
+                        class={css({ marginRight: "auto" })}
                       >
-                        <XIcon />
+                        <XIcon
+                          class={css({
+                            height: "var(--root-header-icon-size)",
+                            width: "var(--root-header-icon-size)",
+                          })}
+                        />
                       </IconButton>
                     )}
                   />

@@ -16,11 +16,23 @@ export function ColorThemeSwitcher(): JSX.Element {
     >
       <Menu.Trigger
         asChild={(triggerProps) => (
-          <IconButton {...triggerProps()} variant="ghost" size="sm" aria-label="Change theme color">
+          <IconButton
+            {...triggerProps()}
+            variant="ghost"
+            size="sm"
+            aria-label="Change theme color"
+            class={css({
+              padding: 0,
+              "& svg": {
+                width: "var(--root-header-icon-size)",
+                height: "var(--root-header-icon-size)",
+              },
+            })}
+          >
             {match(colorThemeOption())
-              .with("dark", () => <MoonIcon />)
-              .with("light", () => <SunIcon />)
-              .with("system", () => <SunMoonIcon />)
+              .with("dark", () => <MoonIcon size={24} />)
+              .with("light", () => <SunIcon size={24} />)
+              .with("system", () => <SunMoonIcon size={24} />)
               .exhaustive()}
           </IconButton>
         )}

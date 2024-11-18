@@ -16,6 +16,7 @@ export default defineConfig({
   globalCss: {},
   globalVars: {
     "--root-layout-max-width": "100rem",
+    "--root-header-icon-size": "1.5rem",
   },
   theme: {
     extend: {

@@ -4,6 +4,7 @@ import { MenuIcon } from "lucide-solid";
 import { type JSX, type Setter } from "solid-js";
 import { ColorThemeSwitcher } from "~/features/color-theme";
 import { SITE } from "~/site";
+import { GitHubLink } from "./github-link";
 
 interface GlobalHeaderProps {
   onClickMenuTrigger: Setter<boolean>;
@@ -18,21 +19,23 @@ export function GlobalHeader(props: GlobalHeaderProps): JSX.Element {
         margin: "0 auto",
         padding: "16px",
         justifyContent: "space-between",
+        alignItems: "center",
       })}
     >
+      <div class={css({ md: { display: "none" } })}>
+        <IconButton
+          aria-label="Open Navigation Menu"
+          size="sm"
+          variant="ghost"
+          onClick={() => props.onClickMenuTrigger(true)}
+        >
+          <MenuIcon class={css({ height: "var(--root-header-icon-size)", width: "var(--root-header-icon-size)" })} />
+        </IconButton>
+      </div>
       <span>{SITE.name}</span>
       <div class={css({ display: "flex", columnGap: "4px" })}>
         <ColorThemeSwitcher />
-        <div class={css({ md: { display: "none" } })}>
-          <IconButton
-            aria-label="Open Navigation Menu"
-            size="sm"
-            variant="ghost"
-            onClick={() => props.onClickMenuTrigger(true)}
-          >
-            <MenuIcon />
-          </IconButton>
-        </div>
+        <GitHubLink />
       </div>
     </header>
   );
