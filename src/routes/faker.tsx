@@ -15,6 +15,7 @@ const PAGE_TITLE = makePageTitle(PAGES["faker"].name);
 const ALL_LOCALE_LIST = Object.keys(allLocales);
 
 type FakerLocale = keyof typeof allLocales;
+
 export default function FakerPage(): JSX.Element {
   const [selectedLocale, setSelectedLocale] = createSignal<FakerLocale>("en");
   const localeCollection = createListCollection({ items: ALL_LOCALE_LIST });
