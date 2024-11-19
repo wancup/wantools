@@ -1,6 +1,7 @@
 import { css } from "$panda/css";
 import { Drawer } from "$park/drawer";
 import { IconButton } from "$park/icon-button";
+import { useBeforeLeave } from "@solidjs/router";
 import { XIcon } from "lucide-solid";
 import { createSignal, type JSX, type ParentProps } from "solid-js";
 import { GlobalHeader } from "./global-header";
@@ -8,6 +9,10 @@ import { SidebarContent } from "./sidebar-content";
 
 export function Layout(props: ParentProps): JSX.Element {
   const [isOpen, setIsOpen] = createSignal(false);
+
+  useBeforeLeave(() => {
+    setIsOpen(false);
+  });
 
   return (
     <>
