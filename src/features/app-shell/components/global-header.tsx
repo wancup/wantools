@@ -1,11 +1,12 @@
 import { css } from "$panda/css";
 import { IconButton } from "$park/icon-button";
+import { A } from "@solidjs/router";
 import { MenuIcon } from "lucide-solid";
 import { type JSX, type Setter } from "solid-js";
 import darkLogo from "~/assets/images/wanTooLs_dark.svg";
 import lightLogo from "~/assets/images/wanTooLs_light.svg";
 import { ColorThemeSwitcher, useCurrentThemeColor } from "~/features/color-theme";
-import { SITE } from "~/site";
+import { PAGES, SITE } from "~/site";
 import { GitHubLink } from "./github-link";
 
 interface GlobalHeaderProps {
@@ -37,7 +38,16 @@ export function GlobalHeader(props: GlobalHeaderProps): JSX.Element {
           <MenuIcon class={css({ height: "var(--root-header-icon-size)", width: "var(--root-header-icon-size)" })} />
         </IconButton>
       </div>
-      <img alt={SITE.name} src={logoSrc()} class={css({ width: "10rem" })} />
+      <IconButton
+        variant="ghost"
+        asChild={(props) => {
+          return (
+            <A {...props} href={PAGES["/"].path}>
+              <img alt={SITE.name} src={logoSrc()} class={css({ width: "10rem" })} />
+            </A>
+          );
+        }}
+      />
       <div class={css({ display: "flex", columnGap: "4px" })}>
         <ColorThemeSwitcher />
         <GitHubLink />

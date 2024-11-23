@@ -2,10 +2,16 @@ interface Pages {
   [page: string]: {
     name: string;
     path: string;
+    hideOnSideBar?: true;
   };
 }
 
 export const PAGES = {
+  "/": {
+    name: "Top Page",
+    path: "/",
+    hideOnSideBar: true,
+  },
   "directory-tree": {
     name: "Directory Tree",
     path: "/directory-tree",

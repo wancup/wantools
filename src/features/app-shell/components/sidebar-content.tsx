@@ -3,12 +3,14 @@ import { A } from "@solidjs/router";
 import { For, type JSX } from "solid-js";
 import { PAGES } from "~/site";
 
+const LINK_LIST = Object.values(PAGES).filter(p => !(Object.hasOwn(p, "hideOnSideBar")));
+
 export function SidebarContent(): JSX.Element {
   return (
     <aside>
       <nav>
         <ul class={css({ listStyle: "none", paddingLeft: 0 })}>
-          <For each={Object.values(PAGES)}>
+          <For each={LINK_LIST}>
             {(page) => {
               return (
                 <li>
