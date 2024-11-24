@@ -2,6 +2,15 @@
 
 Utility tools for web application developers!
 
+## Features
+
+- Directory Tree Generator
+- CSS Transition Samples
+- Pointer Event Samples
+- Keyboard Event Samples
+- URI Encoding
+- QR code Generator
+
 ## Prerequisites
 
 - Node.js
