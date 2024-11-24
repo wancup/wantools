@@ -5,4 +5,7 @@ export default defineConfig({
   vite: {
     plugins: [tsconfigPaths()],
   },
+  server: {
+    preset: "cloudflare-pages",
+  },
 });
