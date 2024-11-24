@@ -1,4 +1,4 @@
-import { MetaProvider, Title } from "@solidjs/meta";
+import { Meta, MetaProvider, Title } from "@solidjs/meta";
 import { Router } from "@solidjs/router";
 import { FileRoutes } from "@solidjs/start/router";
 import { type JSX, Suspense } from "solid-js";
@@ -12,6 +12,7 @@ export default function App(): JSX.Element {
       root={props => (
         <MetaProvider>
           <Title>{SITE.name}</Title>
+          <Meta name="description" content={SITE.description} />
           <Layout>
             <Suspense>{props.children}</Suspense>
           </Layout>
