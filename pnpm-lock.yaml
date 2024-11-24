@@ -22,7 +22,7 @@ importers:
         version: 0.14.3(solid-js@1.8.22)
       '@solidjs/start':
         specifier: 1.0.10
-        version: 1.0.10(solid-js@1.8.22)(vinxi@0.4.2(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))(vite@5.4.3(@types/node@22.5.4)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))
+        version: 1.0.10(solid-js@1.8.22)(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))(vite@5.4.3(@types/node@22.5.4)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))
       lucide-solid:
         specifier: 0.447.0
         version: 0.447.0(solid-js@1.8.22)
@@ -33,8 +33,8 @@ importers:
         specifier: 5.3.1
         version: 5.3.1
       vinxi:
-        specifier: 0.4.2
-        version: 0.4.2(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6)
+        specifier: 0.4.3
+        version: 0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6)
     devDependencies:
       '@eslint/js':
         specifier: 9.10.0
@@ -3562,8 +3562,8 @@ packages:
   validate-html-nesting@1.2.2:
     resolution: {integrity: sha512-hGdgQozCsQJMyfK5urgFcWEqsSSrK63Awe0t/IMR0bZ0QMtnuaiHzThW81guu3qx9abLi99NEuiaN6P9gVYsNg==}
 
-  vinxi@0.4.2:
-    resolution: {integrity: sha512-BbvIum9BLUQ22O/lU1RX0+aKNMXXcl58hofNoWFnFcKkm+efgVsHiD2d7HG3w8QLdb2Asdhmz5/ZzI1Y3zTBXw==}
+  vinxi@0.4.3:
+    resolution: {integrity: sha512-RgJz7RWftML5h/qfPsp3QKVc2FSlvV4+HevpE0yEY2j+PS/I2ULjoSsZDXaR8Ks2WYuFFDzQr8yrox7v8aqkng==}
     hasBin: true
 
   vite-node@2.0.5:
@@ -4603,7 +4603,7 @@ snapshots:
 
   '@rollup/pluginutils@5.1.0(rollup@4.21.2)':
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       estree-walker: 2.0.2
       picomatch: 2.3.1
     optionalDependencies:
@@ -4676,11 +4676,11 @@ snapshots:
     dependencies:
       solid-js: 1.8.22
 
-  '@solidjs/start@1.0.10(solid-js@1.8.22)(vinxi@0.4.2(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))(vite@5.4.3(@types/node@22.5.4)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))':
+  '@solidjs/start@1.0.10(solid-js@1.8.22)(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))(vite@5.4.3(@types/node@22.5.4)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))':
     dependencies:
-      '@vinxi/plugin-directives': 0.4.3(vinxi@0.4.2(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))
-      '@vinxi/server-components': 0.4.3(vinxi@0.4.2(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))
-      '@vinxi/server-functions': 0.4.3(vinxi@0.4.2(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))
+      '@vinxi/plugin-directives': 0.4.3(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))
+      '@vinxi/server-components': 0.4.3(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))
+      '@vinxi/server-functions': 0.4.3(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))
       defu: 6.1.4
       error-stack-parser: 2.1.4
       html-to-image: 1.11.11
@@ -4863,7 +4863,7 @@ snapshots:
       consola: 3.2.3
       defu: 6.1.4
       get-port-please: 3.1.2
-      h3: 1.11.1
+      h3: 1.12.0
       http-shutdown: 1.2.2
       jiti: 1.21.6
       mlly: 1.7.1
@@ -4876,7 +4876,7 @@ snapshots:
     transitivePeerDependencies:
       - uWebSockets.js
 
-  '@vinxi/plugin-directives@0.4.3(vinxi@0.4.2(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))':
+  '@vinxi/plugin-directives@0.4.3(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))':
     dependencies:
       '@babel/parser': 7.25.6
       acorn: 8.12.1
@@ -4887,29 +4887,29 @@ snapshots:
       magicast: 0.2.11
       recast: 0.23.9
       tslib: 2.7.0
-      vinxi: 0.4.2(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6)
+      vinxi: 0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6)
 
-  '@vinxi/server-components@0.4.3(vinxi@0.4.2(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))':
+  '@vinxi/server-components@0.4.3(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))':
     dependencies:
-      '@vinxi/plugin-directives': 0.4.3(vinxi@0.4.2(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))
+      '@vinxi/plugin-directives': 0.4.3(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))
       acorn: 8.12.1
       acorn-loose: 8.4.0
       acorn-typescript: 1.4.13(acorn@8.12.1)
       astring: 1.9.0
       magicast: 0.2.11
       recast: 0.23.9
-      vinxi: 0.4.2(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6)
+      vinxi: 0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6)
 
-  '@vinxi/server-functions@0.4.3(vinxi@0.4.2(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))':
+  '@vinxi/server-functions@0.4.3(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))':
     dependencies:
-      '@vinxi/plugin-directives': 0.4.3(vinxi@0.4.2(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))
+      '@vinxi/plugin-directives': 0.4.3(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6))
       acorn: 8.12.1
       acorn-loose: 8.4.0
       acorn-typescript: 1.4.13(acorn@8.12.1)
       astring: 1.9.0
       magicast: 0.2.11
       recast: 0.23.9
-      vinxi: 0.4.2(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6)
+      vinxi: 0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6)
 
   '@vitest/expect@2.0.5':
     dependencies:
@@ -6847,7 +6847,7 @@ snapshots:
 
   is-reference@1.2.1:
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
 
   is-stream@2.0.1: {}
 
@@ -7962,7 +7962,7 @@ snapshots:
 
   validate-html-nesting@1.2.2: {}
 
-  vinxi@0.4.2(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6):
+  vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6):
     dependencies:
       '@babel/core': 7.25.2
       '@babel/plugin-syntax-jsx': 7.24.7(@babel/core@7.25.2)
