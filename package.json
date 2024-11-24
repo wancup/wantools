@@ -23,7 +23,7 @@
     "lucide-solid": "0.447.0",
     "solid-js": "1.8.22",
     "ts-pattern": "5.3.1",
-    "vinxi": "0.4.2"
+    "vinxi": "0.4.3"
   },
   "devDependencies": {
     "@eslint/js": "9.10.0",
