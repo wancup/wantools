@@ -6,6 +6,6 @@ export default defineConfig({
     plugins: [tsconfigPaths()],
   },
   server: {
-    preset: "cloudflare-pages",
+    preset: "cloudflare-pages-static",
   },
 });
