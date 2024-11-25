@@ -22,7 +22,7 @@
     "@solidjs/start": "1.0.10",
     "lucide-solid": "0.460.0",
     "solid-js": "1.9.3",
-    "ts-pattern": "5.3.1",
+    "ts-pattern": "5.5.0",
     "vinxi": "0.4.3"
   },
   "devDependencies": {

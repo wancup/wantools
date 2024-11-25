@@ -30,8 +30,8 @@ importers:
         specifier: 1.9.3
         version: 1.9.3
       ts-pattern:
-        specifier: 5.3.1
-        version: 5.3.1
+        specifier: 5.5.0
+        version: 5.5.0
       vinxi:
         specifier: 0.4.3
         version: 0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.6)
@@ -3419,8 +3419,8 @@ packages:
   ts-pattern@5.0.8:
     resolution: {integrity: sha512-aafbuAQOTEeWmA7wtcL94w6I89EgLD7F+IlWkr596wYxeb0oveWDO5dQpv85YP0CGbxXT/qXBIeV6IYLcoZ2uA==}
 
-  ts-pattern@5.3.1:
-    resolution: {integrity: sha512-1RUMKa8jYQdNfmnK4jyzBK3/PS/tnjcZ1CW0v1vWDeYe5RBklc/nquw03MEoB66hVBm4BnlCfmOqDVxHyT1DpA==}
+  ts-pattern@5.5.0:
+    resolution: {integrity: sha512-jqbIpTsa/KKTJYWgPNsFNbLVpwCgzXfFJ1ukNn4I8hMwyQzHMJnk/BqWzggB0xpkILuKzaO/aMYhS0SkaJyKXg==}
 
   tsconfck@3.0.2:
     resolution: {integrity: sha512-6lWtFjwuhS3XI4HsX4Zg0izOI3FU/AI9EGVlPEUMDIhvLPMD4wkiof0WCoDgW7qY+Dy198g4d9miAqUHWHFH6Q==}
@@ -7879,7 +7879,7 @@ snapshots:
 
   ts-pattern@5.0.8: {}
 
-  ts-pattern@5.3.1: {}
+  ts-pattern@5.5.0: {}
 
   tsconfck@3.0.2(typescript@5.6.2):
     optionalDependencies:
