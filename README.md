@@ -4,7 +4,7 @@ Utility tools for web application developers!
 
 ## Features
 
-- Directory Tree Generator
+- Directory Tree Editor
 - CSS Transition Samples
 - Pointer Event Samples
 - Keyboard Event Samples
