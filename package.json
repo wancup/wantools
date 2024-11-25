@@ -15,7 +15,7 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@ark-ui/solid": "4.1.0",
+    "@ark-ui/solid": "4.5.1",
     "@solid-primitives/mutation-observer": "1.1.17",
     "@solidjs/meta": "0.29.4",
     "@solidjs/router": "0.15.1",
@@ -28,7 +28,7 @@
   "devDependencies": {
     "@eslint/js": "9.10.0",
     "@pandacss/dev": "0.48.0",
-    "@park-ui/panda-preset": "0.42.0",
+    "@park-ui/panda-preset": "0.43.1",
     "dprint": "0.47.5",
     "eslint": "9.12.0",
     "eslint-plugin-solid": "0.14.4",

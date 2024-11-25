@@ -1,5 +1,7 @@
 import { defineConfig } from "@pandacss/dev";
 import { createPreset } from "@park-ui/panda-preset";
+import mauve from "@park-ui/panda-preset/colors/mauve";
+import plum from "@park-ui/panda-preset/colors/plum";
 
 export default defineConfig({
   preflight: true,
@@ -7,8 +9,9 @@ export default defineConfig({
   outdir: "styled-system",
   presets: [
     createPreset({
-      accentColor: "plum",
-      grayColor: "mauve",
+      accentColor: plum,
+      grayColor: mauve,
+      radius: "sm",
     }),
   ],
   include: ["./park-ui/**/*.{js,jsx,ts,tsx}", "./src/**/*.{ts,tsx}"],

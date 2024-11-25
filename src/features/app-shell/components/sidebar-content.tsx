@@ -22,11 +22,11 @@ export function SidebarContent(): JSX.Element {
                       whiteSpace: "nowrap",
                       borderRadius: "l2",
                       _hover: {
-                        color: "accent.text",
+                        color: "colorPalette.text",
                         background: "bg.emphasized",
                       },
                       _currentPage: {
-                        color: "accent.text",
+                        color: "colorPalette.text",
                       },
                     })}
                   >

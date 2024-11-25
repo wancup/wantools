@@ -1,8 +1,7 @@
 import { css } from "$panda/css";
 import { Heading } from "$park/heading";
-import { Textarea } from "$park/textarea";
+import { Textarea, type TextareaProps } from "$park/textarea";
 import { Title } from "@solidjs/meta";
-import { type TextareaProps } from "node_modules/@ark-ui/solid/dist/types/components/field/field";
 import { createSignal, type JSX } from "solid-js";
 import { DirectoryTree } from "~/features/directory-tree";
 import { makePageTitle, PAGES } from "~/site";

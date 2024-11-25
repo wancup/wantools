@@ -4,7 +4,7 @@ import { type JSX, type ParentProps } from "solid-js";
 
 const markerRecipe = cva({
   base: {
-    backgroundColor: "accent.8",
+    backgroundColor: "colorPalette.8",
     width: "2.5rem",
     height: "2.5rem",
     borderRadius: "2.5rem",
