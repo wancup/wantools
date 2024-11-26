@@ -14,11 +14,11 @@ Utility tools for web application developers!
 ## Prerequisites
 
 - Node.js
+- pnpm
 
 ## Developing
 
 ```bash
-corepack enable
 pnpm install
 pnpm run dev
 ```
