@@ -19,6 +19,11 @@
       "matchCurrentVersion": "!/^0/",
       "automerge": true,
       "automergeType": "branch"
+    },
+    {
+      "matchPackageNames": ["lucide-solid"],
+      "automerge": true,
+      "automergeType": "branch"
     }
   ],
   "lockFileMaintenance": {
