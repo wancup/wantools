@@ -17,18 +17,15 @@
     {
       "matchUpdateTypes": ["minor", "patch"],
       "matchCurrentVersion": "!/^0/",
-      "automerge": true,
-      "automergeType": "branch"
+      "automerge": true
     },
     {
       "matchPackageNames": ["lucide-solid"],
-      "automerge": true,
-      "automergeType": "branch"
+      "automerge": true
     }
   ],
   "lockFileMaintenance": {
     "enabled": true,
-    "automerge": true,
-    "automergeType": "branch"
+    "automerge": true
   }
 }
