@@ -46,6 +46,7 @@ export function DeviceDifferenceChart(): JSX.Element {
 
   return (
     <>
+      {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
       <div
         class={css({
           width: "clamp(160px, 60%, 320px)",
@@ -86,12 +87,14 @@ export function DeviceDifferenceChart(): JSX.Element {
         onPointerOver={(e) => {
           setPointerOverEvent(e);
         }}
+        // eslint-disable-next-line jsx-a11y/mouse-events-have-key-events
         onMouseOver={(e) => {
           setMouseOverEvent(e);
         }}
         onPointerOut={(e) => {
           setPointerOutEvent(e);
         }}
+        // eslint-disable-next-line jsx-a11y/mouse-events-have-key-events
         onMouseOut={(e) => {
           setMouseOutEvent(e);
         }}
