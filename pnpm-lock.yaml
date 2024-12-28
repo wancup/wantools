@@ -40,14 +40,14 @@ importers:
         specifier: 9.17.0
         version: 9.17.0
       '@pandacss/dev':
-        specifier: 0.49.0
-        version: 0.49.0(typescript@5.7.2)
+        specifier: 0.50.0
+        version: 0.50.0(typescript@5.7.2)
       '@pandacss/eslint-plugin':
         specifier: 0.2.3
         version: 0.2.3(eslint@9.17.0(jiti@2.4.2))(typescript@5.7.2)
       '@park-ui/panda-preset':
         specifier: 0.43.1
-        version: 0.43.1(@internationalized/date@3.6.0)(@pandacss/dev@0.49.0(typescript@5.7.2))
+        version: 0.43.1(@internationalized/date@3.6.0)(@pandacss/dev@0.50.0(typescript@5.7.2))
       dprint:
         specifier: 0.48.0
         version: 0.48.0
@@ -820,17 +820,17 @@ packages:
   '@pandacss/config@0.40.1':
     resolution: {integrity: sha512-Pzm0GpsrV8OoXgrBJ+V7aaKG39ytbLex1XsRKY6JThkAAz0rE2P8k4nbSQU8WXuG7mbOijBKYybi/cxRAIUL1w==}
 
-  '@pandacss/config@0.49.0':
-    resolution: {integrity: sha512-DbPbZmQhp714nuFMlLuKrtOeUF8IfyjoD5TA81D/LaPKJGdg9/n553PxMSdp/nvJBwMkDiTvUWIZmxuJQqk5ZQ==}
+  '@pandacss/config@0.50.0':
+    resolution: {integrity: sha512-SZuVsqo92V23roRZ4Swa023vpyr2fuO80cGDbUKgSb9bPw47L/U7MqnkNF3AwwYqH5sUcJU9/6/2JDFbGFReBg==}
 
   '@pandacss/core@0.40.1':
     resolution: {integrity: sha512-12Eu6ReCYZYu6Y/cX5YvGUS8eJkCVJYR8njWAqJmSg+rg/vqmkAM+KL8qdYw95WiTzih1dPaSq+MqkiX3N9hUg==}
 
-  '@pandacss/core@0.49.0':
-    resolution: {integrity: sha512-AFmacN4AYLAsr800IBiiwIc1C4E8pIkbpAW5EXrMnjapq0c9W9/2MKJVMr8KJ7deFv8Kj6OgP71cP0Fj0k+EkA==}
+  '@pandacss/core@0.50.0':
+    resolution: {integrity: sha512-aftYuKoxHNi/2MdUI3HyJqf4WvYN8Q+VVcJruw8ujcpU+OUVOAkl1tUlW8BAB4P09qbJzeaPknOsKR7IL3W7zg==}
 
-  '@pandacss/dev@0.49.0':
-    resolution: {integrity: sha512-pZThil4dc3E9kMfn5UWfmT93qznN+oktd2OG3/CBVqmmWPl4oE9EwAsoaDnWAzYv1xahqeBUapJWbn1mbWKOOQ==}
+  '@pandacss/dev@0.50.0':
+    resolution: {integrity: sha512-DfyzkdUZ1N3cujXBofPsB0TlKI52cXgfNrLLx0dSqUyRyA2oEeOZMVuMbmmeOMByz/xeml49tcz6pc0iBLPsOw==}
     hasBin: true
 
   '@pandacss/eslint-plugin@0.2.3':
@@ -841,71 +841,74 @@ packages:
   '@pandacss/extractor@0.40.1':
     resolution: {integrity: sha512-eHTAiNBLPxOYsf4pqbwhxjqejzaYx6EGFvdxznKohO++ihPgoph4/zl6WZx+/Ncb/IcHKMXpIBghQmmE68LIyA==}
 
-  '@pandacss/extractor@0.49.0':
-    resolution: {integrity: sha512-M0Dm9FHASUdFKPSBqPgXxYRsbIndB/uFAdSlZwwwIRSqlUvFYNbkLq01c2BFSBV5vRZ6J7V5zFTR1jOjp6qoAQ==}
+  '@pandacss/extractor@0.50.0':
+    resolution: {integrity: sha512-Y4bAjF1MVMS23mjG4tHI0wX8ctZxFbS+cEKFSUcJXrKat9T5pOpFEepX8tz7Gf6Bsd8Um3TJCmpv2OKGG5eJ9w==}
 
   '@pandacss/generator@0.40.1':
     resolution: {integrity: sha512-kidMyFPVuJYue4uah9uL4iNdhCPikTPCsc8j9IwrcrKPT6uhLqdeBQEF3Kxs0Pik8v+cMaDV0BSSceCujxHzhA==}
 
-  '@pandacss/generator@0.49.0':
-    resolution: {integrity: sha512-U41q8g2dpGc6FC3oV6RG5/WflFyt0V6/ZWdShPUc/ByuhvF21W87Hjyd+nikhTceMpy0IZar+nGThmDzKbh8UQ==}
+  '@pandacss/generator@0.50.0':
+    resolution: {integrity: sha512-Cn3l3MYNoItkHKKGRvYG4Un5RZORZ2SCjGqGnkZM4NyZhC45rty4OquIyZoW2nkVohlkyZTw4iFki585FHxuCA==}
 
   '@pandacss/is-valid-prop@0.40.1':
     resolution: {integrity: sha512-YcWecr6zecEiCqRi/zoCONcokG64T2LiEOCEYZMhqX9ma/KsKNd4oZO6r001/1ZUSBSVD6ZIb95h/N4gctfayg==}
 
-  '@pandacss/is-valid-prop@0.49.0':
-    resolution: {integrity: sha512-KYLmM4DmlswQjkEVL0BUf5vG01Nq5IvVGTJxNhfYXncfAnOeXOcRqaLir9BsS1Y97ZIgO8qqZT0wgGOrBrtJbQ==}
+  '@pandacss/is-valid-prop@0.50.0':
+    resolution: {integrity: sha512-H/GS16AjEjLq13UsFtNy+Yr94MX2GkWouLqfEME82cFTCZTELtsSnVenAGtNA8OovmpUWFfgxsvoHs606D+tfA==}
 
   '@pandacss/logger@0.40.1':
     resolution: {integrity: sha512-UnxDZGWj4e2Cl9XJWBp5WTJiWmfXIbyYLXt0tOlVIGTiBfZtsqVnT/uD3g71QSJgyUCyYqCx/zHJTIsKIm2/HQ==}
 
-  '@pandacss/logger@0.49.0':
-    resolution: {integrity: sha512-P1qmVhbyJrTXkYOL2CImXud4DST3plm1QLehpZC1rMipw410L0RY7t949kgCQ6em9I/hdf1PVXAER+QhUqN7lw==}
+  '@pandacss/logger@0.50.0':
+    resolution: {integrity: sha512-H0R++/MjTQwDUrdTuEPfVCi5GduFXJd9v1HRR0t/NlyqLOrUSpO9c3w+9Hdxc8k5oUM9eSWN+dC/MhboRCtUxA==}
 
   '@pandacss/node@0.40.1':
     resolution: {integrity: sha512-r00E85hAFmU49H0JgEwRqf2R5P6CIAydLcTTGrqYEvC8NrP2Y2vsnNENYwDT6PChAzjIZxtZK5myYki3qkfWTA==}
 
-  '@pandacss/node@0.49.0':
-    resolution: {integrity: sha512-qgSTCxAJwt/JF/Vr7s1uAzpEWuleZsE++aRD2+kllZka0TH2KbOZ1MVL6n4JikXCFLlvPlepmE8iD+cTnb+Vsw==}
+  '@pandacss/node@0.50.0':
+    resolution: {integrity: sha512-e8QRpewhLUY48pBpP6e7fAXVD4Cb4zHpvmjI2kwWtK7dZgeTJheGnQOe+CJ5IpskkksYxDacTYuZMs6S0+tqmQ==}
 
   '@pandacss/parser@0.40.1':
     resolution: {integrity: sha512-tcBw29Qzxe7BSyf3G76d4ux8rCnqzg4kIApOZQFPrPLGzkc6/TO59HQr3gz8YQbD0HhO2QzjnUkVwCuOpCJoOQ==}
 
-  '@pandacss/parser@0.49.0':
-    resolution: {integrity: sha512-bBkL54rzRYKGBGBA77aPA+5lqUtr44DUOVRLXztXYh/SUfKwAr3fha8ow0Hm0onPn/FLpwGod9BMQzM6VAINSg==}
+  '@pandacss/parser@0.50.0':
+    resolution: {integrity: sha512-9mnF0djf2W56Ifl1yoE1DlgN6vwGG4vyJVLrLI0iRQAhOGgE5bbE/tOmsaIRCWqx6dvEiEUfhdAXzlfWdtRv8Q==}
 
-  '@pandacss/postcss@0.49.0':
-    resolution: {integrity: sha512-2OQyhImjOa0aVS1yXCaMJGuUy4pStWc9oB7fxqBwvCNmbRE+snmw4LAZiKRPogsqU8FpxDl52GzRDKqr1Ar8ww==}
+  '@pandacss/postcss@0.50.0':
+    resolution: {integrity: sha512-clt3bi9+Hx+oQQ/iQI3KTbpVgpXpXyNO65r8torlZS2xnjl4XSOmQ2zZv3LmmvKs2bMpBEFfNegjLhpR9BtsoQ==}
 
   '@pandacss/preset-base@0.40.1':
     resolution: {integrity: sha512-uPevTES6MonoCSLa5BLHcIkj0hJE6Nynlnaqyen4BPESJFh+ylzVjQa8K3RpOAtD6phVgWsjf21cjmKfnxo+0Q==}
 
-  '@pandacss/preset-base@0.49.0':
-    resolution: {integrity: sha512-DiuG3xtiHONpDhmLsb0+a1ukPoXjw46W+wO/4PLpCgxCMrmMUX3gYgIdZ+ZdSWtvUsM1SiOirudgR/M1niP2WA==}
+  '@pandacss/preset-base@0.50.0':
+    resolution: {integrity: sha512-PXzXtu4Co3c15B1g6whp2TeFQU9BwHB+zeXRX8bGyG7eSA66F2rqXFsEvariX37lbrlJ/uTsEFQgH/wg20XFKQ==}
 
   '@pandacss/preset-panda@0.40.1':
     resolution: {integrity: sha512-rNw+mfU3rhQzOgUkKTZqQ6y0qRMua5Z8AVuWUrSPYCERsxmbdAVrdoOfkCjiZ+Kf+nWGumlDca9IWxI5vYlSMw==}
 
-  '@pandacss/preset-panda@0.49.0':
-    resolution: {integrity: sha512-bUEJmwYwlJjE+dJdL26KnEmy3A7Ei6q8/XSTAiDLMNDRlYIDvTEqEy1vWU6ipOQaebdCxGRYN33Tp5UzKD1bGg==}
+  '@pandacss/preset-panda@0.50.0':
+    resolution: {integrity: sha512-ZRU6vAqI7ZVGsMAc/Zhe7u3ok1lsclWTOMPLnj72izZQpAvGbuO59rq77YHVPhX2YGUfsxJKcQ93r9Az6ZlGLQ==}
+
+  '@pandacss/reporter@0.50.0':
+    resolution: {integrity: sha512-m9OG36KQClnHrwyZhrQbqU+c7cKVXxy9qZ1QQ5212/5PFYAhOP0svGmc8bS6BZVaesPpAeiAzRoCVkTH6ro+Aw==}
 
   '@pandacss/shared@0.40.1':
     resolution: {integrity: sha512-FBI2AaaYQZoA7TU/qa9z4FVGU3eQDC/cXobTOzmvewpVb+kFSjPo9hralYAViq+5EFRAJOFM7NMqQH0Enitjnw==}
 
-  '@pandacss/shared@0.49.0':
-    resolution: {integrity: sha512-CXBzjCUI54ZocfvyV2VuPECFZK7tP+PKjwCZowoUA0Jl3KGxyfJBS/cP1lHDRXcx/GBBLU+H99bWRoakYztW4g==}
+  '@pandacss/shared@0.50.0':
+    resolution: {integrity: sha512-BTHCxXJCDkNB4BA0ap7EPd+SaqDDn6THes9f0b26GtVOwTi7G690uqTHoRSY+16KXGfqeeh0w/h4ZlMV2UL8IA==}
 
   '@pandacss/token-dictionary@0.40.1':
     resolution: {integrity: sha512-vpeGGJMd1dasGD2siEqSxtg9wAYNHVnafJSL+QCtarRSwVf9/ETw48md6CvGX7Iq6mfUpNJaa1JkBmhnQUVuNg==}
 
-  '@pandacss/token-dictionary@0.49.0':
-    resolution: {integrity: sha512-w5Pfs073fmWbXREBh/B+NdkdYguI6hdqtOjwdxwhjJlJpKmngC9Bb/9f0gtIvfsvoawgwbgZYkkKgwF0CZdnzw==}
+  '@pandacss/token-dictionary@0.50.0':
+    resolution: {integrity: sha512-3M9duoWxEUQnCD01wqQj8y5D2dSVCYJJ/J88yUDg1t2Q4CUHr6YFbvEUlAN6AVAY5bt0rKW2mcl0swumzcOG2g==}
 
   '@pandacss/types@0.40.1':
     resolution: {integrity: sha512-znHd2Qc9zv/3e86CkM04Dv5b3dTymucfAvbvkUrvz4AT1KME7BQ1YEQRpaXgdE4UI5waV+Rv0Tx7Dmtt//4yWQ==}
 
-  '@pandacss/types@0.49.0':
-    resolution: {integrity: sha512-Chmgjci8ycjxEIaL0DIs9ie0O8XW6Q0zByyuKe/NkBOFM06U+I6OrAK18qUmfseeGzpQdp3iaRirVlMvrYtJrg==}
+  '@pandacss/types@0.50.0':
+    resolution: {integrity: sha512-IP+MC7QmP5biXbzTfubi5XHR2FpBI+6dEfK2+PLKMPm/PphNkeSI8AZ3rPCmbAuEck2WnjsyckpaulUsHaYPKA==}
 
   '@parcel/watcher-android-arm64@2.5.0':
     resolution: {integrity: sha512-qlX4eS28bUcQCdribHkg/herLe+0A9RyYC+mm2PXpncit8z5b3nSqGVzMNR3CmtAOgRutiZ02eIJJgP/b1iEFQ==}
@@ -1875,6 +1878,9 @@ packages:
   ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
 
+  ajv@8.17.1:
+    resolution: {integrity: sha512-B/gBuNg5SiMTrPkC+A2+cW0RszwxYmn6VYxB/inlBStS5nx6xHIt/ehKRhIMhqusl7a8LjQoZnjCs5vhwxOQ1g==}
+
   ansi-align@3.0.1:
     resolution: {integrity: sha512-IOfwwBF5iczOjp/WeY4YxyjqAFMQoZufdQWDd19SEExbVLNXqvpzSJ/M7Za4/sCPmQ0+GRquoA7bGcINcxew6w==}
 
@@ -1954,6 +1960,10 @@ packages:
   ast-types@0.16.1:
     resolution: {integrity: sha512-6t10qk83GOG8p0vKmaCr8eiilZwO171AvbROMtvvNiwrTly62t+7XkA8RdIIVbpMhCASAsxgAzdRSwh6nw/5Dg==}
     engines: {node: '>=4'}
+
+  astral-regex@2.0.0:
+    resolution: {integrity: sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==}
+    engines: {node: '>=8'}
 
   astring@1.9.0:
     resolution: {integrity: sha512-LElXdjswlqjWrPpJFg1Fx4wpkOCxj1TDHlSV4PlaRxHGWko024xICaa97ZkMfs6DRKlCguiAI+rbXv5GWwXIkg==}
@@ -2565,6 +2575,9 @@ packages:
   fast-levenshtein@2.0.6:
     resolution: {integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==}
 
+  fast-uri@3.0.3:
+    resolution: {integrity: sha512-aLrHthzCjH5He4Z2H9YZ+v6Ujb9ocRuW6ZzkJQOrTxleEijANq4v1TsaPaVG1PZcuurEzrLcWRyYBYXD5cEiaw==}
+
   fastq@1.17.1:
     resolution: {integrity: sha512-sRVD3lWVIXWg6By68ZN7vho9a1pQcN/WBFaAAsDDFzlJjvoGx0P8z7V1t72grFJfJhu3YPZBuu25f7Kaw2jN1w==}
 
@@ -2588,10 +2601,6 @@ packages:
 
   filesize@10.1.2:
     resolution: {integrity: sha512-Dx770ai81ohflojxhU+oG+Z2QGvKdYxgEr9OSA8UVrqhwNHjfH9A8f5NKfg83fEH8ZFA5N5llJo5T3PIoZ4CRA==}
-    engines: {node: '>= 10.4.0'}
-
-  filesize@10.1.6:
-    resolution: {integrity: sha512-sJslQKU2uM33qH5nqewAwVB2QgR6w1aMNsYUp3aN5rMRyXEwJGmZvaWzeJFNTOXWlHQyBFCWrdj3fV/fsTOX8w==}
     engines: {node: '>= 10.4.0'}
 
   fill-range@7.1.1:
@@ -3274,6 +3283,9 @@ packages:
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
 
+  lodash.truncate@4.4.2:
+    resolution: {integrity: sha512-jttmRe7bRse52OsWIMDLaXxWqRAmtIUccAQ3garviCqJjafXOfNMO0yMfNpdD6zbGaTU0P5Nz7e7gAT6cKmJRw==}
+
   lodash.uniq@4.5.0:
     resolution: {integrity: sha512-xfBaXQd9ryd9dlSDvnvI0lvxfLJlYAZzXomUYzLKtUeOQvOP5piqAWuGtrhWeqaXK9hhoM/iyJc5AV+XfsX3HQ==}
 
@@ -3299,9 +3311,6 @@ packages:
 
   magic-string@0.30.10:
     resolution: {integrity: sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==}
-
-  magic-string@0.30.14:
-    resolution: {integrity: sha512-5c99P1WKTed11ZC0HMJOj6CDIue6F8ySu+bJL+85q1zBEIY8IklrJ1eiKC2NDRh3Ct3FcvmJPyQHb9erXMTJNw==}
 
   magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
@@ -3986,6 +3995,10 @@ packages:
     resolution: {integrity: sha512-ZA6oR3T/pEyuqwMgAKT0/hAv8oAXckzbkmR0UkUosQ+Mc4RxGoJkRmwHgHufaenlyAgE1Mxgpdcrf75y6XcnDg==}
     engines: {node: '>=14.16'}
 
+  slice-ansi@4.0.0:
+    resolution: {integrity: sha512-qMCMfhY040cVHT43K9BFygqYbUPFZKHOg7K73mtTWJRb8pyP3fzf4Ixd5SzdEJQ6MRUg/WBnOLxghZtKKurENQ==}
+    engines: {node: '>=10'}
+
   smob@1.5.0:
     resolution: {integrity: sha512-g6T+p7QO8npa+/hNx9ohv1E5pVCmWrVCUzUXJyLdMmftX6ER0oiWY/w9knEonLpnOp6b6FenKnMfR8gqwWdwig==}
 
@@ -4118,6 +4131,10 @@ packages:
 
   tabbable@6.2.0:
     resolution: {integrity: sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==}
+
+  table@6.9.0:
+    resolution: {integrity: sha512-9kY+CygyYM6j02t5YFHbNz2FN5QmYGv9zAjVp4lCDjlCw7amdckXlEt/bjMhUIfj4ThGRE4gCUH5+yGnNuPo5A==}
+    engines: {node: '>=10.0.0'}
 
   tar-stream@3.1.7:
     resolution: {integrity: sha512-qJj60CXt7IU1Ffyc3NJMjh6EkuCFej46zUqJ4J7pqYlThyd9bO0XBTmcOIhSzZJVWfsLks0+nle/j538YAW9RQ==}
@@ -4550,6 +4567,10 @@ packages:
   word-wrap@1.2.5:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
+
+  wordwrapjs@5.1.0:
+    resolution: {integrity: sha512-JNjcULU2e4KJwUNv6CHgI46UvDGitb6dGryHajXTDiLgg1/RiGoPSDw4kZfYnwGtEXf2ZMeIewDQgFGzkCB2Sg==}
+    engines: {node: '>=12.17'}
 
   wrap-ansi@7.0.0:
     resolution: {integrity: sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==}
@@ -5265,13 +5286,13 @@ snapshots:
       microdiff: 1.3.2
       typescript: 5.3.3
 
-  '@pandacss/config@0.49.0':
+  '@pandacss/config@0.50.0':
     dependencies:
-      '@pandacss/logger': 0.49.0
-      '@pandacss/preset-base': 0.49.0
-      '@pandacss/preset-panda': 0.49.0
-      '@pandacss/shared': 0.49.0
-      '@pandacss/types': 0.49.0
+      '@pandacss/logger': 0.50.0
+      '@pandacss/preset-base': 0.50.0
+      '@pandacss/preset-panda': 0.50.0
+      '@pandacss/shared': 0.50.0
+      '@pandacss/types': 0.50.0
       bundle-n-require: 1.1.1
       escalade: 3.1.2
       merge-anything: 5.1.7
@@ -5301,14 +5322,14 @@ snapshots:
       postcss-selector-parser: 6.0.16
       ts-pattern: 5.0.8
 
-  '@pandacss/core@0.49.0':
+  '@pandacss/core@0.50.0':
     dependencies:
       '@csstools/postcss-cascade-layers': 4.0.6(postcss@8.4.49)
-      '@pandacss/is-valid-prop': 0.49.0
-      '@pandacss/logger': 0.49.0
-      '@pandacss/shared': 0.49.0
-      '@pandacss/token-dictionary': 0.49.0
-      '@pandacss/types': 0.49.0
+      '@pandacss/is-valid-prop': 0.50.0
+      '@pandacss/logger': 0.50.0
+      '@pandacss/shared': 0.50.0
+      '@pandacss/token-dictionary': 0.50.0
+      '@pandacss/types': 0.50.0
       browserslist: 4.23.3
       hookable: 5.5.3
       lightningcss: 1.25.1
@@ -5324,17 +5345,17 @@ snapshots:
       postcss-selector-parser: 6.1.2
       ts-pattern: 5.0.8
 
-  '@pandacss/dev@0.49.0(typescript@5.7.2)':
+  '@pandacss/dev@0.50.0(typescript@5.7.2)':
     dependencies:
       '@clack/prompts': 0.7.0
-      '@pandacss/config': 0.49.0
-      '@pandacss/logger': 0.49.0
-      '@pandacss/node': 0.49.0(typescript@5.7.2)
-      '@pandacss/postcss': 0.49.0(typescript@5.7.2)
-      '@pandacss/preset-panda': 0.49.0
-      '@pandacss/shared': 0.49.0
-      '@pandacss/token-dictionary': 0.49.0
-      '@pandacss/types': 0.49.0
+      '@pandacss/config': 0.50.0
+      '@pandacss/logger': 0.50.0
+      '@pandacss/node': 0.50.0(typescript@5.7.2)
+      '@pandacss/postcss': 0.50.0(typescript@5.7.2)
+      '@pandacss/preset-panda': 0.50.0
+      '@pandacss/shared': 0.50.0
+      '@pandacss/token-dictionary': 0.50.0
+      '@pandacss/types': 0.50.0
       cac: 6.7.14
     transitivePeerDependencies:
       - jsdom
@@ -5364,9 +5385,9 @@ snapshots:
       - jsdom
       - typescript
 
-  '@pandacss/extractor@0.49.0(typescript@5.7.2)':
+  '@pandacss/extractor@0.50.0(typescript@5.7.2)':
     dependencies:
-      '@pandacss/shared': 0.49.0
+      '@pandacss/shared': 0.50.0
       ts-evaluator: 1.2.0(typescript@5.7.2)
       ts-morph: 21.0.1
     transitivePeerDependencies:
@@ -5387,14 +5408,14 @@ snapshots:
       postcss: 8.4.38
       ts-pattern: 5.0.8
 
-  '@pandacss/generator@0.49.0':
+  '@pandacss/generator@0.50.0':
     dependencies:
-      '@pandacss/core': 0.49.0
-      '@pandacss/is-valid-prop': 0.49.0
-      '@pandacss/logger': 0.49.0
-      '@pandacss/shared': 0.49.0
-      '@pandacss/token-dictionary': 0.49.0
-      '@pandacss/types': 0.49.0
+      '@pandacss/core': 0.50.0
+      '@pandacss/is-valid-prop': 0.50.0
+      '@pandacss/logger': 0.50.0
+      '@pandacss/shared': 0.50.0
+      '@pandacss/token-dictionary': 0.50.0
+      '@pandacss/types': 0.50.0
       javascript-stringify: 2.1.0
       outdent: 0.8.0
       pluralize: 8.0.0
@@ -5403,16 +5424,16 @@ snapshots:
 
   '@pandacss/is-valid-prop@0.40.1': {}
 
-  '@pandacss/is-valid-prop@0.49.0': {}
+  '@pandacss/is-valid-prop@0.50.0': {}
 
   '@pandacss/logger@0.40.1':
     dependencies:
       '@pandacss/types': 0.40.1
       kleur: 4.1.5
 
-  '@pandacss/logger@0.49.0':
+  '@pandacss/logger@0.50.0':
     dependencies:
-      '@pandacss/types': 0.49.0
+      '@pandacss/types': 0.50.0
       kleur: 4.1.5
 
   '@pandacss/node@0.40.1(typescript@5.7.2)':
@@ -5450,22 +5471,20 @@ snapshots:
       - jsdom
       - typescript
 
-  '@pandacss/node@0.49.0(typescript@5.7.2)':
+  '@pandacss/node@0.50.0(typescript@5.7.2)':
     dependencies:
-      '@pandacss/config': 0.49.0
-      '@pandacss/core': 0.49.0
-      '@pandacss/extractor': 0.49.0(typescript@5.7.2)
-      '@pandacss/generator': 0.49.0
-      '@pandacss/logger': 0.49.0
-      '@pandacss/parser': 0.49.0(typescript@5.7.2)
-      '@pandacss/shared': 0.49.0
-      '@pandacss/token-dictionary': 0.49.0
-      '@pandacss/types': 0.49.0
+      '@pandacss/config': 0.50.0
+      '@pandacss/core': 0.50.0
+      '@pandacss/generator': 0.50.0
+      '@pandacss/logger': 0.50.0
+      '@pandacss/parser': 0.50.0(typescript@5.7.2)
+      '@pandacss/reporter': 0.50.0
+      '@pandacss/shared': 0.50.0
+      '@pandacss/token-dictionary': 0.50.0
+      '@pandacss/types': 0.50.0
       browserslist: 4.23.3
       chokidar: 3.6.0
       fast-glob: 3.3.2
-      file-size: 1.0.0
-      filesize: 10.1.6
       fs-extra: 11.2.0
       glob-parent: 6.0.2
       is-glob: 4.0.3
@@ -5501,25 +5520,25 @@ snapshots:
       - jsdom
       - typescript
 
-  '@pandacss/parser@0.49.0(typescript@5.7.2)':
+  '@pandacss/parser@0.50.0(typescript@5.7.2)':
     dependencies:
-      '@pandacss/config': 0.49.0
-      '@pandacss/core': 0.49.0
-      '@pandacss/extractor': 0.49.0(typescript@5.7.2)
-      '@pandacss/logger': 0.49.0
-      '@pandacss/shared': 0.49.0
-      '@pandacss/types': 0.49.0
+      '@pandacss/config': 0.50.0
+      '@pandacss/core': 0.50.0
+      '@pandacss/extractor': 0.50.0(typescript@5.7.2)
+      '@pandacss/logger': 0.50.0
+      '@pandacss/shared': 0.50.0
+      '@pandacss/types': 0.50.0
       '@vue/compiler-sfc': 3.4.19
-      magic-string: 0.30.14
+      magic-string: 0.30.17
       ts-morph: 21.0.1
       ts-pattern: 5.0.8
     transitivePeerDependencies:
       - jsdom
       - typescript
 
-  '@pandacss/postcss@0.49.0(typescript@5.7.2)':
+  '@pandacss/postcss@0.50.0(typescript@5.7.2)':
     dependencies:
-      '@pandacss/node': 0.49.0(typescript@5.7.2)
+      '@pandacss/node': 0.50.0(typescript@5.7.2)
       postcss: 8.4.49
     transitivePeerDependencies:
       - jsdom
@@ -5529,21 +5548,31 @@ snapshots:
     dependencies:
       '@pandacss/types': 0.40.1
 
-  '@pandacss/preset-base@0.49.0':
+  '@pandacss/preset-base@0.50.0':
     dependencies:
-      '@pandacss/types': 0.49.0
+      '@pandacss/types': 0.50.0
 
   '@pandacss/preset-panda@0.40.1':
     dependencies:
       '@pandacss/types': 0.40.1
 
-  '@pandacss/preset-panda@0.49.0':
+  '@pandacss/preset-panda@0.50.0':
     dependencies:
-      '@pandacss/types': 0.49.0
+      '@pandacss/types': 0.50.0
+
+  '@pandacss/reporter@0.50.0':
+    dependencies:
+      '@pandacss/core': 0.50.0
+      '@pandacss/generator': 0.50.0
+      '@pandacss/logger': 0.50.0
+      '@pandacss/shared': 0.50.0
+      '@pandacss/types': 0.50.0
+      table: 6.9.0
+      wordwrapjs: 5.1.0
 
   '@pandacss/shared@0.40.1': {}
 
-  '@pandacss/shared@0.49.0': {}
+  '@pandacss/shared@0.50.0': {}
 
   '@pandacss/token-dictionary@0.40.1':
     dependencies:
@@ -5552,16 +5581,16 @@ snapshots:
       '@pandacss/types': 0.40.1
       ts-pattern: 5.0.8
 
-  '@pandacss/token-dictionary@0.49.0':
+  '@pandacss/token-dictionary@0.50.0':
     dependencies:
-      '@pandacss/logger': 0.49.0
-      '@pandacss/shared': 0.49.0
-      '@pandacss/types': 0.49.0
+      '@pandacss/logger': 0.50.0
+      '@pandacss/shared': 0.50.0
+      '@pandacss/types': 0.50.0
       ts-pattern: 5.0.8
 
   '@pandacss/types@0.40.1': {}
 
-  '@pandacss/types@0.49.0': {}
+  '@pandacss/types@0.50.0': {}
 
   '@parcel/watcher-android-arm64@2.5.0':
     optional: true
@@ -5633,10 +5662,10 @@ snapshots:
       '@parcel/watcher-win32-ia32': 2.5.0
       '@parcel/watcher-win32-x64': 2.5.0
 
-  '@park-ui/panda-preset@0.43.1(@internationalized/date@3.6.0)(@pandacss/dev@0.49.0(typescript@5.7.2))':
+  '@park-ui/panda-preset@0.43.1(@internationalized/date@3.6.0)(@pandacss/dev@0.50.0(typescript@5.7.2))':
     dependencies:
       '@ark-ui/anatomy': 3.5.0(@internationalized/date@3.6.0)
-      '@pandacss/dev': 0.49.0(typescript@5.7.2)
+      '@pandacss/dev': 0.50.0(typescript@5.7.2)
       effect: 3.10.15
     transitivePeerDependencies:
       - '@internationalized/date'
@@ -6181,7 +6210,7 @@ snapshots:
       '@vue/compiler-ssr': 3.4.19
       '@vue/shared': 3.4.19
       estree-walker: 2.0.2
-      magic-string: 0.30.14
+      magic-string: 0.30.17
       postcss: 8.4.49
       source-map-js: 1.2.1
 
@@ -7197,6 +7226,13 @@ snapshots:
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
 
+  ajv@8.17.1:
+    dependencies:
+      fast-deep-equal: 3.1.3
+      fast-uri: 3.0.3
+      json-schema-traverse: 1.0.0
+      require-from-string: 2.0.2
+
   ansi-align@3.0.1:
     dependencies:
       string-width: 4.2.3
@@ -7293,6 +7329,8 @@ snapshots:
   ast-types@0.16.1:
     dependencies:
       tslib: 2.8.1
+
+  astral-regex@2.0.0: {}
 
   astring@1.9.0: {}
 
@@ -8019,6 +8057,8 @@ snapshots:
 
   fast-levenshtein@2.0.6: {}
 
+  fast-uri@3.0.3: {}
+
   fastq@1.17.1:
     dependencies:
       reusify: 1.0.4
@@ -8036,8 +8076,6 @@ snapshots:
   file-uri-to-path@1.0.0: {}
 
   filesize@10.1.2: {}
-
-  filesize@10.1.6: {}
 
   fill-range@7.1.1:
     dependencies:
@@ -8716,6 +8754,8 @@ snapshots:
 
   lodash.merge@4.6.2: {}
 
+  lodash.truncate@4.4.2: {}
+
   lodash.uniq@4.5.0: {}
 
   lodash@4.17.21: {}
@@ -8735,10 +8775,6 @@ snapshots:
       solid-js: 1.9.3
 
   magic-string@0.30.10:
-    dependencies:
-      '@jridgewell/sourcemap-codec': 1.5.0
-
-  magic-string@0.30.14:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
 
@@ -9531,6 +9567,12 @@ snapshots:
 
   slash@5.1.0: {}
 
+  slice-ansi@4.0.0:
+    dependencies:
+      ansi-styles: 4.3.0
+      astral-regex: 2.0.0
+      is-fullwidth-code-point: 3.0.0
+
   smob@1.5.0: {}
 
   solid-js@1.9.3:
@@ -9670,6 +9712,14 @@ snapshots:
   system-architecture@0.1.0: {}
 
   tabbable@6.2.0: {}
+
+  table@6.9.0:
+    dependencies:
+      ajv: 8.17.1
+      lodash.truncate: 4.4.2
+      slice-ansi: 4.0.0
+      string-width: 4.2.3
+      strip-ansi: 6.0.1
 
   tar-stream@3.1.7:
     dependencies:
@@ -10201,6 +10251,8 @@ snapshots:
       string-width: 5.1.2
 
   word-wrap@1.2.5: {}
+
+  wordwrapjs@5.1.0: {}
 
   wrap-ansi@7.0.0:
     dependencies:
