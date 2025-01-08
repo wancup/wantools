@@ -21,8 +21,8 @@ importers:
         specifier: 0.15.2
         version: 0.15.2(solid-js@1.9.4)
       '@solidjs/start':
-        specifier: 1.0.10
-        version: 1.0.10(solid-js@1.9.4)(vinxi@0.4.3(@types/node@22.10.5)(db0@0.2.1)(ioredis@5.4.2)(lightningcss@1.25.1)(terser@5.37.0)(typescript@5.7.2))(vite@5.4.11(@types/node@22.10.5)(lightningcss@1.25.1)(terser@5.37.0))
+        specifier: 1.0.11
+        version: 1.0.11(solid-js@1.9.4)(vinxi@0.4.3(@types/node@22.10.5)(db0@0.2.1)(ioredis@5.4.2)(lightningcss@1.25.1)(terser@5.37.0)(typescript@5.7.2))(vite@5.4.11(@types/node@22.10.5)(lightningcss@1.25.1)(terser@5.37.0))
       lucide-solid:
         specifier: 0.469.0
         version: 0.469.0(solid-js@1.9.4)
@@ -1218,8 +1218,8 @@ packages:
     peerDependencies:
       solid-js: ^1.8.6
 
-  '@solidjs/start@1.0.10':
-    resolution: {integrity: sha512-3yg4KraSxc4rXs9dy/3kkqjDhU0JCPsZFLmDl5n6hHRPwtLLac6WUhs2k5VxGzitHaaJM/ZQCfT7i544Mf+4tw==}
+  '@solidjs/start@1.0.11':
+    resolution: {integrity: sha512-ZkrHtwxnmaVGItah13BtmST6rh3PtATcj0RyXM19Shj6MK/cIpDBBsDTsgwqCbZoa/AT8/JLM5xUHFjQyBjRCA==}
 
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
@@ -5852,7 +5852,7 @@ snapshots:
     dependencies:
       solid-js: 1.9.4
 
-  '@solidjs/start@1.0.10(solid-js@1.9.4)(vinxi@0.4.3(@types/node@22.10.5)(db0@0.2.1)(ioredis@5.4.2)(lightningcss@1.25.1)(terser@5.37.0)(typescript@5.7.2))(vite@5.4.11(@types/node@22.10.5)(lightningcss@1.25.1)(terser@5.37.0))':
+  '@solidjs/start@1.0.11(solid-js@1.9.4)(vinxi@0.4.3(@types/node@22.10.5)(db0@0.2.1)(ioredis@5.4.2)(lightningcss@1.25.1)(terser@5.37.0)(typescript@5.7.2))(vite@5.4.11(@types/node@22.10.5)(lightningcss@1.25.1)(terser@5.37.0))':
     dependencies:
       '@vinxi/plugin-directives': 0.4.3(vinxi@0.4.3(@types/node@22.10.5)(db0@0.2.1)(ioredis@5.4.2)(lightningcss@1.25.1)(terser@5.37.0)(typescript@5.7.2))
       '@vinxi/server-components': 0.4.3(vinxi@0.4.3(@types/node@22.10.5)(db0@0.2.1)(ioredis@5.4.2)(lightningcss@1.25.1)(terser@5.37.0)(typescript@5.7.2))
