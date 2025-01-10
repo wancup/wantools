@@ -27,7 +27,7 @@
     "vinxi": "0.4.3"
   },
   "devDependencies": {
-    "@eslint/js": "9.17.0",
+    "@eslint/js": "9.18.0",
     "@pandacss/dev": "0.51.1",
     "@park-ui/panda-preset": "0.43.1",
     "dprint": "0.48.0",
