@@ -43,8 +43,8 @@ importers:
         specifier: 0.51.1
         version: 0.51.1(typescript@5.7.3)
       '@pandacss/eslint-plugin':
-        specifier: 0.2.3
-        version: 0.2.3(eslint@9.18.0(jiti@2.4.2))(typescript@5.7.3)
+        specifier: 0.2.4
+        version: 0.2.4(eslint@9.18.0(jiti@2.4.2))(typescript@5.7.3)
       '@park-ui/panda-preset':
         specifier: 0.43.1
         version: 0.43.1(@internationalized/date@3.6.0)(@pandacss/dev@0.51.1(typescript@5.7.3))
@@ -833,8 +833,8 @@ packages:
     resolution: {integrity: sha512-CSZur9PwEVTJuZ8MabScei7bt3c1WLoQ15L8umiSij1Us7AHsLLnIjed5Gzw7r7gfIWiztGeY9bniNYRo8qg1w==}
     hasBin: true
 
-  '@pandacss/eslint-plugin@0.2.3':
-    resolution: {integrity: sha512-gsZLkmZpzQpozCOgW8pUSU6DzxFx0HuXenJaBEBGjBwlIYifzouN7T55Fn7SmYPd2lliRqsjuuEzG1ql0KPbRw==}
+  '@pandacss/eslint-plugin@0.2.4':
+    resolution: {integrity: sha512-vY3pT8ByQjAC4ZVQo0eEBBE/ZqAI6gyh6y/Mc/SLBFWPaz6BD+lrU+uJ4IYIOzsj72x4ucoyq75Uq36xp18Jlw==}
     peerDependencies:
       eslint: '*'
 
@@ -5382,7 +5382,7 @@ snapshots:
       - jsdom
       - typescript
 
-  '@pandacss/eslint-plugin@0.2.3(eslint@9.18.0(jiti@2.4.2))(typescript@5.7.3)':
+  '@pandacss/eslint-plugin@0.2.4(eslint@9.18.0(jiti@2.4.2))(typescript@5.7.3)':
     dependencies:
       '@pandacss/config': 0.40.1
       '@pandacss/generator': 0.40.1
@@ -5889,7 +5889,7 @@ snapshots:
 
   '@ts-morph/common@0.22.0':
     dependencies:
-      fast-glob: 3.3.2
+      fast-glob: 3.3.3
       minimatch: 9.0.5
       mkdirp: 3.0.1
       path-browserify: 1.0.1
@@ -7450,7 +7450,7 @@ snapshots:
 
   caniuse-api@3.0.0:
     dependencies:
-      browserslist: 4.23.3
+      browserslist: 4.24.3
       caniuse-lite: 1.0.30001690
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
@@ -9201,15 +9201,15 @@ snapshots:
 
   postcss-merge-rules@7.0.0(postcss@8.4.38):
     dependencies:
-      browserslist: 4.23.0
+      browserslist: 4.24.3
       caniuse-api: 3.0.0
       cssnano-utils: 5.0.0(postcss@8.4.38)
       postcss: 8.4.38
-      postcss-selector-parser: 6.0.16
+      postcss-selector-parser: 6.1.2
 
   postcss-merge-rules@7.0.4(postcss@8.4.49):
     dependencies:
-      browserslist: 4.23.3
+      browserslist: 4.24.3
       caniuse-api: 3.0.0
       cssnano-utils: 5.0.0(postcss@8.4.49)
       postcss: 8.4.49
@@ -9218,7 +9218,7 @@ snapshots:
   postcss-minify-selectors@7.0.0(postcss@8.4.38):
     dependencies:
       postcss: 8.4.38
-      postcss-selector-parser: 6.0.16
+      postcss-selector-parser: 6.1.2
 
   postcss-minify-selectors@7.0.4(postcss@8.4.49):
     dependencies:
