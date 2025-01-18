@@ -1,7 +1,6 @@
 // @ts-check
 
 import pluginJs from "@eslint/js";
-import panda from "@pandacss/eslint-plugin";
 import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 import solid from "eslint-plugin-solid/configs/typescript";
 import globals from "globals";
@@ -72,18 +71,6 @@ export default tseslint.config(
     },
     rules: {
       ...jsxA11yPlugin.flatConfigs.recommended.rules,
-    },
-  },
-  {
-    files: ["**/*.{js,jsx,ts,tsx}"],
-    plugins: {
-      "@pandacss": panda,
-    },
-    languageOptions: {
-      parser: tseslint.parser,
-    },
-    rules: {
-      ...panda.configs.recommended.rules,
     },
   },
 );
