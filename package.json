@@ -27,11 +27,11 @@
     "vinxi": "0.4.3"
   },
   "devDependencies": {
-    "@eslint/js": "9.18.0",
+    "@eslint/js": "9.19.0",
     "@pandacss/dev": "0.51.1",
     "@park-ui/panda-preset": "0.43.1",
     "dprint": "0.48.0",
-    "eslint": "9.18.0",
+    "eslint": "9.19.0",
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-solid": "0.14.5",
     "globals": "15.14.0",
