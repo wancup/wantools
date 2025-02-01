@@ -42,7 +42,7 @@ export function GlobalHeader(props: GlobalHeaderProps): JSX.Element {
         variant="ghost"
         asChild={(props) => {
           return (
-            <A {...props} href={PAGES["/"].path}>
+            <A {...props()} href={PAGES["/"].path}>
               <img alt={SITE.name} src={logoSrc()} class={css({ width: "10rem" })} />
             </A>
           );

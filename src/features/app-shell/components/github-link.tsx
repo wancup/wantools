@@ -11,7 +11,7 @@ export function GitHubLink(): JSX.Element {
       size="sm"
       asChild={(props) => {
         return (
-          <a {...props} href="https://github.com/wancup/wanTooLs" target="_blank" rel="noreferrer">
+          <a {...props()} href="https://github.com/wancup/wanTooLs" target="_blank" rel="noreferrer">
             <img
               alt="GitHub Repositoty"
               src={`https://cdn.simpleicons.org/github`}
