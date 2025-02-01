@@ -4,8 +4,8 @@ import { Input } from "$park/input";
 import { QrCode } from "$park/qr-code";
 import { Title } from "@solidjs/meta";
 import { createSignal, type JSX, Show } from "solid-js";
-import { Container } from "~/components";
 import { makePageTitle, PAGES } from "~/site";
+import { Container } from "~/ui";
 
 const PAGE_TITLE = makePageTitle(PAGES["qr-code"].name);
 

@@ -1,2 +1,2 @@
-export * from "./components/keydown-event-checker";
-export * from "./components/keyup-event-checker";
+export * from "./ui/keydown-event-checker";
+export * from "./ui/keyup-event-checker";

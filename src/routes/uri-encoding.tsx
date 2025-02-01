@@ -4,8 +4,8 @@ import { Input } from "$park/input";
 import { Title } from "@solidjs/meta";
 import { ArrowDownIcon, ArrowUpIcon } from "lucide-solid";
 import { createSignal, type JSX } from "solid-js";
-import { Container } from "~/components";
 import { makePageTitle, PAGES } from "~/site";
+import { Container } from "~/ui";
 
 const SAMPLE_URI = "https://example.com/?sakura=桜";
 
