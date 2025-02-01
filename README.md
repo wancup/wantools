@@ -5,9 +5,9 @@ Utility tools for web application developers!
 ## Features
 
 - Directory Tree Editor
-- CSS Transition Samples
-- Pointer Event Samples
-- Keyboard Event Samples
+- CSS Transition Swatches
+- Pointer Event Playground
+- Keyboard Event Playground
 - URI Encoding
 - QR code Generator
 
