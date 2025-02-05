@@ -24,8 +24,14 @@ export function DirectoryTreeInput(): JSX.Element {
   const [styledText, setStyledText] = createSignal("");
   const id = createUniqueId();
 
-  const rawTextInputId = `raw-text-input-${id}`;
-  const styledTextInputId = `styled-text-input-${id}`;
+  const mobileId = {
+    rawTextInput: `mobile-raw-text-input-${id}`,
+    styledTextInput: `mobile-styled-text-input-${id}`,
+  };
+  const pcId = {
+    rawTextInput: `pc-raw-text-input-${id}`,
+    styledTextInput: `pc-styled-text-input-${id}`,
+  };
 
   const handleInputRawText: JSX.EventHandler<HTMLTextAreaElement, InputEvent> = (e) => {
     setRawText(e.currentTarget.value);
@@ -50,18 +56,18 @@ export function DirectoryTreeInput(): JSX.Element {
         })}
       >
         <div class={css({ marginBottom: "0.5rem" })}>
-          <FormLabel for={rawTextInputId}>Directory Tree With Hyphen</FormLabel>
+          <FormLabel for={mobileId.rawTextInput}>Directory Tree With Hyphen</FormLabel>
           <StyledTextarea
-            id={rawTextInputId}
+            id={mobileId.rawTextInput}
             value={rawText()}
             onInput={handleInputRawText}
             placeholder={SAMPLE_RAW_TEXT}
           />
         </div>
         <div>
-          <FormLabel for={styledTextInputId}>Styled Directory Tree</FormLabel>
+          <FormLabel for={mobileId.styledTextInput}>Styled Directory Tree</FormLabel>
           <StyledTextarea
-            id={styledTextInputId}
+            id={mobileId.styledTextInput}
             value={styledText()}
             onInput={handleInputStyledText}
             placeholder={SAMPLE_STYLED_TEXT}
@@ -74,8 +80,8 @@ export function DirectoryTreeInput(): JSX.Element {
           md: { display: "grid", width: "100%", gridTemplateColumns: "1fr 1fr", columnGap: "1rem" },
         })}
       >
-        <FormLabel for={rawTextInputId}>Directory Tree With Hyphen</FormLabel>
-        <FormLabel for={styledTextInputId}>Styled Directory Tree</FormLabel>
+        <FormLabel for={pcId.rawTextInput}>Directory Tree With Hyphen</FormLabel>
+        <FormLabel for={pcId.styledTextInput}>Styled Directory Tree</FormLabel>
         <div
           class={css({
             gridColumn: "1 / 3",
@@ -87,13 +93,13 @@ export function DirectoryTreeInput(): JSX.Element {
           })}
         >
           <StyledTextarea
-            id={rawTextInputId}
+            id={pcId.rawTextInput}
             value={rawText()}
             onInput={handleInputRawText}
             placeholder={SAMPLE_RAW_TEXT}
           />
           <StyledTextarea
-            id={styledTextInputId}
+            id={pcId.styledTextInput}
             value={styledText()}
             onInput={handleInputStyledText}
             placeholder={SAMPLE_STYLED_TEXT}
