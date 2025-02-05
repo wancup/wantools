@@ -1,24 +1,27 @@
 {
+  "extends": "astro/tsconfigs/strict",
   "include": [
-    "app.config.ts",
+    ".astro/types.d.ts",
     "panda.config.ts",
     "vitest.config.ts",
     "src/**/*",
     "park-ui/**/*",
     "styled-system/**/*"
   ],
+  "exclude": [
+    "dist"
+  ],
   "compilerOptions": {
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "jsx": "preserve",
-    "jsxImportSource": "solid-js",
     "allowJs": false,
     "strict": true,
     "noEmit": true,
-    "types": ["vinxi/types/client", "vitest/globals"],
     "isolatedModules": true,
     "baseUrl": ".",
     "paths": {

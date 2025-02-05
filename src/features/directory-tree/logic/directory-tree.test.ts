@@ -1,3 +1,4 @@
+import { describe, expect, it } from "vitest";
 import { DirectoryTree } from "./directory-tree";
 
 describe("Directory Tree", () => {

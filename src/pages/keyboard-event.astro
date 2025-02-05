@@ -1,0 +1,31 @@
+---
+import { css } from "$panda/css";
+import { Heading } from "$park/heading";
+import { PAGES, SITE } from "~/config";
+import {
+  KeydownEventChecker,
+  KeyupEventChecker,
+} from "~/features/keyboard-event";
+import Layout from "~/layouts/Layout.astro";
+import { Container } from "~/ui";
+---
+
+<Layout title={SITE.toPageTitle(PAGES["pointer-event"].name)}>
+  <Container>
+    <Heading as="h1" size="xl" class={css({ marginBottom: "1rem" })}>
+      {PAGES["keyboard-event"].name}
+    </Heading>
+    <Heading as="h2" size="lg" class={css({ marginBottom: "1rem" })}>
+      On "keydown"
+    </Heading>
+    <KeydownEventChecker client:idle />
+    <Heading
+      as="h2"
+      size="lg"
+      class={css({ marginTop: "3rem", marginBottom: "1rem" })}
+    >
+      On "keyup"
+    </Heading>
+    <KeyupEventChecker client:idle />
+  </Container>
+</Layout>

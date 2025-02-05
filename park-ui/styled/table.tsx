@@ -1,6 +1,6 @@
 import { type Assign, type PolymorphicProps, ark } from '@ark-ui/solid'
 import type { ComponentProps } from 'solid-js'
-import { table, TableVariantProps } from 'styled-system/recipes'
+import { table, type TableVariantProps } from 'styled-system/recipes'
 import type { HTMLStyledProps } from 'styled-system/types'
 import { createStyleContext } from './utils/create-style-context'
 

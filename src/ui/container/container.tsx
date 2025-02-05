@@ -1,5 +1,4 @@
-import { css, cva } from "$panda/css";
-import { type RecipeVariantProps } from "$panda/types";
+import { css, cva, type RecipeVariantProps } from "$panda/css";
 import { type JSX, type ParentProps, splitProps } from "solid-js";
 import { Dynamic } from "solid-js/web";
 import { type StylableComponentProps } from "~/types";

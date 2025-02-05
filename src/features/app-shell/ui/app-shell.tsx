@@ -1,18 +1,17 @@
 import { css } from "$panda/css";
 import { Drawer } from "$park/drawer";
 import { IconButton } from "$park/icon-button";
-import { useBeforeLeave } from "@solidjs/router";
 import { XIcon } from "lucide-solid";
 import { createSignal, type JSX, type ParentProps } from "solid-js";
 import { GlobalHeader } from "./global-header";
 import { SidebarContent } from "./sidebar-content";
 
-export function Layout(props: ParentProps): JSX.Element {
-  const [isOpen, setIsOpen] = createSignal(false);
+interface AppShellProps extends ParentProps {
+  currentUrl: string;
+}
 
-  useBeforeLeave(() => {
-    setIsOpen(false);
-  });
+export function AppShell(props: AppShellProps): JSX.Element {
+  const [isOpen, setIsOpen] = createSignal(false);
 
   return (
     <>
@@ -26,7 +25,7 @@ export function Layout(props: ParentProps): JSX.Element {
         })}
       >
         <div class={css({ display: { base: "none", md: "block" }, padding: "16px" })}>
-          <SidebarContent />
+          <SidebarContent currentUrl={props.currentUrl} />
         </div>
         <div class={css({ display: { md: "none" } })}>
           <Drawer.Root open={isOpen()} onOpenChange={(detail) => setIsOpen(detail.open)}>
@@ -55,15 +54,15 @@ export function Layout(props: ParentProps): JSX.Element {
                   />
                 </Drawer.Header>
                 <Drawer.Body>
-                  <SidebarContent />
+                  <SidebarContent currentUrl={props.currentUrl} />
                 </Drawer.Body>
               </Drawer.Content>
             </Drawer.Positioner>
           </Drawer.Root>
         </div>
-        <div class={css({ flexGrow: 1, padding: "16px" })}>
+        <main class={css({ flexGrow: 1, padding: "16px" })}>
           {props.children}
-        </div>
+        </main>
       </div>
     </>
   );

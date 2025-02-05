@@ -25,5 +25,6 @@ pnpm run dev
 
 ## Tech Stack
 
-- [SolidStart](https://start.solidjs.com/)
+- [Astro](https://astro.build/)
+- [Solid](https://www.solidjs.com/)
 - [Park UI](https://park-ui.com/)

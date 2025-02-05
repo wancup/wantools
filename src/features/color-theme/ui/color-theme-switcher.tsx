@@ -4,7 +4,7 @@ import { Menu } from "$park/menu";
 import { CheckIcon, MoonIcon, SunIcon, SunMoonIcon } from "lucide-solid";
 import { Index, type JSX } from "solid-js";
 import { match } from "ts-pattern";
-import { COLOR_THEME_OPTION } from "~/site";
+import { COLOR_THEME_OPTION } from "~/config";
 import { useCurrentThemeColor } from "../dom/use-current-color-theme";
 
 export function ColorThemeSwitcher(): JSX.Element {
