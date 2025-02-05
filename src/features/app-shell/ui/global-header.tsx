@@ -1,12 +1,9 @@
 import { css } from "$panda/css";
 import { IconButton } from "$park/icon-button";
-import { A } from "@solidjs/router";
 import { MenuIcon } from "lucide-solid";
 import { type JSX, type Setter } from "solid-js";
-import darkLogo from "~/assets/images/wanTooLs_dark.svg";
-import lightLogo from "~/assets/images/wanTooLs_light.svg";
+import { PAGES, SITE } from "~/config";
 import { ColorThemeSwitcher, useCurrentThemeColor } from "~/features/color-theme";
-import { PAGES, SITE } from "~/site";
 import { GitHubLink } from "./github-link";
 
 interface GlobalHeaderProps {
@@ -16,7 +13,7 @@ interface GlobalHeaderProps {
 export function GlobalHeader(props: GlobalHeaderProps): JSX.Element {
   const { colorTheme } = useCurrentThemeColor();
 
-  const logoSrc = (): string => colorTheme() === "light" ? lightLogo : darkLogo;
+  const logoSrc = (): string => colorTheme() === "light" ? "/images/wanTooLs_light.svg" : "/images/wanTooLs_dark.svg";
   return (
     <header
       class={css({
@@ -42,9 +39,9 @@ export function GlobalHeader(props: GlobalHeaderProps): JSX.Element {
         variant="ghost"
         asChild={(props) => {
           return (
-            <A {...props()} href={PAGES["/"].path}>
+            <a {...props()} href={PAGES["/"].path}>
               <img alt={SITE.name} src={logoSrc()} class={css({ width: "10rem" })} />
-            </A>
+            </a>
           );
         }}
       />

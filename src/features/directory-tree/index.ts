@@ -1,1 +1,1 @@
-export * from "./directory-tree";
+export * from "./ui/directry-tree-input";

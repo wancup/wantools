@@ -1,0 +1,17 @@
+---
+import { css } from "$panda/css";
+import { Heading } from "$park/heading";
+import { PAGES, SITE } from "~/config";
+import { TransitionList } from "~/features/transition";
+import Layout from "~/layouts/Layout.astro";
+import { Container } from "~/ui";
+---
+
+<Layout title={SITE.toPageTitle(PAGES["transition"].name)}>
+  <Container>
+    <Heading as="h1" size="xl" class={css({ marginBottom: "1rem" })}>
+      {PAGES["transition"].name}
+    </Heading>
+    <TransitionList client:idle />
+  </Container>
+</Layout>

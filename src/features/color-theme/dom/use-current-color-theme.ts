@@ -1,7 +1,7 @@
 import { createMutationObserver } from "@solid-primitives/mutation-observer";
 import { type Accessor, createSignal, onMount } from "solid-js";
 import { match } from "ts-pattern";
-import { COLOR_THEME_OPTION, STORAGE_KEY } from "~/site";
+import { COLOR_THEME_OPTION, STORAGE_KEY } from "~/config";
 import { type ColorTheme, type ColorThemeOption } from "../types/color-theme-type";
 
 type ColorThemeSetter = (t: string) => ColorTheme;

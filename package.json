@@ -4,29 +4,27 @@
   "type": "module",
   "scripts": {
     "prepare": "panda codegen",
-    "dev": "vinxi dev --port 10010",
-    "build": "vinxi build",
-    "start": "vinxi start",
-    "version": "vinxi version",
+    "dev": "astro dev --port 10010",
+    "build": "astro build",
+    "preview": "astro preview",
+    "typecheck": "astro check",
     "format:check": "dprint check",
     "format:fix": "dprint fmt",
     "lint:check": "eslint --max-warnings=0 .",
     "lint:fix": "eslint --fix .",
-    "typecheck": "tsc --noEmit --skipLibCheck",
     "test": "vitest"
   },
   "dependencies": {
     "@ark-ui/solid": "4.10.1",
+    "@astrojs/solid-js": "5.0.4",
     "@solid-primitives/mutation-observer": "1.2.0",
-    "@solidjs/meta": "0.29.4",
-    "@solidjs/router": "0.15.3",
-    "@solidjs/start": "1.0.11",
-    "lucide-solid": "0.474.0",
+    "astro": "5.2.5",
     "solid-js": "1.9.4",
-    "ts-pattern": "5.6.2",
-    "vinxi": "0.4.3"
+    "lucide-solid": "0.474.0",
+    "ts-pattern": "5.6.2"
   },
   "devDependencies": {
+    "@astrojs/check": "0.9.4",
     "@eslint/js": "9.19.0",
     "@pandacss/dev": "0.52.0",
     "@park-ui/panda-preset": "0.43.1",
@@ -37,7 +35,6 @@
     "globals": "15.14.0",
     "typescript": "5.7.3",
     "typescript-eslint": "8.23.0",
-    "vite-tsconfig-paths": "5.1.4",
     "vitest": "3.0.5"
   },
   "packageManager": "pnpm@9.15.5",

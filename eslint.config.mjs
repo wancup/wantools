@@ -7,7 +7,7 @@ import globals from "globals";
 import tseslint from "typescript-eslint";
 
 export default tseslint.config(
-  { ignores: ["park-ui", "public", "styled-system", "dist", ".vinxi"] },
+  { ignores: ["park-ui", "public", "styled-system", "dist", ".vinxi", ".astro"] },
   {
     languageOptions: {
       globals: globals.browser,
@@ -16,10 +16,16 @@ export default tseslint.config(
       },
     },
   },
+  {
+    files: ["**/*.cjs"],
+    languageOptions: {
+      globals: globals.commonjs,
+    },
+  },
   pluginJs.configs.recommended,
   ...tseslint.configs.strictTypeChecked,
   {
-    files: ["eslint.config.mjs", "postcss.config.mjs"],
+    files: ["**/*.{cjs,mjs}"],
     ...tseslint.configs.disableTypeChecked,
   },
   {

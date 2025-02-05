@@ -1,12 +1,8 @@
 import { css } from "$panda/css";
-import { Heading } from "$park/heading";
 import { Textarea, type TextareaProps } from "$park/textarea";
-import { Title } from "@solidjs/meta";
 import { createSignal, type JSX } from "solid-js";
-import { DirectoryTree } from "~/features/directory-tree";
-import { makePageTitle, PAGES } from "~/site";
+import { DirectoryTree } from "../logic/directory-tree";
 
-const PAGE_TITLE = makePageTitle(PAGES["directory-tree"].name);
 const SAMPLE_RAW_TEXT = `\
 ./
 - src/
@@ -22,7 +18,7 @@ const SAMPLE_STYLED_TEXT = `\
 └─ test/
    └─ hello.test.ts`;
 
-export default function DirectoryTreePage(): JSX.Element {
+export function DirectoryTreeInput(): JSX.Element {
   const [rawText, setRawText] = createSignal("");
   const [styledText, setStyledText] = createSignal("");
 
@@ -41,34 +37,28 @@ export default function DirectoryTreePage(): JSX.Element {
   };
 
   return (
-    <main>
-      <Title>{PAGE_TITLE}</Title>
-      <Heading as="h1" size="xl" class={css({ marginBottom: "1rem" })}>
-        {PAGES["directory-tree"].name}
-      </Heading>
-      <div
-        class={css({
-          width: "100%",
-          display: "flex",
-          overflow: "scroll",
-          resize: "vertical",
-          flexDirection: "column",
-          rowGap: "0.5rem",
-          md: { flexDirection: "row", justifyContent: "space-between", columnGap: "1rem" },
-        })}
-      >
-        <StyledTextarea
-          value={rawText()}
-          onInput={handleInputRawText}
-          placeholder={SAMPLE_RAW_TEXT}
-        />
-        <StyledTextarea
-          value={styledText()}
-          onInput={handleInputStyledText}
-          placeholder={SAMPLE_STYLED_TEXT}
-        />
-      </div>
-    </main>
+    <div
+      class={css({
+        width: "100%",
+        display: "flex",
+        overflow: "scroll",
+        resize: "vertical",
+        flexDirection: "column",
+        rowGap: "0.5rem",
+        md: { flexDirection: "row", justifyContent: "space-between", columnGap: "1rem" },
+      })}
+    >
+      <StyledTextarea
+        value={rawText()}
+        onInput={handleInputRawText}
+        placeholder={SAMPLE_RAW_TEXT}
+      />
+      <StyledTextarea
+        value={styledText()}
+        onInput={handleInputStyledText}
+        placeholder={SAMPLE_STYLED_TEXT}
+      />
+    </div>
   );
 }
 

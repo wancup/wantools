@@ -1,11 +1,14 @@
 import { css } from "$panda/css";
-import { A } from "@solidjs/router";
 import { For, type JSX } from "solid-js";
-import { PAGES } from "~/site";
+import { PAGES } from "~/config";
 
 const LINK_LIST = Object.values(PAGES).filter(p => !(Object.hasOwn(p, "hideOnSideBar")));
 
-export function SidebarContent(): JSX.Element {
+interface SidebarContentProps {
+  currentUrl: string;
+}
+
+export function SidebarContent(props: SidebarContentProps): JSX.Element {
   return (
     <aside>
       <nav>
@@ -14,7 +17,8 @@ export function SidebarContent(): JSX.Element {
             {(page) => {
               return (
                 <li>
-                  <A
+                  <a
+                    aria-current={props.currentUrl === page.path ? "page" : undefined}
                     href={page.path}
                     class={css({
                       display: "block",
@@ -31,7 +35,7 @@ export function SidebarContent(): JSX.Element {
                     })}
                   >
                     {page.name}
-                  </A>
+                  </a>
                 </li>
               );
             }}
