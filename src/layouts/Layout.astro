@@ -52,7 +52,7 @@ interface Props {
   </head>
   <body>
     <noscript class="noscript-alert">Please Enable JavaScript!</noscript>
-    <AppShell client:idle currentUrl={Astro.url.pathname}>
+    <AppShell client:idle currentPathname={Astro.url.pathname}>
       <slot />
     </AppShell>
   </body>

@@ -1,14 +1,18 @@
 import { css } from "$panda/css";
-import { For, type JSX } from "solid-js";
+import { createMemo, For, type JSX } from "solid-js";
 import { PAGES } from "~/config";
 
 const LINK_LIST = Object.values(PAGES).filter(p => !(Object.hasOwn(p, "hideOnSideBar")));
 
 interface SidebarContentProps {
-  currentUrl: string;
+  currentPathname: string;
 }
 
 export function SidebarContent(props: SidebarContentProps): JSX.Element {
+  const currentPath = createMemo(() => {
+    // Trim tailing slash
+    return props.currentPathname.replace(/\/$/, "");
+  });
   return (
     <aside>
       <nav>
@@ -18,7 +22,7 @@ export function SidebarContent(props: SidebarContentProps): JSX.Element {
               return (
                 <li>
                   <a
-                    aria-current={props.currentUrl === page.path ? "page" : undefined}
+                    aria-current={currentPath() === page.path ? "page" : undefined}
                     href={page.path}
                     class={css({
                       display: "block",

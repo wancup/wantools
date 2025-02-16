@@ -7,7 +7,7 @@ import { GlobalHeader } from "./global-header";
 import { SidebarContent } from "./sidebar-content";
 
 interface AppShellProps extends ParentProps {
-  currentUrl: string;
+  currentPathname: string;
 }
 
 export function AppShell(props: AppShellProps): JSX.Element {
@@ -25,7 +25,7 @@ export function AppShell(props: AppShellProps): JSX.Element {
         })}
       >
         <div class={css({ display: { base: "none", md: "block" }, padding: "16px" })}>
-          <SidebarContent currentUrl={props.currentUrl} />
+          <SidebarContent currentPathname={props.currentPathname} />
         </div>
         <div class={css({ display: { md: "none" } })}>
           <Drawer.Root open={isOpen()} onOpenChange={(detail) => setIsOpen(detail.open)}>
@@ -54,7 +54,7 @@ export function AppShell(props: AppShellProps): JSX.Element {
                   />
                 </Drawer.Header>
                 <Drawer.Body>
-                  <SidebarContent currentUrl={props.currentUrl} />
+                  <SidebarContent currentPathname={props.currentPathname} />
                 </Drawer.Body>
               </Drawer.Content>
             </Drawer.Positioner>
