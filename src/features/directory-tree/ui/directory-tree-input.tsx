@@ -85,7 +85,7 @@ export function DirectoryTreeInput(): JSX.Element {
         <div
           class={css({
             gridColumn: "1 / 3",
-            overflow: "scroll",
+            overflow: "auto",
             display: "flex",
             justifyContent: "space-between",
             columnGap: "1rem",
