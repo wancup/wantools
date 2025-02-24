@@ -18,8 +18,8 @@ importers:
         specifier: 1.2.0
         version: 1.2.0(solid-js@1.9.5)
       astro:
-        specifier: 5.3.0
-        version: 5.3.0(lightningcss@1.25.1)(rollup@4.34.8)(typescript@5.7.3)(yaml@2.7.0)
+        specifier: 5.3.1
+        version: 5.3.1(lightningcss@1.25.1)(rollup@4.34.8)(typescript@5.7.3)(yaml@2.7.0)
       lucide-solid:
         specifier: 0.475.0
         version: 0.475.0(solid-js@1.9.5)
@@ -1626,8 +1626,8 @@ packages:
     resolution: {integrity: sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==}
     engines: {node: '>=8'}
 
-  astro@5.3.0:
-    resolution: {integrity: sha512-e88l/Yk/6enR/ZDddLbqtM+oblBFk5mneNSmNesyVYGL/6Dj4UA67GPAZOk79VxT5dbLlclZSyyw/wlxN1aj3A==}
+  astro@5.3.1:
+    resolution: {integrity: sha512-dfcuWKkGsYI6XH6zhSK4tHGFXRgEbPZZwZQ/VmGtKBnDfFW+3faq6k+ETKlKDeRB4LwDGtaeoH+US4HYC5w1SA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -6241,7 +6241,7 @@ snapshots:
 
   astral-regex@2.0.0: {}
 
-  astro@5.3.0(lightningcss@1.25.1)(rollup@4.34.8)(typescript@5.7.3)(yaml@2.7.0):
+  astro@5.3.1(lightningcss@1.25.1)(rollup@4.34.8)(typescript@5.7.3)(yaml@2.7.0):
     dependencies:
       '@astrojs/compiler': 2.10.4
       '@astrojs/internal-helpers': 0.5.1
@@ -6268,7 +6268,6 @@ snapshots:
       es-module-lexer: 1.6.0
       esbuild: 0.24.2
       estree-walker: 3.0.3
-      fast-glob: 3.3.3
       flattie: 1.1.1
       github-slugger: 2.0.0
       html-escaper: 3.0.3
@@ -6277,17 +6276,18 @@ snapshots:
       kleur: 4.1.5
       magic-string: 0.30.17
       magicast: 0.3.5
-      micromatch: 4.0.8
       mrmime: 2.0.1
       neotraverse: 0.6.18
       p-limit: 6.2.0
       p-queue: 8.1.0
+      picomatch: 4.0.2
       preferred-pm: 4.1.1
       prompts: 2.4.2
       rehype: 13.0.2
       semver: 7.7.1
       shiki: 1.29.2
       tinyexec: 0.3.2
+      tinyglobby: 0.2.12
       tsconfck: 3.1.5(typescript@5.7.3)
       ultrahtml: 1.5.3
       unist-util-visit: 5.0.0
