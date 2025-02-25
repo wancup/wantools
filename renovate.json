@@ -7,20 +7,29 @@
   "commitMessagePrefix": "⬆️ ",
   "packageRules": [
     {
-      "updateTypes": ["pin"],
+      "matchUpdateTypes": [
+        "pin"
+      ],
       "commitMessagePrefix": "📌 "
     },
     {
-      "updateTypes": ["rollback"],
+      "matchUpdateTypes": [
+        "rollback"
+      ],
       "commitMessagePrefix": "⬇️ "
     },
     {
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
       "matchCurrentVersion": "!/^0/",
       "automerge": true
     },
     {
-      "matchPackageNames": ["lucide-solid"],
+      "matchPackageNames": [
+        "lucide-solid"
+      ],
       "automerge": true
     }
   ],
