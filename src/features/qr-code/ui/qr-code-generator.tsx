@@ -22,11 +22,19 @@ export function QrCodeGenerator(): JSX.Element {
         }}
       />
       <Show when={text()}>
-        <QrCode.Root value={text()}>
-          <QrCode.Frame class={css({ background: "white" })}>
-            <QrCode.Pattern />
-          </QrCode.Frame>
-        </QrCode.Root>
+        <QrCode.Root
+          value={text()}
+          asChild={(props) => (
+            <output {...props()} for={qrcodeInputId}>
+              <QrCode.Frame
+                class={css({ background: "white" })}
+                aria-label={`The QR code image of "${text()}"`}
+              >
+                <QrCode.Pattern />
+              </QrCode.Frame>
+            </output>
+          )}
+        />
       </Show>
     </>
   );
