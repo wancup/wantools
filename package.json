@@ -20,7 +20,7 @@
     "@solid-primitives/mutation-observer": "1.2.0",
     "astro": "5.3.1",
     "solid-js": "1.9.5",
-    "lucide-solid": "0.475.0",
+    "lucide-solid": "0.476.0",
     "ts-pattern": "5.6.2"
   },
   "devDependencies": {
