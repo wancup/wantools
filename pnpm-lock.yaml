@@ -18,8 +18,8 @@ importers:
         specifier: 1.2.0
         version: 1.2.0(solid-js@1.9.5)
       astro:
-        specifier: 5.5.1
-        version: 5.5.1(lightningcss@1.25.1)(rollup@4.35.0)(typescript@5.8.2)(yaml@2.7.0)
+        specifier: 5.5.2
+        version: 5.5.2(lightningcss@1.25.1)(rollup@4.35.0)(typescript@5.8.2)(yaml@2.7.0)
       lucide-solid:
         specifier: 0.479.0
         version: 0.479.0(solid-js@1.9.5)
@@ -1655,8 +1655,8 @@ packages:
     resolution: {integrity: sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==}
     engines: {node: '>=8'}
 
-  astro@5.5.1:
-    resolution: {integrity: sha512-1bA4e7lbGKO0eXcuXy6GV8wjsypdrOO6EPLP3l1rNddMdkmj67VlMjWUp/3bti+kOe46ocXxJDh7Ux2L77YWjQ==}
+  astro@5.5.2:
+    resolution: {integrity: sha512-SOTJxB8mqxe/KEYEJiLIot0YULiCffyfTEclwmdeaASitDJ7eLM/KYrJ9sx3U5hq9GVI17Z4Y0P/1T2aQ0ZN3A==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -6249,7 +6249,7 @@ snapshots:
 
   astral-regex@2.0.0: {}
 
-  astro@5.5.1(lightningcss@1.25.1)(rollup@4.35.0)(typescript@5.8.2)(yaml@2.7.0):
+  astro@5.5.2(lightningcss@1.25.1)(rollup@4.35.0)(typescript@5.8.2)(yaml@2.7.0):
     dependencies:
       '@astrojs/compiler': 2.11.0
       '@astrojs/internal-helpers': 0.6.1
