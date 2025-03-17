@@ -37,7 +37,7 @@
     "typescript-eslint": "8.26.1",
     "vitest": "3.0.9"
   },
-  "packageManager": "pnpm@10.6.3",
+  "packageManager": "pnpm@10.6.4",
   "gitmoji": {
     "autoAdd": false,
     "emojiFormat": "emoji",
