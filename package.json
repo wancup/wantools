@@ -26,7 +26,7 @@
   "devDependencies": {
     "@astrojs/check": "0.9.4",
     "@eslint/js": "9.22.0",
-    "@pandacss/dev": "0.53.1",
+    "@pandacss/dev": "0.53.2",
     "@park-ui/panda-preset": "0.43.1",
     "dprint": "0.49.1",
     "eslint": "9.22.0",
