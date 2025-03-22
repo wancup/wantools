@@ -2,6 +2,7 @@
 
 import pluginJs from "@eslint/js";
 import jsonlint from "@eslint/json";
+import markdownlint from "@eslint/markdown";
 import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 import solid from "eslint-plugin-solid/configs/typescript";
 import globals from "globals";
@@ -33,6 +34,7 @@ export default tseslint.config(
     language: "json/json",
     ...jsonlint.configs.recommended,
   },
+  markdownlint.configs.recommended,
   {
     files: ["**/*.{cjs,mjs}"],
     ...tseslint.configs.disableTypeChecked,
