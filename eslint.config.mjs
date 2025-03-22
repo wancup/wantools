@@ -1,6 +1,7 @@
 // @ts-check
 
 import pluginJs from "@eslint/js";
+import jsonlint from "@eslint/json";
 import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 import solid from "eslint-plugin-solid/configs/typescript";
 import globals from "globals";
@@ -22,8 +23,16 @@ export default tseslint.config(
       globals: globals.commonjs,
     },
   },
-  pluginJs.configs.recommended,
-  ...tseslint.configs.strictTypeChecked,
+  {
+    files: ["**/*.{js,cjs,mjs}"],
+    ...pluginJs.configs.recommended,
+  },
+  tseslint.configs.strictTypeChecked.map((c) => ({ files: ["**/*.{js,cjs,mjs,ts,tsx}"], ...c })),
+  {
+    files: ["**/*.json"],
+    language: "json/json",
+    ...jsonlint.configs.recommended,
+  },
   {
     files: ["**/*.{cjs,mjs}"],
     ...tseslint.configs.disableTypeChecked,
