@@ -15,8 +15,8 @@ importers:
         specifier: 5.0.9
         version: 5.0.9(lightningcss@1.25.1)(solid-js@1.9.5)(yaml@2.7.1)
       '@solid-primitives/mutation-observer':
-        specifier: 1.2.0
-        version: 1.2.0(solid-js@1.9.5)
+        specifier: 1.2.1
+        version: 1.2.1(solid-js@1.9.5)
       astro:
         specifier: 5.7.5
         version: 5.7.5(lightningcss@1.25.1)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1)
@@ -881,13 +881,13 @@ packages:
     peerDependencies:
       solid-js: ^1.6.12
 
-  '@solid-primitives/mutation-observer@1.2.0':
-    resolution: {integrity: sha512-U7ZuO7IE5cPK2qPRJF5pyoI/H/D1TCdS6pXfC8gt6m+SUkLHllN2vcX7GtEHPU0xVOXw/zf+EMafo++qtGDn5Q==}
+  '@solid-primitives/mutation-observer@1.2.1':
+    resolution: {integrity: sha512-7PZ+8ZbmhSTsDolHYrBNVAbmA+5hmcDNiMZB7siQ1egmo86u9iqaa+bPuqjbzjOQOFPeEzL5Yx0BIX995fR4iQ==}
     peerDependencies:
       solid-js: ^1.6.12
 
-  '@solid-primitives/utils@6.3.0':
-    resolution: {integrity: sha512-e7hTlJ1Ywh2+g/Qug+n4L1mpfxsikoIS4/sHE2EK9WatQt8UJqop/vE6bsLnXlU1xuhb/jo94Ah5Y27rd4wP7A==}
+  '@solid-primitives/utils@6.3.1':
+    resolution: {integrity: sha512-4/Z59nnwu4MPR//zWZmZm2yftx24jMqQ8CSd/JobL26TPfbn4Ph8GKNVJfGJWShg1QB98qObJSskqizbTvcLLA==}
     peerDependencies:
       solid-js: ^1.6.12
 
@@ -4888,12 +4888,12 @@ snapshots:
     dependencies:
       solid-js: 1.9.5
 
-  '@solid-primitives/mutation-observer@1.2.0(solid-js@1.9.5)':
+  '@solid-primitives/mutation-observer@1.2.1(solid-js@1.9.5)':
     dependencies:
-      '@solid-primitives/utils': 6.3.0(solid-js@1.9.5)
+      '@solid-primitives/utils': 6.3.1(solid-js@1.9.5)
       solid-js: 1.9.5
 
-  '@solid-primitives/utils@6.3.0(solid-js@1.9.5)':
+  '@solid-primitives/utils@6.3.1(solid-js@1.9.5)':
     dependencies:
       solid-js: 1.9.5
 
