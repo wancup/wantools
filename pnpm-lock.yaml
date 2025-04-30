@@ -12,14 +12,14 @@ importers:
         specifier: 5.7.0
         version: 5.7.0(solid-js@1.9.5)
       '@astrojs/solid-js':
-        specifier: 5.0.9
-        version: 5.0.9(lightningcss@1.25.1)(solid-js@1.9.5)(yaml@2.7.1)
+        specifier: 5.0.10
+        version: 5.0.10(lightningcss@1.25.1)(solid-js@1.9.5)(yaml@2.7.1)
       '@solid-primitives/mutation-observer':
         specifier: 1.2.1
         version: 1.2.1(solid-js@1.9.5)
       astro:
-        specifier: 5.7.9
-        version: 5.7.9(lightningcss@1.25.1)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1)
+        specifier: 5.7.10
+        version: 5.7.10(lightningcss@1.25.1)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1)
       lucide-solid:
         specifier: 0.503.0
         version: 0.503.0(solid-js@1.9.5)
@@ -118,8 +118,8 @@ packages:
     resolution: {integrity: sha512-GilTHKGCW6HMq7y3BUv9Ac7GMe/MO9gi9GW62GzKtth0SwukCu/qp2wLiGpEujhY+VVhaG9v7kv/5vFzvf4NYw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0}
 
-  '@astrojs/solid-js@5.0.9':
-    resolution: {integrity: sha512-NusiQkiH3r3/9e+B31W/CBQwnQfskUr7kVChTFa61ewXJ7XAh8F5bTaSws9uRKVVoqg+VzdNCCh/IwmBvlqysg==}
+  '@astrojs/solid-js@5.0.10':
+    resolution: {integrity: sha512-HROXzcxkcK0Ld2XsEaz4wPvOYQSwMwUIqOyZ0ExbrXJfP2i4BiJS9f+2+YV/zYvUS54HG0VE8Vbh2sUycpuFdA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0}
     peerDependencies:
       solid-devtools: ^0.30.1
@@ -1550,8 +1550,8 @@ packages:
     resolution: {integrity: sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==}
     engines: {node: '>=8'}
 
-  astro@5.7.9:
-    resolution: {integrity: sha512-P0cLijpmu4xZEXIh83ROOJqiCWRA7KSo24nhRLIjbMkiPElXu2qL1c28m7xhylCXeHa0lnCGPLyNjs1Wx3GyxA==}
+  astro@5.7.10:
+    resolution: {integrity: sha512-9TQcFZqP2w6//JXXUHfw8/5PX7KUx9EkG5O3m+hISuyeUztvjY1q5+p7+C5HiXyg24Zs3KkpieoL5BGRXGCAGA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3638,6 +3638,46 @@ packages:
       yaml:
         optional: true
 
+  vite@6.3.4:
+    resolution: {integrity: sha512-BiReIiMS2fyFqbqNT/Qqt4CVITDU9M9vE+DKcVAsB+ZV0wvTKd+3hMbkpxz1b+NmEDMegpVbisKiAZOnvO92Sw==}
+    engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': ^18.0.0 || ^20.0.0 || >=22.0.0
+      jiti: '>=1.21.0'
+      less: '*'
+      lightningcss: ^1.21.0
+      sass: '*'
+      sass-embedded: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.16.0
+      tsx: ^4.8.1
+      yaml: ^2.4.2
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      jiti:
+        optional: true
+      less:
+        optional: true
+      lightningcss:
+        optional: true
+      sass:
+        optional: true
+      sass-embedded:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+      tsx:
+        optional: true
+      yaml:
+        optional: true
+
   vitefu@1.0.6:
     resolution: {integrity: sha512-+Rex1GlappUyNN6UfwbVZne/9cYC4+R2XDk9xkNXBKMw6HQagdX9PgZ8V2v1WUSK1wfBLp7qbI1+XSNIlB1xmA==}
     peerDependencies:
@@ -4079,11 +4119,11 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/solid-js@5.0.9(lightningcss@1.25.1)(solid-js@1.9.5)(yaml@2.7.1)':
+  '@astrojs/solid-js@5.0.10(lightningcss@1.25.1)(solid-js@1.9.5)(yaml@2.7.1)':
     dependencies:
       solid-js: 1.9.5
-      vite: 6.3.3(lightningcss@1.25.1)(yaml@2.7.1)
-      vite-plugin-solid: 2.11.6(solid-js@1.9.5)(vite@6.3.3(lightningcss@1.25.1)(yaml@2.7.1))
+      vite: 6.3.4(lightningcss@1.25.1)(yaml@2.7.1)
+      vite-plugin-solid: 2.11.6(solid-js@1.9.5)(vite@6.3.4(lightningcss@1.25.1)(yaml@2.7.1))
     transitivePeerDependencies:
       - '@testing-library/jest-dom'
       - '@types/node'
@@ -5183,7 +5223,7 @@ snapshots:
       '@vue/shared': 3.4.19
       estree-walker: 2.0.2
       magic-string: 0.30.17
-      postcss: 8.4.49
+      postcss: 8.5.3
       source-map-js: 1.2.1
 
   '@vue/compiler-ssr@3.4.19':
@@ -6214,7 +6254,7 @@ snapshots:
 
   astral-regex@2.0.0: {}
 
-  astro@5.7.9(lightningcss@1.25.1)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1):
+  astro@5.7.10(lightningcss@1.25.1)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1):
     dependencies:
       '@astrojs/compiler': 2.11.0
       '@astrojs/internal-helpers': 0.6.1
@@ -6267,8 +6307,8 @@ snapshots:
       unist-util-visit: 5.0.0
       unstorage: 1.16.0
       vfile: 6.0.3
-      vite: 6.3.3(lightningcss@1.25.1)(yaml@2.7.1)
-      vitefu: 1.0.6(vite@6.3.3(lightningcss@1.25.1)(yaml@2.7.1))
+      vite: 6.3.4(lightningcss@1.25.1)(yaml@2.7.1)
+      vitefu: 1.0.6(vite@6.3.4(lightningcss@1.25.1)(yaml@2.7.1))
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.2
@@ -6419,7 +6459,7 @@ snapshots:
 
   caniuse-api@3.0.0:
     dependencies:
-      browserslist: 4.23.3
+      browserslist: 4.24.4
       caniuse-lite: 1.0.30001715
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
@@ -8756,7 +8796,7 @@ snapshots:
       - tsx
       - yaml
 
-  vite-plugin-solid@2.11.6(solid-js@1.9.5)(vite@6.3.3(lightningcss@1.25.1)(yaml@2.7.1)):
+  vite-plugin-solid@2.11.6(solid-js@1.9.5)(vite@6.3.4(lightningcss@1.25.1)(yaml@2.7.1)):
     dependencies:
       '@babel/core': 7.26.10
       '@types/babel__core': 7.20.5
@@ -8764,8 +8804,8 @@ snapshots:
       merge-anything: 5.1.7
       solid-js: 1.9.5
       solid-refresh: 0.6.3(solid-js@1.9.5)
-      vite: 6.3.3(lightningcss@1.25.1)(yaml@2.7.1)
-      vitefu: 1.0.6(vite@6.3.3(lightningcss@1.25.1)(yaml@2.7.1))
+      vite: 6.3.4(lightningcss@1.25.1)(yaml@2.7.1)
+      vitefu: 1.0.6(vite@6.3.4(lightningcss@1.25.1)(yaml@2.7.1))
     transitivePeerDependencies:
       - supports-color
 
@@ -8782,9 +8822,22 @@ snapshots:
       lightningcss: 1.25.1
       yaml: 2.7.1
 
-  vitefu@1.0.6(vite@6.3.3(lightningcss@1.25.1)(yaml@2.7.1)):
+  vite@6.3.4(lightningcss@1.25.1)(yaml@2.7.1):
+    dependencies:
+      esbuild: 0.25.3
+      fdir: 6.4.4(picomatch@4.0.2)
+      picomatch: 4.0.2
+      postcss: 8.5.3
+      rollup: 4.40.0
+      tinyglobby: 0.2.13
     optionalDependencies:
-      vite: 6.3.3(lightningcss@1.25.1)(yaml@2.7.1)
+      fsevents: 2.3.3
+      lightningcss: 1.25.1
+      yaml: 2.7.1
+
+  vitefu@1.0.6(vite@6.3.4(lightningcss@1.25.1)(yaml@2.7.1)):
+    optionalDependencies:
+      vite: 6.3.4(lightningcss@1.25.1)(yaml@2.7.1)
 
   vitest@3.1.2(@types/debug@4.1.12)(lightningcss@1.25.1)(yaml@2.7.1):
     dependencies:
