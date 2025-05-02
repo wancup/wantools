@@ -19,7 +19,7 @@
     "@astrojs/solid-js": "5.0.10",
     "@solid-primitives/mutation-observer": "1.2.1",
     "astro": "5.7.10",
-    "lucide-solid": "0.503.0",
+    "lucide-solid": "0.504.0",
     "solid-js": "1.9.6",
     "ts-pattern": "5.7.0"
   },
