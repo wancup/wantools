@@ -21,8 +21,8 @@ importers:
         specifier: 5.7.10
         version: 5.7.10(lightningcss@1.25.1)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1)
       lucide-solid:
-        specifier: 0.504.0
-        version: 0.504.0(solid-js@1.9.6)
+        specifier: 0.506.0
+        version: 0.506.0(solid-js@1.9.6)
       solid-js:
         specifier: 1.9.6
         version: 1.9.6
@@ -2576,8 +2576,8 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
-  lucide-solid@0.504.0:
-    resolution: {integrity: sha512-TbRq22oyRtVwHDVNAzcHrhbl5bdhNjTDqQaEDKX+27VHTPfRSHWvYRgsX6FVd9v0ASsMAv6sGFOn77tszJL8gQ==}
+  lucide-solid@0.506.0:
+    resolution: {integrity: sha512-H44Q7a7xlZ60uZVrtDmCT+P5ho2M0bNWiMJRqDRui5tp3Avb0sGLAYmlzXTBsa0y0D9u5qQ/DCDPmdJ8Iz5Z5g==}
     peerDependencies:
       solid-js: ^1.4.7
 
@@ -7482,7 +7482,7 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
-  lucide-solid@0.504.0(solid-js@1.9.6):
+  lucide-solid@0.506.0(solid-js@1.9.6):
     dependencies:
       solid-js: 1.9.6
 
