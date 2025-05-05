@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@ark-ui/solid':
-        specifier: 5.8.0
-        version: 5.8.0(solid-js@1.9.6)
+        specifier: 5.9.0
+        version: 5.9.0(solid-js@1.9.6)
       '@astrojs/solid-js':
         specifier: 5.0.10
         version: 5.0.10(lightningcss@1.25.1)(solid-js@1.9.6)(yaml@2.7.1)
@@ -82,8 +82,8 @@ packages:
   '@ark-ui/anatomy@3.5.0':
     resolution: {integrity: sha512-KoROLVVT23BvFHcye/GYhG8NJ2CH0C+CaoJhXrkEjvk8pbEx80Xk5NIUy5gL7xmX+LDD7kY5t3NotBqCu+2L2w==}
 
-  '@ark-ui/solid@5.8.0':
-    resolution: {integrity: sha512-zOUteeguQkt8iOpnTT/N08aespGFVi5svuV6XbiWR7vdHvL/4KvuMypmHIuYZt36RxV1e2I6ikJ6Ge9rQghYEw==}
+  '@ark-ui/solid@5.9.0':
+    resolution: {integrity: sha512-fWxLCJTaa1isP6NFM5qia89gLyyIZwfj4vPiJPgQJ5/BYTYibV+KGdxUrknSk6qxe4DW6mKFheD3XmHmU+MkGw==}
     peerDependencies:
       solid-js: '>=1.6.0'
 
@@ -4133,7 +4133,7 @@ snapshots:
     transitivePeerDependencies:
       - '@internationalized/date'
 
-  '@ark-ui/solid@5.8.0(solid-js@1.9.6)':
+  '@ark-ui/solid@5.9.0(solid-js@1.9.6)':
     dependencies:
       '@internationalized/date': 3.8.0
       '@zag-js/accordion': 1.12.0
