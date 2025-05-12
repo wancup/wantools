@@ -15,7 +15,7 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@ark-ui/solid": "5.9.0",
+    "@ark-ui/solid": "5.9.1",
     "@astrojs/solid-js": "5.0.10",
     "@solid-primitives/mutation-observer": "1.2.1",
     "astro": "5.7.12",
