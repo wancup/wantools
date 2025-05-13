@@ -18,8 +18,8 @@ importers:
         specifier: 1.2.1
         version: 1.2.1(solid-js@1.9.6)
       astro:
-        specifier: 5.7.12
-        version: 5.7.12(@types/node@22.15.17)(lightningcss@1.25.1)(rollup@4.40.2)(typescript@5.8.3)(yaml@2.7.1)
+        specifier: 5.7.13
+        version: 5.7.13(@types/node@22.15.17)(lightningcss@1.25.1)(rollup@4.40.2)(typescript@5.8.3)(yaml@2.7.1)
       lucide-solid:
         specifier: 0.510.0
         version: 0.510.0(solid-js@1.9.6)
@@ -1564,8 +1564,8 @@ packages:
     resolution: {integrity: sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==}
     engines: {node: '>=8'}
 
-  astro@5.7.12:
-    resolution: {integrity: sha512-UQOItiZz2hcv9PlHTQ6dNqFDIVNPnmwk6eyAjJqPE9O8EDHZK2JKtTRD0CBFN2Uqr0RE0TWP2gqDpLfsa5dJEA==}
+  astro@5.7.13:
+    resolution: {integrity: sha512-cRGq2llKOhV3XMcYwQpfBIUcssN6HEK5CRbcMxAfd9OcFhvWE7KUy50zLioAZVVl3AqgUTJoNTlmZfD2eG0G1w==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -5142,7 +5142,7 @@ snapshots:
     dependencies:
       minimatch: 9.0.5
       path-browserify: 1.0.1
-      tinyglobby: 0.2.12
+      tinyglobby: 0.2.13
 
   '@types/babel__core@7.20.5':
     dependencies:
@@ -6463,7 +6463,7 @@ snapshots:
 
   astral-regex@2.0.0: {}
 
-  astro@5.7.12(@types/node@22.15.17)(lightningcss@1.25.1)(rollup@4.40.2)(typescript@5.8.3)(yaml@2.7.1):
+  astro@5.7.13(@types/node@22.15.17)(lightningcss@1.25.1)(rollup@4.40.2)(typescript@5.8.3)(yaml@2.7.1):
     dependencies:
       '@astrojs/compiler': 2.12.0
       '@astrojs/internal-helpers': 0.6.1
