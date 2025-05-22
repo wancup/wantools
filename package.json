@@ -16,9 +16,9 @@
   },
   "dependencies": {
     "@ark-ui/solid": "5.9.1",
-    "@astrojs/solid-js": "5.0.10",
+    "@astrojs/solid-js": "5.1.0",
     "@solid-primitives/mutation-observer": "1.2.1",
-    "astro": "5.7.14",
+    "astro": "5.8.0",
     "lucide-solid": "0.511.0",
     "solid-js": "1.9.7",
     "ts-pattern": "5.7.1"
