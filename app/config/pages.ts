@@ -32,6 +32,10 @@ export const PAGES = {
     name: "URI Encoding",
     path: "/uri-encoding",
   },
+  "uuid": {
+    name: "UUID",
+    path: "/uuid",
+  },
   "qr-code": {
     name: "QR code",
     path: "/qr-code",

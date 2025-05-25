@@ -29,6 +29,9 @@ importers:
       ts-pattern:
         specifier: 5.7.1
         version: 5.7.1
+      uuid:
+        specifier: 11.1.0
+        version: 11.1.0
       vinxi:
         specifier: 0.5.6
         version: 0.5.6(@types/node@22.15.19)(db0@0.3.2)(ioredis@5.6.1)(jiti@2.4.2)(lightningcss@1.25.1)(terser@5.39.2)(tsx@4.19.4)(yaml@2.8.0)

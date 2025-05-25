@@ -18,6 +18,7 @@ import { Route as PointerEventImport } from './routes/pointer-event'
 import { Route as KeyboardEventImport } from './routes/keyboard-event'
 import { Route as DirectoryTreeImport } from './routes/directory-tree'
 import { Route as IndexImport } from './routes/index'
+import { Route as UuidIndexImport } from './routes/uuid/index'
 
 // Create/Update Routes
 
@@ -60,6 +61,12 @@ const DirectoryTreeRoute = DirectoryTreeImport.update({
 const IndexRoute = IndexImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const UuidIndexRoute = UuidIndexImport.update({
+  id: '/uuid/',
+  path: '/uuid/',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -116,6 +123,13 @@ declare module '@tanstack/solid-router' {
       preLoaderRoute: typeof UriEncodingImport
       parentRoute: typeof rootRoute
     }
+    '/uuid/': {
+      id: '/uuid/'
+      path: '/uuid'
+      fullPath: '/uuid'
+      preLoaderRoute: typeof UuidIndexImport
+      parentRoute: typeof rootRoute
+    }
   }
 }
 
@@ -129,6 +143,7 @@ export interface FileRoutesByFullPath {
   '/qr-code': typeof QrCodeRoute
   '/transition': typeof TransitionRoute
   '/uri-encoding': typeof UriEncodingRoute
+  '/uuid': typeof UuidIndexRoute
 }
 
 export interface FileRoutesByTo {
@@ -139,6 +154,7 @@ export interface FileRoutesByTo {
   '/qr-code': typeof QrCodeRoute
   '/transition': typeof TransitionRoute
   '/uri-encoding': typeof UriEncodingRoute
+  '/uuid': typeof UuidIndexRoute
 }
 
 export interface FileRoutesById {
@@ -150,6 +166,7 @@ export interface FileRoutesById {
   '/qr-code': typeof QrCodeRoute
   '/transition': typeof TransitionRoute
   '/uri-encoding': typeof UriEncodingRoute
+  '/uuid/': typeof UuidIndexRoute
 }
 
 export interface FileRouteTypes {
@@ -162,6 +179,7 @@ export interface FileRouteTypes {
     | '/qr-code'
     | '/transition'
     | '/uri-encoding'
+    | '/uuid'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -171,6 +189,7 @@ export interface FileRouteTypes {
     | '/qr-code'
     | '/transition'
     | '/uri-encoding'
+    | '/uuid'
   id:
     | '__root__'
     | '/'
@@ -180,6 +199,7 @@ export interface FileRouteTypes {
     | '/qr-code'
     | '/transition'
     | '/uri-encoding'
+    | '/uuid/'
   fileRoutesById: FileRoutesById
 }
 
@@ -191,6 +211,7 @@ export interface RootRouteChildren {
   QrCodeRoute: typeof QrCodeRoute
   TransitionRoute: typeof TransitionRoute
   UriEncodingRoute: typeof UriEncodingRoute
+  UuidIndexRoute: typeof UuidIndexRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
@@ -201,6 +222,7 @@ const rootRouteChildren: RootRouteChildren = {
   QrCodeRoute: QrCodeRoute,
   TransitionRoute: TransitionRoute,
   UriEncodingRoute: UriEncodingRoute,
+  UuidIndexRoute: UuidIndexRoute,
 }
 
 export const routeTree = rootRoute
@@ -219,7 +241,8 @@ export const routeTree = rootRoute
         "/pointer-event",
         "/qr-code",
         "/transition",
-        "/uri-encoding"
+        "/uri-encoding",
+        "/uuid/"
       ]
     },
     "/": {
@@ -242,6 +265,9 @@ export const routeTree = rootRoute
     },
     "/uri-encoding": {
       "filePath": "uri-encoding.tsx"
+    },
+    "/uuid/": {
+      "filePath": "uuid/index.tsx"
     }
   }
 }

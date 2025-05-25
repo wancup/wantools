@@ -9,6 +9,7 @@ Utility tools for web application developers!
 - Pointer Event Playground
 - Keyboard Event Playground
 - URI Encoding
+- UUID v4/v7 Generator
 - QR code Generator
 
 ## Prerequisites
