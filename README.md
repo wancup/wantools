@@ -25,6 +25,6 @@ pnpm run dev
 
 ## Tech Stack
 
-- [Astro](https://astro.build/)
+- [TanstackStart](https://tanstack.com/start/latest)
 - [Solid](https://www.solidjs.com/)
 - [Park UI](https://park-ui.com/)

@@ -1,5 +1,6 @@
 import { css } from "$panda/css";
 import { IconButton } from "$park/icon-button";
+import { Link } from "@tanstack/solid-router";
 import { MenuIcon } from "lucide-solid";
 import { type JSX, type Setter } from "solid-js";
 import { PAGES, SITE } from "~/config";
@@ -39,9 +40,9 @@ export function GlobalHeader(props: GlobalHeaderProps): JSX.Element {
         variant="ghost"
         asChild={(props) => {
           return (
-            <a {...props()} href={PAGES["/"].path}>
+            <Link {...props()} to={PAGES["/"].path}>
               <img alt={SITE.name} src={logoSrc()} class={css({ width: "10rem" })} />
-            </a>
+            </Link>
           );
         }}
       />

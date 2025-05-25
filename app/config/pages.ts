@@ -14,26 +14,26 @@ export const PAGES = {
   },
   "directory-tree": {
     name: "Directory Tree",
-    path: "/directory-tree/",
+    path: "/directory-tree",
   },
   "transition": {
     name: "Transition",
-    path: "/transition/",
+    path: "/transition",
   },
   "pointer-event": {
     name: "Pointer Event",
-    path: "/pointer-event/",
+    path: "/pointer-event",
   },
   "keyboard-event": {
     name: "Keyboard Event",
-    path: "/keyboard-event/",
+    path: "/keyboard-event",
   },
   "uri-encoding": {
     name: "URI Encoding",
-    path: "/uri-encoding/",
+    path: "/uri-encoding",
   },
   "qr-code": {
     name: "QR code",
-    path: "/qr-code/",
+    path: "/qr-code",
   },
 } as const satisfies Pages;

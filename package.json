@@ -4,10 +4,10 @@
   "type": "module",
   "scripts": {
     "prepare": "panda codegen",
-    "dev": "astro dev --port 10010",
-    "build": "astro build",
-    "preview": "astro preview",
-    "typecheck": "astro check",
+    "dev": "vinxi dev --port 10010",
+    "build": "vinxi build",
+    "start": "vinxi start",
+    "typecheck": "tsc --noEmit --skipLibCheck",
     "format:check": "dprint check",
     "format:fix": "dprint fmt",
     "lint:check": "eslint --max-warnings=0 .",
@@ -16,15 +16,15 @@
   },
   "dependencies": {
     "@ark-ui/solid": "5.9.2",
-    "@astrojs/solid-js": "5.1.0",
     "@solid-primitives/mutation-observer": "1.2.1",
-    "astro": "5.8.0",
+    "@tanstack/solid-router": "1.120.10",
+    "@tanstack/solid-start": "1.120.10",
     "lucide-solid": "0.511.0",
     "solid-js": "1.9.7",
-    "ts-pattern": "5.7.1"
+    "ts-pattern": "5.7.1",
+    "vinxi": "0.5.6"
   },
   "devDependencies": {
-    "@astrojs/check": "0.9.4",
     "@eslint/js": "9.27.0",
     "@eslint/json": "0.12.0",
     "@eslint/markdown": "6.4.0",
@@ -37,6 +37,7 @@
     "globals": "16.1.0",
     "typescript": "5.8.3",
     "typescript-eslint": "8.32.1",
+    "vite-tsconfig-paths": "5.1.4",
     "vitest": "3.1.4"
   },
   "packageManager": "pnpm@10.11.0",
