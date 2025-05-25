@@ -1,22 +1,22 @@
 import { createSignal, type JSX, onCleanup, onMount } from "solid-js";
-import { KeyboardEventIndicator } from "./keyboard-event-indicator";
+import { KeyboardEventIndicator } from "./-keyboard-event-indicator";
 
-export function KeyupEventChecker(): JSX.Element {
+export function KeydownEventChecker(): JSX.Element {
   const [event, setEvent] = createSignal<KeyboardEvent>();
 
-  const handleKeyUp = (e: KeyboardEvent): void => {
+  const handleKeyDown = (e: KeyboardEvent): void => {
     setEvent(e);
   };
 
   onMount(() => {
     if (typeof document !== "undefined") {
-      document.addEventListener("keyup", handleKeyUp);
+      document.addEventListener("keydown", handleKeyDown);
     }
   });
 
   onCleanup(() => {
     if (typeof document !== "undefined") {
-      document.removeEventListener("keyup", handleKeyUp);
+      document.removeEventListener("keydown", handleKeyDown);
     }
   });
 

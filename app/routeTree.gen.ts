@@ -11,52 +11,16 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as UriEncodingImport } from './routes/uri-encoding'
-import { Route as TransitionImport } from './routes/transition'
-import { Route as QrCodeImport } from './routes/qr-code'
-import { Route as PointerEventImport } from './routes/pointer-event'
-import { Route as KeyboardEventImport } from './routes/keyboard-event'
-import { Route as DirectoryTreeImport } from './routes/directory-tree'
 import { Route as IndexImport } from './routes/index'
 import { Route as UuidIndexImport } from './routes/uuid/index'
+import { Route as UriEncodingIndexImport } from './routes/uri-encoding/index'
+import { Route as TransitionIndexImport } from './routes/transition/index'
+import { Route as QrCodeIndexImport } from './routes/qr-code/index'
+import { Route as PointerEventIndexImport } from './routes/pointer-event/index'
+import { Route as KeyboardEventIndexImport } from './routes/keyboard-event/index'
+import { Route as DirectoryTreeIndexImport } from './routes/directory-tree/index'
 
 // Create/Update Routes
-
-const UriEncodingRoute = UriEncodingImport.update({
-  id: '/uri-encoding',
-  path: '/uri-encoding',
-  getParentRoute: () => rootRoute,
-} as any)
-
-const TransitionRoute = TransitionImport.update({
-  id: '/transition',
-  path: '/transition',
-  getParentRoute: () => rootRoute,
-} as any)
-
-const QrCodeRoute = QrCodeImport.update({
-  id: '/qr-code',
-  path: '/qr-code',
-  getParentRoute: () => rootRoute,
-} as any)
-
-const PointerEventRoute = PointerEventImport.update({
-  id: '/pointer-event',
-  path: '/pointer-event',
-  getParentRoute: () => rootRoute,
-} as any)
-
-const KeyboardEventRoute = KeyboardEventImport.update({
-  id: '/keyboard-event',
-  path: '/keyboard-event',
-  getParentRoute: () => rootRoute,
-} as any)
-
-const DirectoryTreeRoute = DirectoryTreeImport.update({
-  id: '/directory-tree',
-  path: '/directory-tree',
-  getParentRoute: () => rootRoute,
-} as any)
 
 const IndexRoute = IndexImport.update({
   id: '/',
@@ -67,6 +31,42 @@ const IndexRoute = IndexImport.update({
 const UuidIndexRoute = UuidIndexImport.update({
   id: '/uuid/',
   path: '/uuid/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const UriEncodingIndexRoute = UriEncodingIndexImport.update({
+  id: '/uri-encoding/',
+  path: '/uri-encoding/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const TransitionIndexRoute = TransitionIndexImport.update({
+  id: '/transition/',
+  path: '/transition/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const QrCodeIndexRoute = QrCodeIndexImport.update({
+  id: '/qr-code/',
+  path: '/qr-code/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const PointerEventIndexRoute = PointerEventIndexImport.update({
+  id: '/pointer-event/',
+  path: '/pointer-event/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const KeyboardEventIndexRoute = KeyboardEventIndexImport.update({
+  id: '/keyboard-event/',
+  path: '/keyboard-event/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const DirectoryTreeIndexRoute = DirectoryTreeIndexImport.update({
+  id: '/directory-tree/',
+  path: '/directory-tree/',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -81,46 +81,46 @@ declare module '@tanstack/solid-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
-    '/directory-tree': {
-      id: '/directory-tree'
+    '/directory-tree/': {
+      id: '/directory-tree/'
       path: '/directory-tree'
       fullPath: '/directory-tree'
-      preLoaderRoute: typeof DirectoryTreeImport
+      preLoaderRoute: typeof DirectoryTreeIndexImport
       parentRoute: typeof rootRoute
     }
-    '/keyboard-event': {
-      id: '/keyboard-event'
+    '/keyboard-event/': {
+      id: '/keyboard-event/'
       path: '/keyboard-event'
       fullPath: '/keyboard-event'
-      preLoaderRoute: typeof KeyboardEventImport
+      preLoaderRoute: typeof KeyboardEventIndexImport
       parentRoute: typeof rootRoute
     }
-    '/pointer-event': {
-      id: '/pointer-event'
+    '/pointer-event/': {
+      id: '/pointer-event/'
       path: '/pointer-event'
       fullPath: '/pointer-event'
-      preLoaderRoute: typeof PointerEventImport
+      preLoaderRoute: typeof PointerEventIndexImport
       parentRoute: typeof rootRoute
     }
-    '/qr-code': {
-      id: '/qr-code'
+    '/qr-code/': {
+      id: '/qr-code/'
       path: '/qr-code'
       fullPath: '/qr-code'
-      preLoaderRoute: typeof QrCodeImport
+      preLoaderRoute: typeof QrCodeIndexImport
       parentRoute: typeof rootRoute
     }
-    '/transition': {
-      id: '/transition'
+    '/transition/': {
+      id: '/transition/'
       path: '/transition'
       fullPath: '/transition'
-      preLoaderRoute: typeof TransitionImport
+      preLoaderRoute: typeof TransitionIndexImport
       parentRoute: typeof rootRoute
     }
-    '/uri-encoding': {
-      id: '/uri-encoding'
+    '/uri-encoding/': {
+      id: '/uri-encoding/'
       path: '/uri-encoding'
       fullPath: '/uri-encoding'
-      preLoaderRoute: typeof UriEncodingImport
+      preLoaderRoute: typeof UriEncodingIndexImport
       parentRoute: typeof rootRoute
     }
     '/uuid/': {
@@ -137,35 +137,35 @@ declare module '@tanstack/solid-router' {
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/directory-tree': typeof DirectoryTreeRoute
-  '/keyboard-event': typeof KeyboardEventRoute
-  '/pointer-event': typeof PointerEventRoute
-  '/qr-code': typeof QrCodeRoute
-  '/transition': typeof TransitionRoute
-  '/uri-encoding': typeof UriEncodingRoute
+  '/directory-tree': typeof DirectoryTreeIndexRoute
+  '/keyboard-event': typeof KeyboardEventIndexRoute
+  '/pointer-event': typeof PointerEventIndexRoute
+  '/qr-code': typeof QrCodeIndexRoute
+  '/transition': typeof TransitionIndexRoute
+  '/uri-encoding': typeof UriEncodingIndexRoute
   '/uuid': typeof UuidIndexRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/directory-tree': typeof DirectoryTreeRoute
-  '/keyboard-event': typeof KeyboardEventRoute
-  '/pointer-event': typeof PointerEventRoute
-  '/qr-code': typeof QrCodeRoute
-  '/transition': typeof TransitionRoute
-  '/uri-encoding': typeof UriEncodingRoute
+  '/directory-tree': typeof DirectoryTreeIndexRoute
+  '/keyboard-event': typeof KeyboardEventIndexRoute
+  '/pointer-event': typeof PointerEventIndexRoute
+  '/qr-code': typeof QrCodeIndexRoute
+  '/transition': typeof TransitionIndexRoute
+  '/uri-encoding': typeof UriEncodingIndexRoute
   '/uuid': typeof UuidIndexRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
-  '/directory-tree': typeof DirectoryTreeRoute
-  '/keyboard-event': typeof KeyboardEventRoute
-  '/pointer-event': typeof PointerEventRoute
-  '/qr-code': typeof QrCodeRoute
-  '/transition': typeof TransitionRoute
-  '/uri-encoding': typeof UriEncodingRoute
+  '/directory-tree/': typeof DirectoryTreeIndexRoute
+  '/keyboard-event/': typeof KeyboardEventIndexRoute
+  '/pointer-event/': typeof PointerEventIndexRoute
+  '/qr-code/': typeof QrCodeIndexRoute
+  '/transition/': typeof TransitionIndexRoute
+  '/uri-encoding/': typeof UriEncodingIndexRoute
   '/uuid/': typeof UuidIndexRoute
 }
 
@@ -193,35 +193,35 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
-    | '/directory-tree'
-    | '/keyboard-event'
-    | '/pointer-event'
-    | '/qr-code'
-    | '/transition'
-    | '/uri-encoding'
+    | '/directory-tree/'
+    | '/keyboard-event/'
+    | '/pointer-event/'
+    | '/qr-code/'
+    | '/transition/'
+    | '/uri-encoding/'
     | '/uuid/'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  DirectoryTreeRoute: typeof DirectoryTreeRoute
-  KeyboardEventRoute: typeof KeyboardEventRoute
-  PointerEventRoute: typeof PointerEventRoute
-  QrCodeRoute: typeof QrCodeRoute
-  TransitionRoute: typeof TransitionRoute
-  UriEncodingRoute: typeof UriEncodingRoute
+  DirectoryTreeIndexRoute: typeof DirectoryTreeIndexRoute
+  KeyboardEventIndexRoute: typeof KeyboardEventIndexRoute
+  PointerEventIndexRoute: typeof PointerEventIndexRoute
+  QrCodeIndexRoute: typeof QrCodeIndexRoute
+  TransitionIndexRoute: typeof TransitionIndexRoute
+  UriEncodingIndexRoute: typeof UriEncodingIndexRoute
   UuidIndexRoute: typeof UuidIndexRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  DirectoryTreeRoute: DirectoryTreeRoute,
-  KeyboardEventRoute: KeyboardEventRoute,
-  PointerEventRoute: PointerEventRoute,
-  QrCodeRoute: QrCodeRoute,
-  TransitionRoute: TransitionRoute,
-  UriEncodingRoute: UriEncodingRoute,
+  DirectoryTreeIndexRoute: DirectoryTreeIndexRoute,
+  KeyboardEventIndexRoute: KeyboardEventIndexRoute,
+  PointerEventIndexRoute: PointerEventIndexRoute,
+  QrCodeIndexRoute: QrCodeIndexRoute,
+  TransitionIndexRoute: TransitionIndexRoute,
+  UriEncodingIndexRoute: UriEncodingIndexRoute,
   UuidIndexRoute: UuidIndexRoute,
 }
 
@@ -236,35 +236,35 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
-        "/directory-tree",
-        "/keyboard-event",
-        "/pointer-event",
-        "/qr-code",
-        "/transition",
-        "/uri-encoding",
+        "/directory-tree/",
+        "/keyboard-event/",
+        "/pointer-event/",
+        "/qr-code/",
+        "/transition/",
+        "/uri-encoding/",
         "/uuid/"
       ]
     },
     "/": {
       "filePath": "index.tsx"
     },
-    "/directory-tree": {
-      "filePath": "directory-tree.tsx"
+    "/directory-tree/": {
+      "filePath": "directory-tree/index.tsx"
     },
-    "/keyboard-event": {
-      "filePath": "keyboard-event.tsx"
+    "/keyboard-event/": {
+      "filePath": "keyboard-event/index.tsx"
     },
-    "/pointer-event": {
-      "filePath": "pointer-event.tsx"
+    "/pointer-event/": {
+      "filePath": "pointer-event/index.tsx"
     },
-    "/qr-code": {
-      "filePath": "qr-code.tsx"
+    "/qr-code/": {
+      "filePath": "qr-code/index.tsx"
     },
-    "/transition": {
-      "filePath": "transition.tsx"
+    "/transition/": {
+      "filePath": "transition/index.tsx"
     },
-    "/uri-encoding": {
-      "filePath": "uri-encoding.tsx"
+    "/uri-encoding/": {
+      "filePath": "uri-encoding/index.tsx"
     },
     "/uuid/": {
       "filePath": "uuid/index.tsx"

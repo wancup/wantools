@@ -3,11 +3,11 @@ import { Heading } from "$park/heading";
 import { createFileRoute } from "@tanstack/solid-router";
 import type { JSX } from "solid-js";
 import { PAGES, SITE } from "~/config";
-import { KeydownEventChecker, KeyupEventChecker } from "~/features/keyboard-event";
+import { TransitionList } from "./-transition-list";
 
-const CURRENT_PAGE = PAGES["keyboard-event"];
+const CURRENT_PAGE = PAGES["transition"];
 
-export const Route = createFileRoute("/keyboard-event")({
+export const Route = createFileRoute("/transition/")({
   head: () => ({
     meta: [
       { title: SITE.toPageTitle(CURRENT_PAGE.name) },
@@ -22,18 +22,7 @@ function RouteComponent(): JSX.Element {
       <Heading as="h1" size="xl" class={css({ marginBottom: "1rem" })}>
         {CURRENT_PAGE.name}
       </Heading>
-      <Heading as="h2" size="lg" class={css({ marginBottom: "1rem" })}>
-        On "keydown"
-      </Heading>
-      <KeydownEventChecker />
-      <Heading
-        as="h2"
-        size="lg"
-        class={css({ marginTop: "3rem", marginBottom: "1rem" })}
-      >
-        On "keyup"
-      </Heading>
-      <KeyupEventChecker />
+      <TransitionList />
     </>
   );
 }

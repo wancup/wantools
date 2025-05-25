@@ -7,7 +7,7 @@ import { Select } from "$park/select";
 import { createListCollection } from "@ark-ui/solid";
 import { CheckIcon, ChevronsUpDownIcon } from "lucide-solid";
 import { createEffect, createMemo, createSignal, createUniqueId, For, type JSX, onCleanup } from "solid-js";
-import { TransitionSwatch, type TransitionSwatchProps } from "./transition-swatch";
+import { TransitionSwatch, type TransitionSwatchProps } from "./-transition-swatch";
 
 type MotionVariant = TransitionSwatchProps["motion"];
 

@@ -3,12 +3,13 @@ import { Heading } from "$park/heading";
 import { createFileRoute } from "@tanstack/solid-router";
 import type { JSX } from "solid-js";
 import { PAGES, SITE } from "~/config";
-import { UriConverter } from "~/features/uri-encoding";
+import { ClickEventChecker } from "./-click-event-checker";
+import { DeviceDifferenceChart } from "./-device-difference-chart";
+import { PointerEventChecker } from "./-pointer-event-checker";
 
-const CURRENT_PAGE = PAGES["uri-encoding"];
-const SAMPLE_URI = "https://example.com/?sakura=桜";
+const CURRENT_PAGE = PAGES["pointer-event"];
 
-export const Route = createFileRoute("/uri-encoding")({
+export const Route = createFileRoute("/pointer-event/")({
   head: () => ({
     meta: [
       { title: SITE.toPageTitle(CURRENT_PAGE.name) },
@@ -23,18 +24,21 @@ function RouteComponent(): JSX.Element {
       <Heading as="h1" size="xl" class={css({ marginBottom: "1rem" })}>
         {CURRENT_PAGE.name}
       </Heading>
+
       <Heading as="h2" size="lg" class={css({ marginBottom: "1rem" })}>
-        encodeURI()
+        On "click"
       </Heading>
-      <UriConverter placeholder={SAMPLE_URI} type="uri" />
-      <Heading
-        as="h2"
-        size="lg"
-        class={css({ marginTop: "3rem", marginBottom: "1rem" })}
-      >
-        encodeURIComponent()
+      <ClickEventChecker />
+
+      <Heading as="h2" size="lg" class={css({ margin: "3rem 0 1rem" })}>
+        On "pointermove"
       </Heading>
-      <UriConverter placeholder={SAMPLE_URI} type="uri-component" />
+      <PointerEventChecker />
+
+      <Heading as="h2" size="lg" class={css({ margin: "3rem 0 1rem" })}>
+        Pointer / Mouse / Touch Event
+      </Heading>
+      <DeviceDifferenceChart />
     </>
   );
 }

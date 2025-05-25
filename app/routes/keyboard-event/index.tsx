@@ -3,11 +3,12 @@ import { Heading } from "$park/heading";
 import { createFileRoute } from "@tanstack/solid-router";
 import type { JSX } from "solid-js";
 import { PAGES, SITE } from "~/config";
-import { ClickEventChecker, DeviceDifferenceChart, PointerEventChecker } from "~/features/pointer-event";
+import { KeydownEventChecker } from "./-keydown-event-checker";
+import { KeyupEventChecker } from "./-keyup-event-checker";
 
-const CURRENT_PAGE = PAGES["pointer-event"];
+const CURRENT_PAGE = PAGES["keyboard-event"];
 
-export const Route = createFileRoute("/pointer-event")({
+export const Route = createFileRoute("/keyboard-event/")({
   head: () => ({
     meta: [
       { title: SITE.toPageTitle(CURRENT_PAGE.name) },
@@ -22,21 +23,18 @@ function RouteComponent(): JSX.Element {
       <Heading as="h1" size="xl" class={css({ marginBottom: "1rem" })}>
         {CURRENT_PAGE.name}
       </Heading>
-
       <Heading as="h2" size="lg" class={css({ marginBottom: "1rem" })}>
-        On "click"
+        On "keydown"
       </Heading>
-      <ClickEventChecker />
-
-      <Heading as="h2" size="lg" class={css({ margin: "3rem 0 1rem" })}>
-        On "pointermove"
+      <KeydownEventChecker />
+      <Heading
+        as="h2"
+        size="lg"
+        class={css({ marginTop: "3rem", marginBottom: "1rem" })}
+      >
+        On "keyup"
       </Heading>
-      <PointerEventChecker />
-
-      <Heading as="h2" size="lg" class={css({ margin: "3rem 0 1rem" })}>
-        Pointer / Mouse / Touch Event
-      </Heading>
-      <DeviceDifferenceChart />
+      <KeyupEventChecker />
     </>
   );
 }

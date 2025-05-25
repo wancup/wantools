@@ -3,11 +3,11 @@ import { Heading } from "$park/heading";
 import { createFileRoute } from "@tanstack/solid-router";
 import type { JSX } from "solid-js";
 import { PAGES, SITE } from "~/config";
-import { TransitionList } from "~/features/transition";
+import { DirectoryTreeInput } from "~/features/directory-tree";
 
-const CURRENT_PAGE = PAGES["transition"];
+const CURRENT_PAGE = PAGES["directory-tree"];
 
-export const Route = createFileRoute("/transition")({
+export const Route = createFileRoute("/directory-tree/")({
   head: () => ({
     meta: [
       { title: SITE.toPageTitle(CURRENT_PAGE.name) },
@@ -19,10 +19,10 @@ export const Route = createFileRoute("/transition")({
 function RouteComponent(): JSX.Element {
   return (
     <>
-      <Heading as="h1" size="xl" class={css({ marginBottom: "1rem" })}>
+      <Heading as="h1" size="xl" class={css({ marginBottom: "0.5rem" })}>
         {CURRENT_PAGE.name}
       </Heading>
-      <TransitionList />
+      <DirectoryTreeInput />
     </>
   );
 }
