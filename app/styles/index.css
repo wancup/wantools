@@ -1,5 +1,9 @@
 @layer reset, base, tokens, recipes, utilities;
 
+::selection {
+  background-color: var(--colors-color-palette-default);
+}
+
 .noscript-alert {
   width: 100vw;
   padding: 20px;
