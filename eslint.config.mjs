@@ -9,7 +9,7 @@ import globals from "globals";
 import tseslint from "typescript-eslint";
 
 export default tseslint.config(
-  { ignores: ["park-ui", "public", "styled-system", "dist", ".vinxi", ".astro"] },
+  { ignores: ["park-ui", "public", "styled-system", ".output", ".vinxi"] },
   {
     languageOptions: {
       globals: globals.browser,
@@ -88,6 +88,9 @@ export default tseslint.config(
     },
     rules: {
       ...jsxA11yPlugin.flatConfigs.recommended.rules,
+      "jsx-a11y/anchor-is-valid": ["error", {
+        "aspects": ["invalidHref", "preferButton"], // The Link component of TanStack Router specifies the destination with 'to' prop, so the rule is disabled.
+      }],
     },
   },
 );

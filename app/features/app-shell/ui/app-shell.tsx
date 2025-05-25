@@ -6,11 +6,7 @@ import { createSignal, type JSX, type ParentProps } from "solid-js";
 import { GlobalHeader } from "./global-header";
 import { SidebarContent } from "./sidebar-content";
 
-interface AppShellProps extends ParentProps {
-  currentPathname: string;
-}
-
-export function AppShell(props: AppShellProps): JSX.Element {
+export function AppShell(props: ParentProps): JSX.Element {
   const [isOpen, setIsOpen] = createSignal(false);
 
   return (
@@ -25,7 +21,7 @@ export function AppShell(props: AppShellProps): JSX.Element {
         })}
       >
         <div class={css({ display: { base: "none", md: "block" }, padding: "16px" })}>
-          <SidebarContent currentPathname={props.currentPathname} />
+          <SidebarContent />
         </div>
         <div class={css({ display: { md: "none" } })}>
           <Drawer.Root open={isOpen()} onOpenChange={(detail) => setIsOpen(detail.open)}>
@@ -54,7 +50,7 @@ export function AppShell(props: AppShellProps): JSX.Element {
                   />
                 </Drawer.Header>
                 <Drawer.Body>
-                  <SidebarContent currentPathname={props.currentPathname} />
+                  <SidebarContent />
                 </Drawer.Body>
               </Drawer.Content>
             </Drawer.Positioner>

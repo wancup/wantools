@@ -1,10 +1,9 @@
 {
-  "extends": "astro/tsconfigs/strict",
   "include": [
-    ".astro/types.d.ts",
+    "app.config.ts",
     "panda.config.ts",
     "vitest.config.ts",
-    "src/**/*",
+    "app/**/*",
     "park-ui/**/*",
     "styled-system/**/*"
   ],
@@ -25,7 +24,7 @@
     "isolatedModules": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./src/*"],
+      "~/*": ["app/*"],
       "$park/*": ["./park-ui/*"],
       "$panda/*": ["./styled-system/*"]
     },
