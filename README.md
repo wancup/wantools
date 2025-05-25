@@ -26,6 +26,6 @@ pnpm run dev
 
 ## Tech Stack
 
-- [TanstackStart](https://tanstack.com/start/latest)
+- [TanStack Start](https://tanstack.com/start/latest)
 - [Solid](https://www.solidjs.com/)
 - [Park UI](https://park-ui.com/)
