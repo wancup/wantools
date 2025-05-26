@@ -2,6 +2,7 @@ import { css } from "$panda/css";
 import { Heading } from "$park/heading";
 import { createFileRoute } from "@tanstack/solid-router";
 import type { JSX } from "solid-js";
+import { Container } from "~/components";
 import { PAGES, SITE } from "~/config";
 import { ClickEventChecker } from "./-click-event-checker";
 import { DeviceDifferenceChart } from "./-device-difference-chart";
@@ -20,7 +21,7 @@ export const Route = createFileRoute("/pointer-event/")({
 
 function RouteComponent(): JSX.Element {
   return (
-    <>
+    <Container>
       <Heading as="h1" size="xl" class={css({ marginBottom: "1rem" })}>
         {CURRENT_PAGE.name}
       </Heading>
@@ -39,6 +40,6 @@ function RouteComponent(): JSX.Element {
         Pointer / Mouse / Touch Event
       </Heading>
       <DeviceDifferenceChart />
-    </>
+    </Container>
   );
 }
