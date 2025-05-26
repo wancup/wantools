@@ -3,8 +3,9 @@ import { IconButton } from "$park/icon-button";
 import { Link } from "@tanstack/solid-router";
 import { MenuIcon } from "lucide-solid";
 import { type JSX, type Setter } from "solid-js";
+import logoUrl from "~/assets/images/wantools_logo.svg";
 import { PAGES, SITE } from "~/config";
-import { ColorThemeSwitcher, useCurrentThemeColor } from "~/features/color-theme";
+import { ColorThemeSwitcher } from "~/features/color-theme";
 import { GitHubLink } from "./github-link";
 
 interface GlobalHeaderProps {
@@ -12,9 +13,6 @@ interface GlobalHeaderProps {
 }
 
 export function GlobalHeader(props: GlobalHeaderProps): JSX.Element {
-  const { colorTheme } = useCurrentThemeColor();
-
-  const logoSrc = (): string => colorTheme() === "light" ? "/images/wanTooLs_light.svg" : "/images/wanTooLs_dark.svg";
   return (
     <header
       class={css({
@@ -41,7 +39,7 @@ export function GlobalHeader(props: GlobalHeaderProps): JSX.Element {
         asChild={(props) => {
           return (
             <Link {...props()} to={PAGES["/"].path}>
-              <img alt={SITE.name} src={logoSrc()} class={css({ width: "10rem" })} />
+              <img alt={SITE.name} src={logoUrl} class={css({ width: "10rem" })} />
             </Link>
           );
         }}
