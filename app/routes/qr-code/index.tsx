@@ -19,7 +19,7 @@ export const Route = createFileRoute("/qr-code/")({
 
 function RouteComponent(): JSX.Element {
   return (
-    <Container size="sm">
+    <Container size="xs">
       <Heading as="h1" size="xl" class={css({ marginBottom: "1rem" })}>
         {CURRENT_PAGE.name}
       </Heading>

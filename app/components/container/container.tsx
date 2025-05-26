@@ -9,6 +9,9 @@ const containerRecipe = cva({
   },
   variants: {
     size: {
+      xs: {
+        maxWidth: "30rem",
+      },
       sm: {
         maxWidth: "42rem",
       },
