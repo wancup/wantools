@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@ark-ui/solid':
-        specifier: 5.12.0
-        version: 5.12.0(solid-js@1.9.7)
+        specifier: 5.13.0
+        version: 5.13.0(solid-js@1.9.7)
       '@solid-primitives/mutation-observer':
         specifier: 1.2.1
         version: 1.2.1(solid-js@1.9.7)
@@ -88,8 +88,8 @@ packages:
   '@ark-ui/anatomy@3.5.0':
     resolution: {integrity: sha512-KoROLVVT23BvFHcye/GYhG8NJ2CH0C+CaoJhXrkEjvk8pbEx80Xk5NIUy5gL7xmX+LDD7kY5t3NotBqCu+2L2w==}
 
-  '@ark-ui/solid@5.12.0':
-    resolution: {integrity: sha512-feEV4BRreNXl49LvyY/jJuZvvkpfU/67sQSJEltBIlCerXEITNG41oSztQYUEspFxWooWZR7d3bul9oDH9U/eA==}
+  '@ark-ui/solid@5.13.0':
+    resolution: {integrity: sha512-8KKfGkVyZ5p1XG+jMOULRJ6lx2aZC7XQkwsuXhel/TIch9c7DWJjSAH7B1GG6PJmkLgLG5VFseusmkUjSt0BjA==}
     peerDependencies:
       solid-js: '>=1.6.0'
 
@@ -5477,7 +5477,7 @@ snapshots:
     transitivePeerDependencies:
       - '@internationalized/date'
 
-  '@ark-ui/solid@5.12.0(solid-js@1.9.7)':
+  '@ark-ui/solid@5.13.0(solid-js@1.9.7)':
     dependencies:
       '@internationalized/date': 3.8.1
       '@zag-js/accordion': 1.15.0
