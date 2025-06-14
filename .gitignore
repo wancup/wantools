@@ -18,8 +18,9 @@ pnpm-debug.log*
 .idea/
 
 # TanStack Start
-.output/
-.vinxi/
+.nitro/
+.tanstack/
+dist/
 
 ## Panda
 styled-system

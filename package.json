@@ -4,9 +4,9 @@
   "type": "module",
   "scripts": {
     "prepare": "panda codegen",
-    "dev": "vinxi dev --port 10010",
-    "build": "vinxi build",
-    "start": "vinxi start",
+    "dev": "vite dev --port 10010",
+    "build": "vite build",
+    "preview": "vite preview",
     "typecheck": "tsc --noEmit --skipLibCheck",
     "format:check": "dprint check",
     "format:fix": "dprint fmt",
@@ -17,13 +17,13 @@
   "dependencies": {
     "@ark-ui/solid": "5.14.0",
     "@solid-primitives/mutation-observer": "1.2.1",
-    "@tanstack/solid-router": "1.120.19",
-    "@tanstack/solid-start": "1.120.20",
+    "@tanstack/solid-router": "1.121.16",
+    "@tanstack/solid-start": "1.121.16",
     "lucide-solid": "0.515.0",
     "solid-js": "1.9.7",
     "ts-pattern": "5.7.1",
     "uuid": "11.1.0",
-    "vinxi": "0.5.7"
+    "vite": "6.3.5"
   },
   "devDependencies": {
     "@eslint/js": "9.29.0",
