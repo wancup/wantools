@@ -14,7 +14,7 @@ export default defineConfig({
       radius: "sm",
     }),
   ],
-  include: ["./park-ui/**/*.{js,jsx,ts,tsx}", "./app/**/*.{ts,tsx}"],
+  include: ["./park-ui/**/*.{js,jsx,ts,tsx}", "./src/**/*.{ts,tsx}"],
   exclude: [],
   globalCss: {},
   globalVars: {

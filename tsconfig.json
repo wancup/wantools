@@ -1,9 +1,9 @@
 {
   "include": [
-    "app.config.ts",
     "panda.config.ts",
+    "vite.config.ts",
     "vitest.config.ts",
-    "app/**/*",
+    "src/**/*",
     "park-ui/**/*",
     "styled-system/**/*"
   ],
@@ -11,6 +11,7 @@
     "dist"
   ],
   "compilerOptions": {
+    "types": ["vite/client"],
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
     "target": "ESNext",
@@ -24,7 +25,7 @@
     "isolatedModules": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["app/*"],
+      "~/*": ["src/*"],
       "$park/*": ["./park-ui/*"],
       "$panda/*": ["./styled-system/*"]
     },
