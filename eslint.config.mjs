@@ -3,6 +3,7 @@
 import pluginJs from "@eslint/js";
 import jsonlint from "@eslint/json";
 import markdownlint from "@eslint/markdown";
+import vitestlint from "@vitest/eslint-plugin";
 import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 import solid from "eslint-plugin-solid/configs/typescript";
 import globals from "globals";
@@ -100,6 +101,15 @@ export default tseslint.config(
       "jsx-a11y/anchor-is-valid": ["error", {
         "aspects": ["invalidHref", "preferButton"], // The Link component of TanStack Router specifies the destination with 'to' prop, so the rule is disabled.
       }],
+    },
+  },
+  {
+    files: ["./src/**/*.test.{js,jsx,ts,tsx}"],
+    plugins: {
+      vitest: vitestlint,
+    },
+    rules: {
+      ...vitestlint.configs.recommended.rules,
     },
   },
 );

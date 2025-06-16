@@ -51,6 +51,9 @@ importers:
       '@park-ui/panda-preset':
         specifier: 0.43.1
         version: 0.43.1(@internationalized/date@3.8.2)(@pandacss/dev@0.54.0(typescript@5.8.3))
+      '@vitest/eslint-plugin':
+        specifier: 1.2.5
+        version: 1.2.5(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3)(vitest@3.2.3(@types/debug@4.1.12)(@types/node@24.0.3)(jiti@2.4.2)(lightningcss@1.25.1)(terser@5.42.0)(tsx@4.20.3))
       dprint:
         specifier: 0.50.0
         version: 0.50.0
@@ -1343,6 +1346,18 @@ packages:
     resolution: {integrity: sha512-6lLqMNX3TuycBPABycx7A9F1bHQR7kiQln6abjFbPrf5C/05qHM9M5E4PeTE59c7z8g6vHnx1Ioihb2AQl7BTA==}
     engines: {node: '>=18'}
     hasBin: true
+
+  '@vitest/eslint-plugin@1.2.5':
+    resolution: {integrity: sha512-cfmXz++mkqYpssrKymd7KJumxaZBsfFji2y22QV04kDYKRbiaZ+s4WZL/bzAkcefVKj4KkFctVALHdDZhFhHGg==}
+    peerDependencies:
+      eslint: '>= 8.57.0'
+      typescript: '>= 5.0.0'
+      vitest: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+      vitest:
+        optional: true
 
   '@vitest/expect@3.2.3':
     resolution: {integrity: sha512-W2RH2TPWVHA1o7UmaFKISPvdicFJH+mjykctJFoAkUw+SPTJTGjUNdKscFBrqM7IPnCVu6zihtKYa7TkZS1dkQ==}
@@ -6720,6 +6735,16 @@ snapshots:
     transitivePeerDependencies:
       - encoding
       - rollup
+      - supports-color
+
+  '@vitest/eslint-plugin@1.2.5(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3)(vitest@3.2.3(@types/debug@4.1.12)(@types/node@24.0.3)(jiti@2.4.2)(lightningcss@1.25.1)(terser@5.42.0)(tsx@4.20.3))':
+    dependencies:
+      '@typescript-eslint/utils': 8.34.0(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3)
+      eslint: 9.29.0(jiti@2.4.2)
+    optionalDependencies:
+      typescript: 5.8.3
+      vitest: 3.2.3(@types/debug@4.1.12)(@types/node@24.0.3)(jiti@2.4.2)(lightningcss@1.25.1)(terser@5.42.0)(tsx@4.20.3)
+    transitivePeerDependencies:
       - supports-color
 
   '@vitest/expect@3.2.3':
