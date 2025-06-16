@@ -9,7 +9,7 @@
     "**/node_modules",
     "park-ui",
     "pnpm-lock.yaml",
-    "./app/routeTree.gen.ts"
+    "./src/routeTree.gen.ts"
   ],
   "plugins": [
     "https://plugins.dprint.dev/typescript-0.95.7.wasm",
