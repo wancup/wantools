@@ -9,7 +9,16 @@ import globals from "globals";
 import tseslint from "typescript-eslint";
 
 export default tseslint.config(
-  { ignores: ["park-ui", "public", "styled-system", ".output"] },
+  {
+    ignores: [
+      "park-ui",
+      "public",
+      "styled-system",
+      ".tanstack",
+      ".nitro",
+      "dist",
+    ],
+  },
   {
     languageOptions: {
       globals: globals.browser,
