@@ -34,10 +34,19 @@ export function AppShell(props: ParentProps): JSX.Element {
           <SidebarContent />
         </div>
         <div class={css({ display: { md: "none" } })}>
-          <Drawer.Root open={isOpen()} onOpenChange={(detail) => setIsOpen(detail.open)}>
+          <Drawer.Root variant="left" open={isOpen()} onOpenChange={(detail) => setIsOpen(detail.open)}>
             <Drawer.Backdrop />
-            <Drawer.Positioner>
-              <Drawer.Content>
+            <Drawer.Positioner class={css({ left: 0 })}>
+              <Drawer.Content
+                class={css({
+                  _open: {
+                    animation: "drawer-in-left",
+                  },
+                  _closed: {
+                    animation: "drawer-out-left",
+                  },
+                })}
+              >
                 <Drawer.Header
                   class={css({ padding: "16px" })}
                 >
