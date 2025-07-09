@@ -6,13 +6,15 @@ export default defineConfig({
   plugins: [
     tsConfigPaths(),
     tanstackStart({
-      spa: {
-        enabled: true,
-        prerender: {
-          enabled: true,
-          crawlLinks: true,
+      pages: [
+        {
+          path: "/",
+          prerender: {
+            enabled: true,
+            crawlLinks: true,
+          },
         },
-      },
+      ],
       target: "cloudflare-pages-static",
     }),
   ],
