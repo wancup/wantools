@@ -15,7 +15,7 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@ark-ui/solid": "5.19.0",
+    "@ark-ui/solid": "5.20.0",
     "@solid-primitives/mutation-observer": "1.2.2",
     "@tanstack/solid-router": "1.131.27",
     "@tanstack/solid-start": "1.131.27",
