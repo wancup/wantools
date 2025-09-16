@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@ark-ui/solid':
-        specifier: 5.24.1
-        version: 5.24.1(solid-js@1.9.9)
+        specifier: 5.25.0
+        version: 5.25.0(solid-js@1.9.9)
       '@solid-primitives/mutation-observer':
         specifier: 1.2.2
         version: 1.2.2(solid-js@1.9.9)
@@ -88,8 +88,8 @@ packages:
     resolution: {integrity: sha512-KoROLVVT23BvFHcye/GYhG8NJ2CH0C+CaoJhXrkEjvk8pbEx80Xk5NIUy5gL7xmX+LDD7kY5t3NotBqCu+2L2w==}
     deprecated: This package is deprecated. Please import directly from @ark-ui/<framework>
 
-  '@ark-ui/solid@5.24.1':
-    resolution: {integrity: sha512-EG/vXtFUkEXuWn1UIDvMYF6XCz7jfz7pn43pqQT4a3YP7ttOq9OUVYXHvETc3/9z0L7g+WwWAjLjje9nRV7oJg==}
+  '@ark-ui/solid@5.25.0':
+    resolution: {integrity: sha512-MVuJhKYkyN/ygqH1tRc8M5zhZfm33leIAAUTRircCd2Ojhb1Wvahgw425xTnALz4/71vtWmkhLj37268ynPPDQ==}
     peerDependencies:
       solid-js: '>=1.6.0'
 
@@ -4583,7 +4583,7 @@ snapshots:
     transitivePeerDependencies:
       - '@internationalized/date'
 
-  '@ark-ui/solid@5.24.1(solid-js@1.9.9)':
+  '@ark-ui/solid@5.25.0(solid-js@1.9.9)':
     dependencies:
       '@internationalized/date': 3.9.0
       '@zag-js/accordion': 1.24.1
