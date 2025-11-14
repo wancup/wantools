@@ -52,8 +52,8 @@ importers:
         specifier: 0.43.1
         version: 0.43.1(@internationalized/date@3.10.0)(@pandacss/dev@1.4.3(typescript@5.9.3))
       '@vitest/eslint-plugin':
-        specifier: 1.4.1
-        version: 1.4.1(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)(vitest@4.0.8(@types/debug@4.1.12)(jiti@2.6.1)(lightningcss@1.25.1)(terser@5.44.1)(tsx@4.20.6))
+        specifier: 1.4.2
+        version: 1.4.2(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)(vitest@4.0.8(@types/debug@4.1.12)(jiti@2.6.1)(lightningcss@1.25.1)(terser@5.44.1)(tsx@4.20.6))
       dprint:
         specifier: 0.50.2
         version: 0.50.2
@@ -1315,8 +1315,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  '@vitest/eslint-plugin@1.4.1':
-    resolution: {integrity: sha512-eBMCLeUhKvQxH7nPihmLUJUWXxqKovVFEmxbGKqkY/aN6hTAXGiRid8traRUOvgr82NJFJL3KPpE19fElOR7bg==}
+  '@vitest/eslint-plugin@1.4.2':
+    resolution: {integrity: sha512-7rENIOOk6eqgtf2FsQWilgfQheeuGRiU3lB2H+pmtbcA4jOdtBfQHVqS7f/KCOJ2JKjrIJgow8yUeANi34rj9w==}
     engines: {node: '>=18'}
     peerDependencies:
       eslint: '>=8.57.0'
@@ -6149,7 +6149,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vitest/eslint-plugin@1.4.1(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)(vitest@4.0.8(@types/debug@4.1.12)(jiti@2.6.1)(lightningcss@1.25.1)(terser@5.44.1)(tsx@4.20.6))':
+  '@vitest/eslint-plugin@1.4.2(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)(vitest@4.0.8(@types/debug@4.1.12)(jiti@2.6.1)(lightningcss@1.25.1)(terser@5.44.1)(tsx@4.20.6))':
     dependencies:
       '@typescript-eslint/scope-manager': 8.46.3
       '@typescript-eslint/utils': 8.46.3(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
