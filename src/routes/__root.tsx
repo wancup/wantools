@@ -1,6 +1,7 @@
 import { Heading } from "$park/heading";
-import { createRootRoute, Outlet } from "@tanstack/solid-router";
-import type { JSX } from "solid-js";
+import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/solid-router";
+import { type JSX, Suspense } from "solid-js";
+import { HydrationScript } from "solid-js/web";
 import { SITE } from "~/config";
 import { AppShell } from "~/features/app-shell";
 
@@ -59,12 +60,26 @@ window.ThemeProvider = (() => {
 
 function RootComponent(): JSX.Element {
   return (
-    // TODO: set lang attribute to the html element
-    <>
+    <RootDocument>
       <noscript class="noscript-alert">Please Enable JavaScript!</noscript>
       <AppShell>
         <Outlet />
       </AppShell>
-    </>
+    </RootDocument>
+  );
+}
+
+function RootDocument(props: Readonly<{ children: JSX.Element }>): JSX.Element {
+  return (
+    <html lang="en">
+      <head>
+        <HydrationScript />
+      </head>
+      <body>
+        <HeadContent />
+        <Suspense>{props.children}</Suspense>
+        <Scripts />
+      </body>
+    </html>
   );
 }
