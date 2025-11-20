@@ -21,8 +21,8 @@ importers:
         specifier: 1.136.8
         version: 1.136.8(solid-js@1.9.10)(vite-plugin-solid@2.11.10(solid-js@1.9.10)(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6)))(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6))
       lucide-solid:
-        specifier: 0.553.0
-        version: 0.553.0(solid-js@1.9.10)
+        specifier: 0.554.0
+        version: 0.554.0(solid-js@1.9.10)
       solid-js:
         specifier: 1.9.10
         version: 1.9.10
@@ -2517,8 +2517,8 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
-  lucide-solid@0.553.0:
-    resolution: {integrity: sha512-FAvWslAqD/HmCfcvFpbYAjPFf80F60aBlvn7M7Ea/FzYChqpkUiUkJEvG0K1bYHadf7dnkK0DSI992VT26sQdg==}
+  lucide-solid@0.554.0:
+    resolution: {integrity: sha512-pt0KcZB7N/jVoLKng+kLpGTSoL3x03ByxbDVasMuTLvaZGVtio7rN946zlK9TrMZVwtAHuCvDn11+bEfKnMR3A==}
     peerDependencies:
       solid-js: ^1.4.7
 
@@ -6878,7 +6878,7 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
-  lucide-solid@0.553.0(solid-js@1.9.10):
+  lucide-solid@0.554.0(solid-js@1.9.10):
     dependencies:
       solid-js: 1.9.10
 
