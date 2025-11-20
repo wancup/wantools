@@ -55,8 +55,8 @@ importers:
         specifier: 0.43.1
         version: 0.43.1(@internationalized/date@3.10.0)(@pandacss/dev@1.5.1(typescript@5.9.3))
       '@vitest/eslint-plugin':
-        specifier: 1.4.2
-        version: 1.4.2(eslint@9.39.1)(typescript@5.9.3)(vitest@4.0.9(@types/debug@4.1.12)(lightningcss@1.25.1)(tsx@4.20.6))
+        specifier: 1.4.3
+        version: 1.4.3(eslint@9.39.1)(typescript@5.9.3)(vitest@4.0.9(@types/debug@4.1.12)(lightningcss@1.25.1)(tsx@4.20.6))
       dprint:
         specifier: 0.50.2
         version: 0.50.2
@@ -1074,8 +1074,8 @@ packages:
     resolution: {integrity: sha512-/++5CYLQqsO9HFGLI7APrxBJYo+5OCMpViuhV8q5/Qa3o5mMrF//eQHks+PXcsAVaLdn817fMuS7zqoXNNZGaw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@vitest/eslint-plugin@1.4.2':
-    resolution: {integrity: sha512-7rENIOOk6eqgtf2FsQWilgfQheeuGRiU3lB2H+pmtbcA4jOdtBfQHVqS7f/KCOJ2JKjrIJgow8yUeANi34rj9w==}
+  '@vitest/eslint-plugin@1.4.3':
+    resolution: {integrity: sha512-ba+YDKyZdViNAOg8P86a9tIEawPA/O+nLbwhg8g7nkqsLOAVum6GoZhkNxgwX621oqWAbB8N2xb+G5kkpXehcA==}
     engines: {node: '>=18'}
     peerDependencies:
       eslint: '>=8.57.0'
@@ -4727,7 +4727,7 @@ snapshots:
       '@typescript-eslint/types': 8.46.4
       eslint-visitor-keys: 4.2.1
 
-  '@vitest/eslint-plugin@1.4.2(eslint@9.39.1)(typescript@5.9.3)(vitest@4.0.9(@types/debug@4.1.12)(lightningcss@1.25.1)(tsx@4.20.6))':
+  '@vitest/eslint-plugin@1.4.3(eslint@9.39.1)(typescript@5.9.3)(vitest@4.0.9(@types/debug@4.1.12)(lightningcss@1.25.1)(tsx@4.20.6))':
     dependencies:
       '@typescript-eslint/scope-manager': 8.46.4
       '@typescript-eslint/utils': 8.46.4(eslint@9.39.1)(typescript@5.9.3)
