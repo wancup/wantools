@@ -15,11 +15,11 @@ importers:
         specifier: 1.2.2
         version: 1.2.2(solid-js@1.9.10)
       '@tanstack/solid-router':
-        specifier: 1.136.11
-        version: 1.136.11(solid-js@1.9.10)
+        specifier: 1.136.17
+        version: 1.136.17(solid-js@1.9.10)
       '@tanstack/solid-start':
-        specifier: 1.136.11
-        version: 1.136.11(solid-js@1.9.10)(vite-plugin-solid@2.11.10(solid-js@1.9.10)(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6)))(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6))
+        specifier: 1.137.0
+        version: 1.137.0(solid-js@1.9.10)(vite-plugin-solid@2.11.10(solid-js@1.9.10)(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6)))(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6))
       lucide-solid:
         specifier: 0.554.0
         version: 0.554.0(solid-js@1.9.10)
@@ -586,21 +586,21 @@ packages:
   '@nothing-but/utils@0.17.0':
     resolution: {integrity: sha512-TuCHcHLOqDL0SnaAxACfuRHBNRgNJcNn9X0GiH5H3YSDBVquCr3qEIG3FOQAuMyZCbu9w8nk2CHhOsn7IvhIwQ==}
 
-  '@oozcitak/dom@1.15.10':
-    resolution: {integrity: sha512-0JT29/LaxVgRcGKvHmSrUTEvZ8BXvZhGl2LASRUgHqDTC1M5g1pLmVv56IYNyt3bG2CUjDkc67wnyZC14pbQrQ==}
-    engines: {node: '>=8.0'}
+  '@oozcitak/dom@2.0.1':
+    resolution: {integrity: sha512-Un5k8MKqGak1LQM/behcHylmGdRopBXZax19weVedEAIrOCRZooY+MvX4Ehcz0ftOEPgYZ7vjIm/+MokVBFO3w==}
+    engines: {node: '>=20.0'}
 
-  '@oozcitak/infra@1.0.8':
-    resolution: {integrity: sha512-JRAUc9VR6IGHOL7OGF+yrvs0LO8SlqGnPAMqyzOuFZPSZSXI7Xf2O9+awQPSMXgIWGtgUf/dA6Hs6X6ySEaWTg==}
-    engines: {node: '>=6.0'}
+  '@oozcitak/infra@2.0.1':
+    resolution: {integrity: sha512-TtjI+kducm0ExL3OTKglPLkAIQ3alq0Otbokml62haZESfQaL3ojLJxl7+UTBhWCkBBuCshzGEEYmX5MXo8WOg==}
+    engines: {node: '>=20.0'}
 
-  '@oozcitak/url@1.0.4':
-    resolution: {integrity: sha512-kDcD8y+y3FCSOvnBI6HJgl00viO/nGbQoCINmQ0h98OhnGITrWR3bOGfwYCthgcrV8AnTJz8MzslTQbC3SOAmw==}
-    engines: {node: '>=8.0'}
+  '@oozcitak/url@2.0.1':
+    resolution: {integrity: sha512-lLHUQUyYy86q+qbALr0TMVh+VQAYwNGbsxBx4LhfjvkNYG0hgAwWtq7ePebGs2nEhZmmIFl24ikuCpH2r5d3+A==}
+    engines: {node: '>=20.0'}
 
-  '@oozcitak/util@8.3.8':
-    resolution: {integrity: sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ==}
-    engines: {node: '>=8.0'}
+  '@oozcitak/util@9.0.4':
+    resolution: {integrity: sha512-kmx1hRJlsvxiTCpK97off59LqSEOtkWOPe4rdfFL8TjZtihYSTVNObIfc86jtLngfnuIuuTRt+TUCgRS220RSQ==}
+    engines: {node: '>=20.0'}
 
   '@pandacss/config@1.5.1':
     resolution: {integrity: sha512-aO+YVRlccLXuFC30DEO9ZDkvXwjbCXk1blIpii8PuclTAR0+YPq8xXVRTVK3fR3MiA0zROca8nAf5Kb+wHVKPw==}
@@ -881,20 +881,20 @@ packages:
     resolution: {integrity: sha512-B7+x7eP2FFvi3fgd3rNH9o/Eixt+pp0zCIdGhnQbAJjFrlwIKGjGnwyJjhWJ5fMQlGks/E2LdDTqEV4W9Plx7g==}
     engines: {node: '>=12'}
 
-  '@tanstack/router-core@1.136.11':
-    resolution: {integrity: sha512-bz6MSDi4VMlyKc1NUupcpQb3fDBAtAkMEyuD5rSd2P2BXm7fxGPuqqdoKp9xfRowAGABWk5nEmUbCFLcoWlfQw==}
+  '@tanstack/router-core@1.136.17':
+    resolution: {integrity: sha512-LQsR1Bg9ITRFt9qVU9yrsO6Z3izdva5jzow3s3yUaccBhbryBFQdA5f9HTCpuVidFbqC6eVbi0vGfRkyviK4jw==}
     engines: {node: '>=12'}
 
-  '@tanstack/router-generator@1.136.11':
-    resolution: {integrity: sha512-y8/cQOTaSfHvMr/c54BCPUjNA8BWz1gk/Rn5N+Mjm7jVYg/jmbugKZuZ6Qw+68pqTZtVHV4ttFX/0uJ/FVkldg==}
+  '@tanstack/router-generator@1.136.17':
+    resolution: {integrity: sha512-4kUP5KmaEftN46wz7ZRxNeZSnfBDWfNxPBYDoB1JKx2cILbCvOyCu9l74EqDQ19XSZJ9n3FUYWgWg0pLjSKvtw==}
     engines: {node: '>=12'}
 
-  '@tanstack/router-plugin@1.136.11':
-    resolution: {integrity: sha512-7ogZzBYbgmIIgK/wYUYuGFCSYniAhZs+7SeQKiqVCQpOWmBzXOEG1/O77jWE515fWbi67CzQoqjyLgKWML9Y0g==}
+  '@tanstack/router-plugin@1.136.18':
+    resolution: {integrity: sha512-k8MQ+My5njcls2Bvg8J3oi7GjvfNA7smvlPyinYQYCcgJ83e8QT6Mnb6pHOUAJqJx6lBiLfUz/7OC4f1hQ0Ljw==}
     engines: {node: '>=12'}
     peerDependencies:
       '@rsbuild/core': '>=1.0.2'
-      '@tanstack/react-router': ^1.136.11
+      '@tanstack/react-router': ^1.136.18
       vite: '>=5.0.0 || >=6.0.0 || >=7.0.0'
       vite-plugin-solid: ^2.11.10
       webpack: '>=5.92.0'
@@ -918,26 +918,26 @@ packages:
     resolution: {integrity: sha512-2sWxq70T+dOEUlE3sHlXjEPhaFZfdPYlWTSkHchWXrFGw2YOAa+hzD6L9wHMjGDQezYd03ue8tQlHG+9Jzbzgw==}
     engines: {node: '>=12'}
 
-  '@tanstack/solid-router@1.136.11':
-    resolution: {integrity: sha512-viTYSzzyFslJsO8y5ZlWaGOShhGH6EAPySir7bRb7OcIuAHiWnr2MxOYIhkpOqdtRUHakjQfMYtOJqM/BhasmA==}
+  '@tanstack/solid-router@1.136.17':
+    resolution: {integrity: sha512-uPUTu7wcUeb9E4p7tdSSl3sH1x8jlR0PyagnF3wgkflVHYDsgQN69WFyvBxNj3+C2zZ4S2pEASOnN4hFqTdVlg==}
     engines: {node: '>=12'}
     peerDependencies:
       solid-js: ^1.9.10
 
-  '@tanstack/solid-start-client@1.136.11':
-    resolution: {integrity: sha512-fYb5egGWxm5TnEcO4CCcU4Z/Dl+oefjgMDn4SY3k9jVN1418Rqw3Sta1rH6Sn42mLMgSjJmgAS59xl1LtdViiA==}
+  '@tanstack/solid-start-client@1.136.17':
+    resolution: {integrity: sha512-ToQhhyPwZT0L5GgA9/HoPKFu9NT7swlW0TQSOdOACj3/rhH2uXMSyj01QO6GihPlVqGcYEbFj0BNWOthC7h3YA==}
     engines: {node: '>=22.12.0'}
     peerDependencies:
       solid-js: '>=1.0.0'
 
-  '@tanstack/solid-start-server@1.136.11':
-    resolution: {integrity: sha512-UVrsCUTLaa2053V/YuGmTTJNAPZp8C4NdireVhpXgLWOBCNXAcQxbkcHolelP62hMxDKiggBP8cwj1PBRWEa3g==}
+  '@tanstack/solid-start-server@1.136.17':
+    resolution: {integrity: sha512-tacFKLYOAQxIdtfsis1P8bI65Fgx1ShtpQzBosqozDNA0m18emEIvB8uaczO7ZvfD6yajDtQqjDyviISGUpTUA==}
     engines: {node: '>=22.12.0'}
     peerDependencies:
       solid-js: ^1.0.0
 
-  '@tanstack/solid-start@1.136.11':
-    resolution: {integrity: sha512-gJcQ5gJSDuofZ4r3HaO4bqmmsAD0aTGKrs46lF/59B5V3CnjvjLCcYDj6G4HXycKdswKA6oH/43faizedGoorw==}
+  '@tanstack/solid-start@1.137.0':
+    resolution: {integrity: sha512-5QkSev/s4pI12F5cRLw0eAWUnXKAiEaGzwut/ba2JDM9qoqzRI5DKk39LHCzjCLxSfhY2UvzdfNMeykN9+up8A==}
     engines: {node: '>=22.12.0'}
     peerDependencies:
       solid-js: '>=1.0.0'
@@ -948,22 +948,22 @@ packages:
     peerDependencies:
       solid-js: ^1.6.0
 
-  '@tanstack/start-client-core@1.136.11':
-    resolution: {integrity: sha512-vLGHlcKN7Lrf19bgyM8A4O8bPS1GXcIiWEhSE/9TlAEMcBV+AIpRdV55ULgsNP1ao/2eDgOvTCZCl1jlVzTSNw==}
+  '@tanstack/start-client-core@1.136.17':
+    resolution: {integrity: sha512-C7MndwH4SWnc+0BtqJiF9BO1TxV5zSRzhSs9zmpWQoCdcq2i9TaIJvHMphaYK200m1tlmsqq3wfr//MoYN8EDA==}
     engines: {node: '>=22.12.0'}
 
-  '@tanstack/start-plugin-core@1.136.11':
-    resolution: {integrity: sha512-I8lqB1QS039nCSI/tC7ANEbfPI8mKjqEKlAgx2XzS1NSrXzuj7gDOCWBuiudWXi37hQ8FjyPr1bJ/uCHbXl8hQ==}
+  '@tanstack/start-plugin-core@1.137.0':
+    resolution: {integrity: sha512-xtZpRwLetV/bTFjdDPv2vaSesOppPpP5oNrMSVh9kuH1wZIZgCtXnNvvlgGl4tZWHcUHuIJcCdMINNEi6EO/5A==}
     engines: {node: '>=22.12.0'}
     peerDependencies:
       vite: '>=7.0.0'
 
-  '@tanstack/start-server-core@1.136.11':
-    resolution: {integrity: sha512-O1a6bd8eLsoM8ks6H3F/C04FrzuaFYTjoYbVSG4B92oAz403XAN9MFuhXbHMZtI3BZat5F+V5CmYr9AfjrXJEA==}
+  '@tanstack/start-server-core@1.136.17':
+    resolution: {integrity: sha512-d1r3Qo+IzxcIQcrJzgOPaWwIgJwmWgwAXqXBIhPlLJfGZ7jUdlCCDPZFQ0E+Q8qefRLHEgSPzRcThvnJy0mGqw==}
     engines: {node: '>=22.12.0'}
 
-  '@tanstack/start-storage-context@1.136.11':
-    resolution: {integrity: sha512-MjngSafev3ljYhDb4kdETZfquWdl2Z0zU+d/rrKXw7fADdcmpeDAnJkHbw/EdYyb5O2CprtuIJYqUltT5XryFA==}
+  '@tanstack/start-storage-context@1.136.17':
+    resolution: {integrity: sha512-NRNIiMIZ33luWMx30ELGYqKKtPiHrxSpjZP5iHVd5HN5gKtQW7G4KU+6Ro4t8+Iyk7HjnYwFyQkndWPH1XYyQQ==}
     engines: {node: '>=22.12.0'}
 
   '@tanstack/store@0.8.0':
@@ -1607,9 +1607,6 @@ packages:
   anymatch@3.1.3:
     resolution: {integrity: sha512-KMReFUr0B4t+D+OBkjR3KYqvocp2XaSzO55UcB6mgQMd3KbcE+mWTyvVV7D/zsdEbNnV6acZUutkiHQXvTr1Rw==}
     engines: {node: '>= 8'}
-
-  argparse@1.0.10:
-    resolution: {integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==}
 
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
@@ -2402,10 +2399,6 @@ packages:
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
-  js-yaml@3.14.1:
-    resolution: {integrity: sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==}
-    hasBin: true
-
   js-yaml@4.1.1:
     resolution: {integrity: sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==}
     hasBin: true
@@ -3077,9 +3070,6 @@ packages:
     resolution: {integrity: sha512-i5uvt8C3ikiWeNZSVZNWcfZPItFQOsYTUAOkcUPGd8DqDy1uOUikjt5dG+uRlwyvR108Fb9DOd4GvXfT0N2/uQ==}
     engines: {node: '>= 12'}
 
-  sprintf-js@1.0.3:
-    resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
-
   srvx@0.8.16:
     resolution: {integrity: sha512-hmcGW4CgroeSmzgF1Ihwgl+Ths0JqAJ7HwjP2X7e3JzY7u4IydLMcdnlqGQiQGUswz+PO9oh/KtCpOISIvs9QQ==}
     engines: {node: '>=20.16.0'}
@@ -3428,9 +3418,9 @@ packages:
     resolution: {integrity: sha512-0yweIbkINJodk27gX9LBGMzyQdBDan3s/dEAiwBOj+Mf0PPyWL6/rikalkv8EeD0E8jm4o5RXEOrFTP3NXbhJg==}
     engines: {node: '>=12.17'}
 
-  xmlbuilder2@3.1.1:
-    resolution: {integrity: sha512-WCSfbfZnQDdLQLiMdGUQpMxxckeQ4oZNMNhLVkcekTu7xhD4tuUDyAPoY8CwXvBYE6LwBHd6QW2WZXlOWr1vCw==}
-    engines: {node: '>=12.0'}
+  xmlbuilder2@4.0.0:
+    resolution: {integrity: sha512-zIoY033NGmbzHX1cYOGKNfeWpZyiGLzXGHNoxQ6tR/R+WqT7mqz+EDtFdPwqnhIms6vHz9BNtMS47DiGPyGfwg==}
+    engines: {node: '>=20.0'}
 
   yallist@3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==}
@@ -4029,22 +4019,22 @@ snapshots:
 
   '@nothing-but/utils@0.17.0': {}
 
-  '@oozcitak/dom@1.15.10':
+  '@oozcitak/dom@2.0.1':
     dependencies:
-      '@oozcitak/infra': 1.0.8
-      '@oozcitak/url': 1.0.4
-      '@oozcitak/util': 8.3.8
+      '@oozcitak/infra': 2.0.1
+      '@oozcitak/url': 2.0.1
+      '@oozcitak/util': 9.0.4
 
-  '@oozcitak/infra@1.0.8':
+  '@oozcitak/infra@2.0.1':
     dependencies:
-      '@oozcitak/util': 8.3.8
+      '@oozcitak/util': 9.0.4
 
-  '@oozcitak/url@1.0.4':
+  '@oozcitak/url@2.0.1':
     dependencies:
-      '@oozcitak/infra': 1.0.8
-      '@oozcitak/util': 8.3.8
+      '@oozcitak/infra': 2.0.1
+      '@oozcitak/util': 9.0.4
 
-  '@oozcitak/util@8.3.8': {}
+  '@oozcitak/util@9.0.4': {}
 
   '@pandacss/config@1.5.1':
     dependencies:
@@ -4427,7 +4417,7 @@ snapshots:
 
   '@tanstack/history@1.133.28': {}
 
-  '@tanstack/router-core@1.136.11':
+  '@tanstack/router-core@1.136.17':
     dependencies:
       '@tanstack/history': 1.133.28
       '@tanstack/store': 0.8.0
@@ -4437,9 +4427,9 @@ snapshots:
       tiny-invariant: 1.3.3
       tiny-warning: 1.0.3
 
-  '@tanstack/router-generator@1.136.11':
+  '@tanstack/router-generator@1.136.17':
     dependencies:
-      '@tanstack/router-core': 1.136.11
+      '@tanstack/router-core': 1.136.17
       '@tanstack/router-utils': 1.133.19
       '@tanstack/virtual-file-routes': 1.133.19
       prettier: 3.6.2
@@ -4450,7 +4440,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@tanstack/router-plugin@1.136.11(vite-plugin-solid@2.11.10(solid-js@1.9.10)(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6)))(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6))':
+  '@tanstack/router-plugin@1.136.18(vite-plugin-solid@2.11.10(solid-js@1.9.10)(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6)))(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6))':
     dependencies:
       '@babel/core': 7.28.5
       '@babel/plugin-syntax-jsx': 7.27.1(@babel/core@7.28.5)
@@ -4458,8 +4448,8 @@ snapshots:
       '@babel/template': 7.27.2
       '@babel/traverse': 7.28.5
       '@babel/types': 7.28.5
-      '@tanstack/router-core': 1.136.11
-      '@tanstack/router-generator': 1.136.11
+      '@tanstack/router-core': 1.136.17
+      '@tanstack/router-generator': 1.136.17
       '@tanstack/router-utils': 1.133.19
       '@tanstack/virtual-file-routes': 1.133.19
       babel-dead-code-elimination: 1.0.10
@@ -4501,48 +4491,48 @@ snapshots:
       - supports-color
       - vite
 
-  '@tanstack/solid-router@1.136.11(solid-js@1.9.10)':
+  '@tanstack/solid-router@1.136.17(solid-js@1.9.10)':
     dependencies:
       '@solid-devtools/logger': 0.9.11(solid-js@1.9.10)
       '@solid-primitives/refs': 1.1.2(solid-js@1.9.10)
       '@solidjs/meta': 0.29.4(solid-js@1.9.10)
       '@tanstack/history': 1.133.28
-      '@tanstack/router-core': 1.136.11
+      '@tanstack/router-core': 1.136.17
       '@tanstack/solid-store': 0.8.0(solid-js@1.9.10)
       isbot: 5.1.32
       solid-js: 1.9.10
       tiny-invariant: 1.3.3
       tiny-warning: 1.0.3
 
-  '@tanstack/solid-start-client@1.136.11(solid-js@1.9.10)':
+  '@tanstack/solid-start-client@1.136.17(solid-js@1.9.10)':
     dependencies:
-      '@tanstack/router-core': 1.136.11
-      '@tanstack/solid-router': 1.136.11(solid-js@1.9.10)
-      '@tanstack/start-client-core': 1.136.11
+      '@tanstack/router-core': 1.136.17
+      '@tanstack/solid-router': 1.136.17(solid-js@1.9.10)
+      '@tanstack/start-client-core': 1.136.17
       solid-js: 1.9.10
       tiny-invariant: 1.3.3
       tiny-warning: 1.0.3
 
-  '@tanstack/solid-start-server@1.136.11(solid-js@1.9.10)':
+  '@tanstack/solid-start-server@1.136.17(solid-js@1.9.10)':
     dependencies:
       '@solidjs/meta': 0.29.4(solid-js@1.9.10)
       '@tanstack/history': 1.133.28
-      '@tanstack/router-core': 1.136.11
-      '@tanstack/solid-router': 1.136.11(solid-js@1.9.10)
-      '@tanstack/start-client-core': 1.136.11
-      '@tanstack/start-server-core': 1.136.11
+      '@tanstack/router-core': 1.136.17
+      '@tanstack/solid-router': 1.136.17(solid-js@1.9.10)
+      '@tanstack/start-client-core': 1.136.17
+      '@tanstack/start-server-core': 1.136.17
       solid-js: 1.9.10
     transitivePeerDependencies:
       - crossws
 
-  '@tanstack/solid-start@1.136.11(solid-js@1.9.10)(vite-plugin-solid@2.11.10(solid-js@1.9.10)(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6)))(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6))':
+  '@tanstack/solid-start@1.137.0(solid-js@1.9.10)(vite-plugin-solid@2.11.10(solid-js@1.9.10)(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6)))(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6))':
     dependencies:
-      '@tanstack/solid-router': 1.136.11(solid-js@1.9.10)
-      '@tanstack/solid-start-client': 1.136.11(solid-js@1.9.10)
-      '@tanstack/solid-start-server': 1.136.11(solid-js@1.9.10)
-      '@tanstack/start-client-core': 1.136.11
-      '@tanstack/start-plugin-core': 1.136.11(vite-plugin-solid@2.11.10(solid-js@1.9.10)(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6)))(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6))
-      '@tanstack/start-server-core': 1.136.11
+      '@tanstack/solid-router': 1.136.17(solid-js@1.9.10)
+      '@tanstack/solid-start-client': 1.136.17(solid-js@1.9.10)
+      '@tanstack/solid-start-server': 1.136.17(solid-js@1.9.10)
+      '@tanstack/start-client-core': 1.136.17
+      '@tanstack/start-plugin-core': 1.137.0(vite-plugin-solid@2.11.10(solid-js@1.9.10)(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6)))(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6))
+      '@tanstack/start-server-core': 1.136.17
       pathe: 2.0.3
       solid-js: 1.9.10
       vite: 7.2.2(lightningcss@1.25.1)(tsx@4.20.6)
@@ -4559,27 +4549,27 @@ snapshots:
       '@tanstack/store': 0.8.0
       solid-js: 1.9.10
 
-  '@tanstack/start-client-core@1.136.11':
+  '@tanstack/start-client-core@1.136.17':
     dependencies:
-      '@tanstack/router-core': 1.136.11
-      '@tanstack/start-storage-context': 1.136.11
+      '@tanstack/router-core': 1.136.17
+      '@tanstack/start-storage-context': 1.136.17
       seroval: 1.3.2
       tiny-invariant: 1.3.3
       tiny-warning: 1.0.3
 
-  '@tanstack/start-plugin-core@1.136.11(vite-plugin-solid@2.11.10(solid-js@1.9.10)(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6)))(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6))':
+  '@tanstack/start-plugin-core@1.137.0(vite-plugin-solid@2.11.10(solid-js@1.9.10)(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6)))(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6))':
     dependencies:
       '@babel/code-frame': 7.26.2
       '@babel/core': 7.28.5
       '@babel/types': 7.28.5
       '@rolldown/pluginutils': 1.0.0-beta.40
-      '@tanstack/router-core': 1.136.11
-      '@tanstack/router-generator': 1.136.11
-      '@tanstack/router-plugin': 1.136.11(vite-plugin-solid@2.11.10(solid-js@1.9.10)(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6)))(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6))
+      '@tanstack/router-core': 1.136.17
+      '@tanstack/router-generator': 1.136.17
+      '@tanstack/router-plugin': 1.136.18(vite-plugin-solid@2.11.10(solid-js@1.9.10)(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6)))(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6))
       '@tanstack/router-utils': 1.133.19
       '@tanstack/server-functions-plugin': 1.134.5(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6))
-      '@tanstack/start-client-core': 1.136.11
-      '@tanstack/start-server-core': 1.136.11
+      '@tanstack/start-client-core': 1.136.17
+      '@tanstack/start-server-core': 1.136.17
       babel-dead-code-elimination: 1.0.10
       cheerio: 1.1.2
       exsolve: 1.0.8
@@ -4589,7 +4579,7 @@ snapshots:
       ufo: 1.6.1
       vite: 7.2.2(lightningcss@1.25.1)(tsx@4.20.6)
       vitefu: 1.1.1(vite@7.2.2(lightningcss@1.25.1)(tsx@4.20.6))
-      xmlbuilder2: 3.1.1
+      xmlbuilder2: 4.0.0
       zod: 3.25.76
     transitivePeerDependencies:
       - '@rsbuild/core'
@@ -4599,21 +4589,21 @@ snapshots:
       - vite-plugin-solid
       - webpack
 
-  '@tanstack/start-server-core@1.136.11':
+  '@tanstack/start-server-core@1.136.17':
     dependencies:
       '@tanstack/history': 1.133.28
-      '@tanstack/router-core': 1.136.11
-      '@tanstack/start-client-core': 1.136.11
-      '@tanstack/start-storage-context': 1.136.11
+      '@tanstack/router-core': 1.136.17
+      '@tanstack/start-client-core': 1.136.17
+      '@tanstack/start-storage-context': 1.136.17
       h3-v2: h3@2.0.0-beta.4
       seroval: 1.3.2
       tiny-invariant: 1.3.3
     transitivePeerDependencies:
       - crossws
 
-  '@tanstack/start-storage-context@1.136.11':
+  '@tanstack/start-storage-context@1.136.17':
     dependencies:
-      '@tanstack/router-core': 1.136.11
+      '@tanstack/router-core': 1.136.17
 
   '@tanstack/store@0.8.0': {}
 
@@ -5917,10 +5907,6 @@ snapshots:
       normalize-path: 3.0.0
       picomatch: 2.3.1
 
-  argparse@1.0.10:
-    dependencies:
-      sprintf-js: 1.0.3
-
   argparse@2.0.1: {}
 
   aria-query@5.3.2: {}
@@ -6849,11 +6835,6 @@ snapshots:
 
   js-tokens@4.0.0: {}
 
-  js-yaml@3.14.1:
-    dependencies:
-      argparse: 1.0.10
-      esprima: 4.0.1
-
   js-yaml@4.1.1:
     dependencies:
       argparse: 2.0.1
@@ -7699,8 +7680,6 @@ snapshots:
 
   source-map@0.7.6: {}
 
-  sprintf-js@1.0.3: {}
-
   srvx@0.8.16: {}
 
   stackback@0.0.2: {}
@@ -8073,12 +8052,12 @@ snapshots:
 
   wordwrapjs@5.1.1: {}
 
-  xmlbuilder2@3.1.1:
+  xmlbuilder2@4.0.0:
     dependencies:
-      '@oozcitak/dom': 1.15.10
-      '@oozcitak/infra': 1.0.8
-      '@oozcitak/util': 8.3.8
-      js-yaml: 3.14.1
+      '@oozcitak/dom': 2.0.1
+      '@oozcitak/infra': 2.0.1
+      '@oozcitak/util': 9.0.4
+      js-yaml: 4.1.1
 
   yallist@3.1.1: {}
 
