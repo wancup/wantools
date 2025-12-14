@@ -19,7 +19,7 @@
     "@solid-primitives/mutation-observer": "1.2.2",
     "@tanstack/solid-router": "1.140.5",
     "@tanstack/solid-start": "1.140.5",
-    "lucide-solid": "0.559.0",
+    "lucide-solid": "0.560.0",
     "solid-js": "1.9.10",
     "ts-pattern": "5.9.0",
     "uuid": "13.0.0",
