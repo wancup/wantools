@@ -32,7 +32,7 @@
     "@eslint/markdown": "7.5.1",
     "@pandacss/dev": "1.7.1",
     "@park-ui/panda-preset": "0.43.1",
-    "@vitest/eslint-plugin": "1.6.3",
+    "@vitest/eslint-plugin": "1.6.4",
     "dprint": "0.50.2",
     "eslint": "9.39.2",
     "eslint-plugin-jsx-a11y": "6.10.2",
