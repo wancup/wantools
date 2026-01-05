@@ -55,8 +55,8 @@ importers:
         specifier: 0.43.1
         version: 0.43.1(@internationalized/date@3.10.0)(@pandacss/dev@1.7.3(typescript@5.9.3))
       '@vitest/eslint-plugin':
-        specifier: 1.6.4
-        version: 1.6.4(eslint@9.39.2)(typescript@5.9.3)(vitest@4.0.16(lightningcss@1.30.2)(tsx@4.21.0))
+        specifier: 1.6.5
+        version: 1.6.5(eslint@9.39.2)(typescript@5.9.3)(vitest@4.0.16(lightningcss@1.30.2)(tsx@4.21.0))
       dprint:
         specifier: 0.50.2
         version: 0.50.2
@@ -1174,8 +1174,8 @@ packages:
     resolution: {integrity: sha512-mM/JRQOzhVN1ykejrvwnBRV3+7yTKK8tVANVN3o1O0t0v7o+jqdVu9crPy5Y9dov15TJk/FTIgoUGHrTOVL3Zg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@vitest/eslint-plugin@1.6.4':
-    resolution: {integrity: sha512-+qw32ux8HMVNrJnQOYgdjrMYmCn9vsiKnJUv5MoOg40e18WOvhWurzHdbRB3vXLfUrP7+jYyQbd6TuRhL23AkQ==}
+  '@vitest/eslint-plugin@1.6.5':
+    resolution: {integrity: sha512-+wKYGmvXQJjq58qBx/AwiZr5bFfMiWBdgHViSQoFW/+wl5MQhJeOGP/3HM7GO7W1+AoiW9Gcyy2Hdwcao4LnfQ==}
     engines: {node: '>=18'}
     peerDependencies:
       eslint: '>=8.57.0'
@@ -4813,7 +4813,7 @@ snapshots:
       '@typescript-eslint/types': 8.51.0
       eslint-visitor-keys: 4.2.1
 
-  '@vitest/eslint-plugin@1.6.4(eslint@9.39.2)(typescript@5.9.3)(vitest@4.0.16(lightningcss@1.30.2)(tsx@4.21.0))':
+  '@vitest/eslint-plugin@1.6.5(eslint@9.39.2)(typescript@5.9.3)(vitest@4.0.16(lightningcss@1.30.2)(tsx@4.21.0))':
     dependencies:
       '@typescript-eslint/scope-manager': 8.51.0
       '@typescript-eslint/utils': 8.51.0(eslint@9.39.2)(typescript@5.9.3)
