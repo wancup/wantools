@@ -17,8 +17,8 @@
   "dependencies": {
     "@ark-ui/solid": "5.27.1",
     "@solid-primitives/mutation-observer": "1.2.2",
-    "@tanstack/solid-router": "1.158.1",
-    "@tanstack/solid-start": "1.158.3",
+    "@tanstack/solid-router": "1.158.4",
+    "@tanstack/solid-start": "1.159.0",
     "lucide-solid": "0.563.0",
     "solid-js": "1.9.11",
     "ts-pattern": "5.9.0",
