@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@eslint/js": "9.39.2",
-    "@eslint/json": "1.0.0",
+    "@eslint/json": "1.0.1",
     "@eslint/markdown": "7.5.1",
     "@pandacss/dev": "1.8.1",
     "@park-ui/panda-preset": "0.43.1",
