@@ -79,8 +79,8 @@ importers:
         specifier: 8.55.0
         version: 8.55.0(eslint@9.39.2)(typescript@5.9.3)
       vite-tsconfig-paths:
-        specifier: 6.1.0
-        version: 6.1.0(typescript@5.9.3)(vite@7.3.1(lightningcss@1.30.2)(tsx@4.21.0))
+        specifier: 6.1.1
+        version: 6.1.1(typescript@5.9.3)(vite@7.3.1(lightningcss@1.30.2)(tsx@4.21.0))
       vitest:
         specifier: 4.0.18
         version: 4.0.18(lightningcss@1.30.2)(tsx@4.21.0)
@@ -3675,8 +3675,8 @@ packages:
       '@testing-library/jest-dom':
         optional: true
 
-  vite-tsconfig-paths@6.1.0:
-    resolution: {integrity: sha512-kpd3sY9glHIDaq4V/Tlc1Y8WaKtutoc3B525GHxEVKWX42FKfQsXvjFOemu1I8VIN8pNbrMLWVTbW79JaRUxKg==}
+  vite-tsconfig-paths@6.1.1:
+    resolution: {integrity: sha512-2cihq7zliibCCZ8P9cKJrQBkfgdvcFkOOc3Y02o3GWUDLgqjWsZudaoiuOwO/gzTzy17cS5F7ZPo4bsnS4DGkg==}
     peerDependencies:
       vite: '*'
 
@@ -8640,7 +8640,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vite-tsconfig-paths@6.1.0(typescript@5.9.3)(vite@7.3.1(lightningcss@1.30.2)(tsx@4.21.0)):
+  vite-tsconfig-paths@6.1.1(typescript@5.9.3)(vite@7.3.1(lightningcss@1.30.2)(tsx@4.21.0)):
     dependencies:
       debug: 4.4.3
       globrex: 0.1.2
