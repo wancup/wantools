@@ -61,13 +61,13 @@ const DirectoryTreeIndexRoute = DirectoryTreeIndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/directory-tree': typeof DirectoryTreeIndexRoute
-  '/keyboard-event': typeof KeyboardEventIndexRoute
-  '/pointer-event': typeof PointerEventIndexRoute
-  '/qr-code': typeof QrCodeIndexRoute
-  '/transition': typeof TransitionIndexRoute
-  '/uri-encoding': typeof UriEncodingIndexRoute
-  '/uuid': typeof UuidIndexRoute
+  '/directory-tree/': typeof DirectoryTreeIndexRoute
+  '/keyboard-event/': typeof KeyboardEventIndexRoute
+  '/pointer-event/': typeof PointerEventIndexRoute
+  '/qr-code/': typeof QrCodeIndexRoute
+  '/transition/': typeof TransitionIndexRoute
+  '/uri-encoding/': typeof UriEncodingIndexRoute
+  '/uuid/': typeof UuidIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -94,13 +94,13 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
-    | '/directory-tree'
-    | '/keyboard-event'
-    | '/pointer-event'
-    | '/qr-code'
-    | '/transition'
-    | '/uri-encoding'
-    | '/uuid'
+    | '/directory-tree/'
+    | '/keyboard-event/'
+    | '/pointer-event/'
+    | '/qr-code/'
+    | '/transition/'
+    | '/uri-encoding/'
+    | '/uuid/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -146,49 +146,49 @@ declare module '@tanstack/solid-router' {
     '/uuid/': {
       id: '/uuid/'
       path: '/uuid'
-      fullPath: '/uuid'
+      fullPath: '/uuid/'
       preLoaderRoute: typeof UuidIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/uri-encoding/': {
       id: '/uri-encoding/'
       path: '/uri-encoding'
-      fullPath: '/uri-encoding'
+      fullPath: '/uri-encoding/'
       preLoaderRoute: typeof UriEncodingIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/transition/': {
       id: '/transition/'
       path: '/transition'
-      fullPath: '/transition'
+      fullPath: '/transition/'
       preLoaderRoute: typeof TransitionIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/qr-code/': {
       id: '/qr-code/'
       path: '/qr-code'
-      fullPath: '/qr-code'
+      fullPath: '/qr-code/'
       preLoaderRoute: typeof QrCodeIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/pointer-event/': {
       id: '/pointer-event/'
       path: '/pointer-event'
-      fullPath: '/pointer-event'
+      fullPath: '/pointer-event/'
       preLoaderRoute: typeof PointerEventIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/keyboard-event/': {
       id: '/keyboard-event/'
       path: '/keyboard-event'
-      fullPath: '/keyboard-event'
+      fullPath: '/keyboard-event/'
       preLoaderRoute: typeof KeyboardEventIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/directory-tree/': {
       id: '/directory-tree/'
       path: '/directory-tree'
-      fullPath: '/directory-tree'
+      fullPath: '/directory-tree/'
       preLoaderRoute: typeof DirectoryTreeIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
