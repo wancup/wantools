@@ -29,7 +29,7 @@
   "devDependencies": {
     "@eslint/js": "9.39.4",
     "@eslint/json": "1.2.0",
-    "@eslint/markdown": "7.5.1",
+    "@eslint/markdown": "8.0.0",
     "@pandacss/dev": "1.9.1",
     "@park-ui/panda-preset": "0.43.1",
     "@vitest/eslint-plugin": "1.6.13",
