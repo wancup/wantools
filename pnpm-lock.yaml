@@ -18,8 +18,8 @@ importers:
         specifier: 1.168.4
         version: 1.168.4(solid-js@1.9.12)
       '@tanstack/solid-start':
-        specifier: 1.167.7
-        version: 1.167.7(solid-js@1.9.12)(vite-plugin-solid@2.11.11(solid-js@1.9.12)(vite@8.0.2(esbuild@0.27.4)(tsx@4.21.0)))(vite@8.0.2(esbuild@0.27.4)(tsx@4.21.0))
+        specifier: 1.167.8
+        version: 1.167.8(solid-js@1.9.12)(vite-plugin-solid@2.11.11(solid-js@1.9.12)(vite@8.0.2(esbuild@0.27.4)(tsx@4.21.0)))(vite@8.0.2(esbuild@0.27.4)(tsx@4.21.0))
       lucide-solid:
         specifier: 1.7.0
         version: 1.7.0(solid-js@1.9.12)
@@ -1059,8 +1059,8 @@ packages:
     peerDependencies:
       solid-js: ^1.0.0
 
-  '@tanstack/solid-start@1.167.7':
-    resolution: {integrity: sha512-6ZB06/FGIMFQmnaSa2106nQYs2MW6Kv1W5dTi4YlJPtXOVS2kZwjO+egRO5rpJMuyA/cIE4XX5xix698kBL7NQ==}
+  '@tanstack/solid-start@1.167.8':
+    resolution: {integrity: sha512-zo5LWNDo3Zr7EaSR0NWecpvRbe0ljvhCqArD+f+TJ4b9fgNGv6m6bIC//OnYDtSfAupCPMVnKTS0DFwlBWNycg==}
     engines: {node: '>=22.12.0'}
     hasBin: true
     peerDependencies:
@@ -4976,7 +4976,7 @@ snapshots:
     transitivePeerDependencies:
       - crossws
 
-  '@tanstack/solid-start@1.167.7(solid-js@1.9.12)(vite-plugin-solid@2.11.11(solid-js@1.9.12)(vite@8.0.2(esbuild@0.27.4)(tsx@4.21.0)))(vite@8.0.2(esbuild@0.27.4)(tsx@4.21.0))':
+  '@tanstack/solid-start@1.167.8(solid-js@1.9.12)(vite-plugin-solid@2.11.11(solid-js@1.9.12)(vite@8.0.2(esbuild@0.27.4)(tsx@4.21.0)))(vite@8.0.2(esbuild@0.27.4)(tsx@4.21.0))':
     dependencies:
       '@tanstack/solid-router': 1.168.4(solid-js@1.9.12)
       '@tanstack/solid-start-client': 1.166.18(solid-js@1.9.12)
