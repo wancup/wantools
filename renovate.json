@@ -8,6 +8,12 @@
   "minimumReleaseAge": "14 days",
   "packageRules": [
     {
+      "matchManagers": [
+        "npm"
+      ],
+      "minimumReleaseAge": "14 days"
+    },
+    {
       "matchUpdateTypes": [
         "pin"
       ],
