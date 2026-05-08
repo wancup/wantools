@@ -18,8 +18,8 @@ importers:
         specifier: 1.168.20
         version: 1.168.20(solid-js@1.9.12)
       '@tanstack/solid-start':
-        specifier: 1.167.38
-        version: 1.167.38(solid-js@1.9.12)(vite-plugin-solid@2.11.12(solid-js@1.9.12)(vite@8.0.10(esbuild@0.27.7)(tsx@4.21.0)))(vite@8.0.10(esbuild@0.27.7)(tsx@4.21.0))
+        specifier: 1.167.40
+        version: 1.167.40(solid-js@1.9.12)(vite-plugin-solid@2.11.12(solid-js@1.9.12)(vite@8.0.10(esbuild@0.27.7)(tsx@4.21.0)))(vite@8.0.10(esbuild@0.27.7)(tsx@4.21.0))
       lucide-solid:
         specifier: 1.11.0
         version: 1.11.0(solid-js@1.9.12)
@@ -1075,8 +1075,8 @@ packages:
     peerDependencies:
       solid-js: ^1.0.0
 
-  '@tanstack/solid-start@1.167.38':
-    resolution: {integrity: sha512-wCNyuMq6UAvdaSFBa9nN5gcdwDRjMYktW3eLaJPh/3MKg+OCqqJH+jYYlxSg5GuYHN1XhqgvYX8X5uXD1S61BA==}
+  '@tanstack/solid-start@1.167.40':
+    resolution: {integrity: sha512-VI6GmcHJ2vdGCH3Mm9SeguPhJ1SOJimEN6jpLrZxM96XLBul+7MyMnrKnvJCBUgVZz/2L48yqquWshhKxFwc+Q==}
     engines: {node: '>=22.12.0'}
     hasBin: true
     peerDependencies:
@@ -1085,6 +1085,8 @@ packages:
       vite: '>=7.0.0'
     peerDependenciesMeta:
       '@rsbuild/core':
+        optional: true
+      vite:
         optional: true
 
   '@tanstack/start-client-core@1.167.17':
@@ -1096,14 +1098,16 @@ packages:
     resolution: {integrity: sha512-Y6QSlGiLga8cHfvxGGaonXIlt2bIUTVdH6AMjmpMp7+ANNCp+N96GQbjjhLye3JkaxDfP68x5iZA8NK4imgRig==}
     engines: {node: '>=22.12.0'}
 
-  '@tanstack/start-plugin-core@1.168.0':
-    resolution: {integrity: sha512-+pxvYYD6othWDuIKqXgi+yHx1i3iQYD2wWa0m0gKmuOmDQecA9laMJZGOjETREmQrHvUzXixwIbEnXlLv8Nlzg==}
+  '@tanstack/start-plugin-core@1.169.1':
+    resolution: {integrity: sha512-86epI7c5aMs8ANEzkZhk+0+bw3k7Zl5lbLjUrIJj1xNIv2KvYjcbS7jqJ8+FLuvoDHofRAcNzQSsuBydUVLrNg==}
     engines: {node: '>=22.12.0'}
     peerDependencies:
       '@rsbuild/core': ^2.0.0
       vite: '>=7.0.0'
     peerDependenciesMeta:
       '@rsbuild/core':
+        optional: true
+      vite:
         optional: true
 
   '@tanstack/start-server-core@1.167.19':
@@ -5032,16 +5036,17 @@ snapshots:
     transitivePeerDependencies:
       - crossws
 
-  '@tanstack/solid-start@1.167.38(solid-js@1.9.12)(vite-plugin-solid@2.11.12(solid-js@1.9.12)(vite@8.0.10(esbuild@0.27.7)(tsx@4.21.0)))(vite@8.0.10(esbuild@0.27.7)(tsx@4.21.0))':
+  '@tanstack/solid-start@1.167.40(solid-js@1.9.12)(vite-plugin-solid@2.11.12(solid-js@1.9.12)(vite@8.0.10(esbuild@0.27.7)(tsx@4.21.0)))(vite@8.0.10(esbuild@0.27.7)(tsx@4.21.0))':
     dependencies:
       '@tanstack/solid-router': 1.168.20(solid-js@1.9.12)
       '@tanstack/solid-start-client': 1.166.36(solid-js@1.9.12)
       '@tanstack/solid-start-server': 1.166.37(solid-js@1.9.12)
       '@tanstack/start-client-core': 1.167.17
-      '@tanstack/start-plugin-core': 1.168.0(vite-plugin-solid@2.11.12(solid-js@1.9.12)(vite@8.0.10(esbuild@0.27.7)(tsx@4.21.0)))(vite@8.0.10(esbuild@0.27.7)(tsx@4.21.0))
+      '@tanstack/start-plugin-core': 1.169.1(vite-plugin-solid@2.11.12(solid-js@1.9.12)(vite@8.0.10(esbuild@0.27.7)(tsx@4.21.0)))(vite@8.0.10(esbuild@0.27.7)(tsx@4.21.0))
       '@tanstack/start-server-core': 1.167.19
       pathe: 2.0.3
       solid-js: 1.9.12
+    optionalDependencies:
       vite: 8.0.10(esbuild@0.27.7)(tsx@4.21.0)
     transitivePeerDependencies:
       - '@tanstack/react-router'
@@ -5059,7 +5064,7 @@ snapshots:
 
   '@tanstack/start-fn-stubs@1.161.6': {}
 
-  '@tanstack/start-plugin-core@1.168.0(vite-plugin-solid@2.11.12(solid-js@1.9.12)(vite@8.0.10(esbuild@0.27.7)(tsx@4.21.0)))(vite@8.0.10(esbuild@0.27.7)(tsx@4.21.0))':
+  '@tanstack/start-plugin-core@1.169.1(vite-plugin-solid@2.11.12(solid-js@1.9.12)(vite@8.0.10(esbuild@0.27.7)(tsx@4.21.0)))(vite@8.0.10(esbuild@0.27.7)(tsx@4.21.0))':
     dependencies:
       '@babel/code-frame': 7.27.1
       '@babel/core': 7.29.0
@@ -5080,10 +5085,11 @@ snapshots:
       srvx: 0.11.15
       tinyglobby: 0.2.16
       ufo: 1.6.4
-      vite: 8.0.10(esbuild@0.27.7)(tsx@4.21.0)
       vitefu: 1.1.3(vite@8.0.10(esbuild@0.27.7)(tsx@4.21.0))
       xmlbuilder2: 4.0.3
       zod: 3.25.76
+    optionalDependencies:
+      vite: 8.0.10(esbuild@0.27.7)(tsx@4.21.0)
     transitivePeerDependencies:
       - '@tanstack/react-router'
       - crossws
