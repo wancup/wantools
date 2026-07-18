@@ -12,8 +12,8 @@ importers:
         specifier: 5.27.1
         version: 5.27.1(solid-js@1.9.14)
       '@solid-primitives/mutation-observer':
-        specifier: 1.2.3
-        version: 1.2.3(solid-js@1.9.14)
+        specifier: 1.2.4
+        version: 1.2.4(solid-js@1.9.14)
       '@tanstack/solid-router':
         specifier: 1.170.17
         version: 1.170.17(solid-js@1.9.14)
@@ -783,8 +783,8 @@ packages:
     peerDependencies:
       solid-js: ^1.6.12
 
-  '@solid-primitives/mutation-observer@1.2.3':
-    resolution: {integrity: sha512-p69O/zwvR7fCT87KGN3hkDfsZyWAJH+bsCZrdmWHcM5/8lg1Ndh7NjxXX1G1Ugk6ru/Bx6MvSppbbfkdBlwzgQ==}
+  '@solid-primitives/mutation-observer@1.2.4':
+    resolution: {integrity: sha512-CVKOLDj09ZLoN9Hq+o5BTNVBCVM1vKcpRhaZnvpSuXguQBaAz75R8nkaEhkIdMcpENueLivPIJbUqAA1BAaOGw==}
     peerDependencies:
       solid-js: ^1.6.12
 
@@ -4482,7 +4482,7 @@ snapshots:
     dependencies:
       solid-js: 1.9.14
 
-  '@solid-primitives/mutation-observer@1.2.3(solid-js@1.9.14)':
+  '@solid-primitives/mutation-observer@1.2.4(solid-js@1.9.14)':
     dependencies:
       '@solid-primitives/utils': 6.4.1(solid-js@1.9.14)
       solid-js: 1.9.14
