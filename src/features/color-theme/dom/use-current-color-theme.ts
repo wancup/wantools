@@ -1,71 +1,62 @@
-import { createMutationObserver } from "@solid-primitives/mutation-observer";
-import { type Accessor, createSignal, onMount } from "solid-js";
-import { match } from "ts-pattern";
-import { COLOR_THEME_OPTION, STORAGE_KEY } from "~/config";
+import { type Accessor, createSignal, onCleanup, onMount } from "solid-js";
+import { STORAGE_KEY } from "~/config";
+import { parseThemeOption, resolveThemeColor } from "../logic/color-theme";
 import { type ColorTheme, type ColorThemeOption } from "../types/color-theme-type";
 
-type ColorThemeSetter = (t: string) => ColorTheme;
+const [themeOption, setThemeOption] = createSignal<ColorThemeOption>("system");
+const [prefersDark, setPrefersDark] = createSignal(false);
 
-const [_theme, _setTheme] = createSignal<ColorTheme>("dark");
-const [_themeOption, _setThemeOption] = createSignal<ColorThemeOption>("system");
-
-function parseThemeOption(theme: string | null): ColorThemeOption {
-  return match(theme)
-    .with(COLOR_THEME_OPTION.dark, () => (COLOR_THEME_OPTION.dark))
-    .with(COLOR_THEME_OPTION.light, () => COLOR_THEME_OPTION.light)
-    .otherwise(() => COLOR_THEME_OPTION.system);
-}
-
-function convertThemeColor(option: ColorThemeOption): ColorTheme {
-  return match(option)
-    .with("system", () => {
-      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        return COLOR_THEME_OPTION.dark;
-      } else {
-        return COLOR_THEME_OPTION.light;
-      }
-    })
-    .otherwise((t) => t);
+function applyThemeOption(option: ColorThemeOption): void {
+  if (option === "system") {
+    delete document.documentElement.dataset.huiColorScheme;
+  } else {
+    document.documentElement.dataset.huiColorScheme = option;
+  }
 }
 
 export function useCurrentThemeColor(): {
   colorTheme: Accessor<ColorTheme>;
   colorThemeOption: Accessor<ColorThemeOption>;
-  setColorThemeOption: ColorThemeSetter;
+  setColorThemeOption: (value: string) => ColorTheme;
 } {
   onMount(() => {
-    const storedTheme = localStorage.getItem(STORAGE_KEY.colorTheme);
-    const option = parseThemeOption(storedTheme);
-    const theme = convertThemeColor(option);
+    let storedTheme: string | null = null;
+    try {
+      storedTheme = localStorage.getItem(STORAGE_KEY.colorTheme);
+    } catch {
+      // Follow the system preference when storage is unavailable.
+    }
 
-    _setThemeOption(option);
-    _setTheme(theme);
+    const option = parseThemeOption(storedTheme);
+    const media = window.matchMedia("(prefers-color-scheme: dark)");
+    setPrefersDark(media.matches);
+    setThemeOption(option);
+    applyThemeOption(option);
+
+    const handleChange = (event: MediaQueryListEvent): void => {
+      setPrefersDark(event.matches);
+    };
+    media.addEventListener("change", handleChange);
+    onCleanup(() => {
+      media.removeEventListener("change", handleChange);
+    });
   });
 
-  createMutationObserver(
-    () => document.documentElement,
-    { attributes: true, attributeFilter: ["class"] },
-    () => {
-      const isLight = document.documentElement.classList.contains(COLOR_THEME_OPTION.light);
-      const theme = isLight ? COLOR_THEME_OPTION.light : COLOR_THEME_OPTION.dark;
-      _setTheme(theme);
-    },
-  );
-
-  const setThemeOption: ColorThemeSetter = (newVal) => {
-    const option = parseThemeOption(newVal);
-    const themeClass = convertThemeColor(option);
-    document.documentElement.classList.remove(COLOR_THEME_OPTION.dark, COLOR_THEME_OPTION.light);
-    document.documentElement.classList.add(themeClass);
-    localStorage.setItem(STORAGE_KEY.colorTheme, option);
-    _setThemeOption(option);
-
-    return themeClass;
+  const setColorThemeOption = (value: string): ColorTheme => {
+    const option = parseThemeOption(value);
+    setThemeOption(option);
+    applyThemeOption(option);
+    try {
+      localStorage.setItem(STORAGE_KEY.colorTheme, option);
+    } catch {
+      // Apply the preference even when it cannot be persisted.
+    }
+    return resolveThemeColor(option, prefersDark());
   };
 
   return {
-    colorTheme: _theme,
-    colorThemeOption: _themeOption,
-    setColorThemeOption: setThemeOption,
+    colorTheme: () => resolveThemeColor(themeOption(), prefersDark()),
+    colorThemeOption: themeOption,
+    setColorThemeOption,
   };
 }

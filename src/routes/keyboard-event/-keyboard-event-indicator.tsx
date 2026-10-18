@@ -1,4 +1,4 @@
-import { css } from "$panda/css";
+import { Dl } from "@hebium-ui/solid";
 import { type JSX } from "solid-js";
 
 interface KeyboardEventIndicatorProps {
@@ -7,25 +7,25 @@ interface KeyboardEventIndicatorProps {
 
 export function KeyboardEventIndicator(props: KeyboardEventIndicatorProps): JSX.Element {
   return (
-    <dl class={css({ display: "grid", gridTemplateColumns: "min-content auto", columnGap: "1rem" })}>
-      <dt>key</dt>
-      <dd>{props.event?.key}</dd>
-      <dt>code</dt>
-      <dd>{props.event?.code}</dd>
-      <dt>altKey</dt>
-      <dd>{props.event?.altKey.toString()}</dd>
-      <dt>ctrlKey</dt>
-      <dd>{props.event?.ctrlKey.toString()}</dd>
-      <dt>metaKey</dt>
-      <dd>{props.event?.metaKey.toString()}</dd>
-      <dt>shiftKey</dt>
-      <dd>{props.event?.shiftKey.toString()}</dd>
-      <dt>isComposing</dt>
-      <dd>{props.event?.isComposing.toString()}</dd>
-      <dt>location</dt>
-      <dd>{props.event?.location}</dd>
-      <dt>repeat</dt>
-      <dd>{props.event?.repeat.toString()}</dd>
-    </dl>
+    <Dl>
+      <Dl.Dt>key</Dl.Dt>
+      <Dl.Dd>{props.event?.key}</Dl.Dd>
+      <Dl.Dt>code</Dl.Dt>
+      <Dl.Dd>{props.event?.code}</Dl.Dd>
+      <Dl.Dt>altKey</Dl.Dt>
+      <Dl.Dd>{props.event?.altKey.toString()}</Dl.Dd>
+      <Dl.Dt>ctrlKey</Dl.Dt>
+      <Dl.Dd>{props.event?.ctrlKey.toString()}</Dl.Dd>
+      <Dl.Dt>metaKey</Dl.Dt>
+      <Dl.Dd>{props.event?.metaKey.toString()}</Dl.Dd>
+      <Dl.Dt>shiftKey</Dl.Dt>
+      <Dl.Dd>{props.event?.shiftKey.toString()}</Dl.Dd>
+      <Dl.Dt>isComposing</Dl.Dt>
+      <Dl.Dd>{props.event?.isComposing.toString()}</Dl.Dd>
+      <Dl.Dt>location</Dl.Dt>
+      <Dl.Dd>{props.event?.location}</Dl.Dd>
+      <Dl.Dt>repeat</Dl.Dt>
+      <Dl.Dd>{props.event?.repeat.toString()}</Dl.Dd>
+    </Dl>
   );
 }

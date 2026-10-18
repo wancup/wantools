@@ -8,7 +8,6 @@
   "excludes": [
     "**/node_modules",
     "**/*.svg",
-    "park-ui",
     "pnpm-lock.yaml",
     "./src/routeTree.gen.ts"
   ],

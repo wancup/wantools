@@ -1,4 +1,5 @@
 import { css } from "$panda/css";
+import { Anchor } from "@hebium-ui/solid";
 import { Link } from "@tanstack/solid-router";
 import { For, type JSX } from "solid-js";
 import { PAGES } from "~/config";
@@ -14,24 +15,27 @@ export function SidebarContent(): JSX.Element {
             {(page) => {
               return (
                 <li>
-                  <Link
+                  <Anchor
+                    as={Link}
                     to={page.path}
+                    color="neutral"
+                    decoration="none"
                     class={css({
                       display: "block",
                       padding: "8px 16px",
                       whiteSpace: "nowrap",
-                      borderRadius: "l2",
+                      borderRadius: "calc(1em * var(--hui-radius-ratio-base))",
                       _hover: {
-                        color: "colorPalette.text",
-                        background: "bg.emphasized",
+                        color: "var(--hui-color-accent)",
+                        background: "var(--hui-color-bg-section)",
                       },
                       _currentPage: {
-                        color: "colorPalette.text",
+                        color: "var(--hui-color-accent)",
                       },
                     })}
                   >
                     {page.name}
-                  </Link>
+                  </Anchor>
                 </li>
               );
             }}

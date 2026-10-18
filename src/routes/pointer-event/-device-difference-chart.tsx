@@ -1,5 +1,5 @@
 import { css } from "$panda/css";
-import { Table } from "$park/table";
+import { Section, Table } from "@hebium-ui/solid";
 import { createSignal, type JSX } from "solid-js";
 
 function toPositionStr(e: TouchEvent | MouseEvent | undefined): string {
@@ -46,13 +46,12 @@ export function DeviceDifferenceChart(): JSX.Element {
 
   return (
     <>
-      {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
-      <div
+      <Section
+        bg="box"
         class={css({
           width: "clamp(160px, 60%, 320px)",
           aspectRatio: "2/1",
           margin: "0 auto 1rem",
-          background: "gray.10",
         })}
         onPointerEnter={(e) => {
           setPointerEnterEvent(e);
@@ -87,14 +86,12 @@ export function DeviceDifferenceChart(): JSX.Element {
         onPointerOver={(e) => {
           setPointerOverEvent(e);
         }}
-        // eslint-disable-next-line jsx-a11y/mouse-events-have-key-events
         onMouseOver={(e) => {
           setMouseOverEvent(e);
         }}
         onPointerOut={(e) => {
           setPointerOutEvent(e);
         }}
-        // eslint-disable-next-line jsx-a11y/mouse-events-have-key-events
         onMouseOut={(e) => {
           setMouseOutEvent(e);
         }}
@@ -114,132 +111,61 @@ export function DeviceDifferenceChart(): JSX.Element {
             backgroundImage: "repeating-linear-gradient(-45deg, rgba(1,1,1,0.3) 0 5%, rgba(1,1,1,0.8) 5% 10%)",
           })}
         />
-      </div>
-      <Table.Root size="sm">
-        <Table.Head>
-          <Table.Row>
-            <Table.Header>
-              Event Name
-            </Table.Header>
-            <Table.Header>
-              Pointer
-            </Table.Header>
-            <Table.Header>
-              Mouse
-            </Table.Header>
-            <Table.Header>
-              Touch
-            </Table.Header>
-          </Table.Row>
-        </Table.Head>
-
-        <Table.Body>
-          <Table.Row>
-            <Table.Cell>
-              enter
-            </Table.Cell>
-            <Table.Cell>
-              {toPositionStr(pointerEnterEvent())}
-            </Table.Cell>
-            <Table.Cell>
-              {toPositionStr(mouseEnterEvent())}
-            </Table.Cell>
-            <Table.Cell>
-              -
-            </Table.Cell>
-          </Table.Row>
-
-          <Table.Row>
-            <Table.Cell>
-              leave
-            </Table.Cell>
-            <Table.Cell>
-              {toPositionStr(pointerLeaveEvent())}
-            </Table.Cell>
-            <Table.Cell>
-              {toPositionStr(mouseLeaveEvent())}
-            </Table.Cell>
-            <Table.Cell>
-              -
-            </Table.Cell>
-          </Table.Row>
-
-          <Table.Row>
-            <Table.Cell>
-              over
-            </Table.Cell>
-            <Table.Cell>
-              {toPositionStr(pointerOverEvent())}
-            </Table.Cell>
-            <Table.Cell>
-              {toPositionStr(mouseOverEvent())}
-            </Table.Cell>
-            <Table.Cell>
-              -
-            </Table.Cell>
-          </Table.Row>
-
-          <Table.Row>
-            <Table.Cell>
-              out
-            </Table.Cell>
-            <Table.Cell>
-              {toPositionStr(pointerOutEvent())}
-            </Table.Cell>
-            <Table.Cell>
-              {toPositionStr(mouseOutEvent())}
-            </Table.Cell>
-            <Table.Cell>
-              -
-            </Table.Cell>
-          </Table.Row>
-
-          <Table.Row>
-            <Table.Cell>
-              down / start
-            </Table.Cell>
-            <Table.Cell>
-              {toPositionStr(pointerDownEvent())}
-            </Table.Cell>
-            <Table.Cell>
-              {toPositionStr(mouseDownEvent())}
-            </Table.Cell>
-            <Table.Cell>
-              {toPositionStr(touchStartEvent())}
-            </Table.Cell>
-          </Table.Row>
-
-          <Table.Row>
-            <Table.Cell>
-              up / end
-            </Table.Cell>
-            <Table.Cell>
-              {toPositionStr(pointerUpEvent())}
-            </Table.Cell>
-            <Table.Cell>
-              {toPositionStr(mouseUpEvent())}
-            </Table.Cell>
-            <Table.Cell>
-              {toPositionStr(touchEndEvent())}
-            </Table.Cell>
-          </Table.Row>
-
-          <Table.Row>
-            <Table.Cell>
-              cancel
-            </Table.Cell>
-            <Table.Cell>
-              {toPositionStr(pointerCancelEvent())}
-            </Table.Cell>
-            <Table.Cell>
-              -
-            </Table.Cell>
-            <Table.Cell>
-              {toPositionStr(touchCancelEvent())}
-            </Table.Cell>
-          </Table.Row>
-        </Table.Body>
-      </Table.Root>
+      </Section>
+      <Table class={css({ width: "100%" })}>
+        <Table.Thead>
+          <Table.Tr>
+            <Table.Th scope="col">Event Name</Table.Th>
+            <Table.Th scope="col">Pointer</Table.Th>
+            <Table.Th scope="col">Mouse</Table.Th>
+            <Table.Th scope="col">Touch</Table.Th>
+          </Table.Tr>
+        </Table.Thead>
+        <Table.Tbody>
+          <Table.Tr>
+            <Table.Th scope="row">enter</Table.Th>
+            <Table.Td>{toPositionStr(pointerEnterEvent())}</Table.Td>
+            <Table.Td>{toPositionStr(mouseEnterEvent())}</Table.Td>
+            <Table.Td>-</Table.Td>
+          </Table.Tr>
+          <Table.Tr>
+            <Table.Th scope="row">leave</Table.Th>
+            <Table.Td>{toPositionStr(pointerLeaveEvent())}</Table.Td>
+            <Table.Td>{toPositionStr(mouseLeaveEvent())}</Table.Td>
+            <Table.Td>-</Table.Td>
+          </Table.Tr>
+          <Table.Tr>
+            <Table.Th scope="row">over</Table.Th>
+            <Table.Td>{toPositionStr(pointerOverEvent())}</Table.Td>
+            <Table.Td>{toPositionStr(mouseOverEvent())}</Table.Td>
+            <Table.Td>-</Table.Td>
+          </Table.Tr>
+          <Table.Tr>
+            <Table.Th scope="row">out</Table.Th>
+            <Table.Td>{toPositionStr(pointerOutEvent())}</Table.Td>
+            <Table.Td>{toPositionStr(mouseOutEvent())}</Table.Td>
+            <Table.Td>-</Table.Td>
+          </Table.Tr>
+          <Table.Tr>
+            <Table.Th scope="row">down / start</Table.Th>
+            <Table.Td>{toPositionStr(pointerDownEvent())}</Table.Td>
+            <Table.Td>{toPositionStr(mouseDownEvent())}</Table.Td>
+            <Table.Td>{toPositionStr(touchStartEvent())}</Table.Td>
+          </Table.Tr>
+          <Table.Tr>
+            <Table.Th scope="row">up / end</Table.Th>
+            <Table.Td>{toPositionStr(pointerUpEvent())}</Table.Td>
+            <Table.Td>{toPositionStr(mouseUpEvent())}</Table.Td>
+            <Table.Td>{toPositionStr(touchEndEvent())}</Table.Td>
+          </Table.Tr>
+          <Table.Tr border="none">
+            <Table.Th scope="row">cancel</Table.Th>
+            <Table.Td>{toPositionStr(pointerCancelEvent())}</Table.Td>
+            <Table.Td>-</Table.Td>
+            <Table.Td>{toPositionStr(touchCancelEvent())}</Table.Td>
+          </Table.Tr>
+        </Table.Tbody>
+      </Table>
     </>
   );
 }

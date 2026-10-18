@@ -10,42 +10,22 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as UuidIndexRouteImport } from './routes/uuid/index'
-import { Route as UriEncodingIndexRouteImport } from './routes/uri-encoding/index'
-import { Route as TransitionIndexRouteImport } from './routes/transition/index'
-import { Route as QrCodeIndexRouteImport } from './routes/qr-code/index'
-import { Route as PointerEventIndexRouteImport } from './routes/pointer-event/index'
-import { Route as KeyboardEventIndexRouteImport } from './routes/keyboard-event/index'
 import { Route as DirectoryTreeIndexRouteImport } from './routes/directory-tree/index'
+import { Route as KeyboardEventIndexRouteImport } from './routes/keyboard-event/index'
+import { Route as PointerEventIndexRouteImport } from './routes/pointer-event/index'
+import { Route as QrCodeIndexRouteImport } from './routes/qr-code/index'
+import { Route as TransitionIndexRouteImport } from './routes/transition/index'
+import { Route as UriEncodingIndexRouteImport } from './routes/uri-encoding/index'
+import { Route as UuidIndexRouteImport } from './routes/uuid/index'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const UuidIndexRoute = UuidIndexRouteImport.update({
-  id: '/uuid/',
-  path: '/uuid/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const UriEncodingIndexRoute = UriEncodingIndexRouteImport.update({
-  id: '/uri-encoding/',
-  path: '/uri-encoding/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TransitionIndexRoute = TransitionIndexRouteImport.update({
-  id: '/transition/',
-  path: '/transition/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const QrCodeIndexRoute = QrCodeIndexRouteImport.update({
-  id: '/qr-code/',
-  path: '/qr-code/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PointerEventIndexRoute = PointerEventIndexRouteImport.update({
-  id: '/pointer-event/',
-  path: '/pointer-event/',
+const DirectoryTreeIndexRoute = DirectoryTreeIndexRouteImport.update({
+  id: '/directory-tree/',
+  path: '/directory-tree/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const KeyboardEventIndexRoute = KeyboardEventIndexRouteImport.update({
@@ -53,9 +33,29 @@ const KeyboardEventIndexRoute = KeyboardEventIndexRouteImport.update({
   path: '/keyboard-event/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const DirectoryTreeIndexRoute = DirectoryTreeIndexRouteImport.update({
-  id: '/directory-tree/',
-  path: '/directory-tree/',
+const PointerEventIndexRoute = PointerEventIndexRouteImport.update({
+  id: '/pointer-event/',
+  path: '/pointer-event/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const QrCodeIndexRoute = QrCodeIndexRouteImport.update({
+  id: '/qr-code/',
+  path: '/qr-code/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TransitionIndexRoute = TransitionIndexRouteImport.update({
+  id: '/transition/',
+  path: '/transition/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UriEncodingIndexRoute = UriEncodingIndexRouteImport.update({
+  id: '/uri-encoding/',
+  path: '/uri-encoding/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UuidIndexRoute = UuidIndexRouteImport.update({
+  id: '/uuid/',
+  path: '/uuid/',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -143,39 +143,11 @@ declare module '@tanstack/solid-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/uuid/': {
-      id: '/uuid/'
-      path: '/uuid'
-      fullPath: '/uuid/'
-      preLoaderRoute: typeof UuidIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/uri-encoding/': {
-      id: '/uri-encoding/'
-      path: '/uri-encoding'
-      fullPath: '/uri-encoding/'
-      preLoaderRoute: typeof UriEncodingIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/transition/': {
-      id: '/transition/'
-      path: '/transition'
-      fullPath: '/transition/'
-      preLoaderRoute: typeof TransitionIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/qr-code/': {
-      id: '/qr-code/'
-      path: '/qr-code'
-      fullPath: '/qr-code/'
-      preLoaderRoute: typeof QrCodeIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/pointer-event/': {
-      id: '/pointer-event/'
-      path: '/pointer-event'
-      fullPath: '/pointer-event/'
-      preLoaderRoute: typeof PointerEventIndexRouteImport
+    '/directory-tree/': {
+      id: '/directory-tree/'
+      path: '/directory-tree'
+      fullPath: '/directory-tree/'
+      preLoaderRoute: typeof DirectoryTreeIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/keyboard-event/': {
@@ -185,11 +157,39 @@ declare module '@tanstack/solid-router' {
       preLoaderRoute: typeof KeyboardEventIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/directory-tree/': {
-      id: '/directory-tree/'
-      path: '/directory-tree'
-      fullPath: '/directory-tree/'
-      preLoaderRoute: typeof DirectoryTreeIndexRouteImport
+    '/pointer-event/': {
+      id: '/pointer-event/'
+      path: '/pointer-event'
+      fullPath: '/pointer-event/'
+      preLoaderRoute: typeof PointerEventIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/qr-code/': {
+      id: '/qr-code/'
+      path: '/qr-code'
+      fullPath: '/qr-code/'
+      preLoaderRoute: typeof QrCodeIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/transition/': {
+      id: '/transition/'
+      path: '/transition'
+      fullPath: '/transition/'
+      preLoaderRoute: typeof TransitionIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/uri-encoding/': {
+      id: '/uri-encoding/'
+      path: '/uri-encoding'
+      fullPath: '/uri-encoding/'
+      preLoaderRoute: typeof UriEncodingIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/uuid/': {
+      id: '/uuid/'
+      path: '/uuid'
+      fullPath: '/uuid/'
+      preLoaderRoute: typeof UuidIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
   }

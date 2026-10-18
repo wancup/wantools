@@ -1,5 +1,5 @@
 import { css } from "$panda/css";
-import { Heading } from "$park/heading";
+import { Heading } from "@hebium-ui/solid";
 import { createFileRoute } from "@tanstack/solid-router";
 import type { JSX } from "solid-js";
 import { Container } from "~/components";
@@ -21,16 +21,15 @@ export const Route = createFileRoute("/uri-encoding/")({
 function RouteComponent(): JSX.Element {
   return (
     <Container>
-      <Heading as="h1" size="xl" class={css({ marginBottom: "1rem" })}>
+      <Heading level={1} class={css({ marginBottom: "1rem" })}>
         {CURRENT_PAGE.name}
       </Heading>
-      <Heading as="h2" size="lg" class={css({ marginBottom: "1rem" })}>
+      <Heading level={2} class={css({ marginBottom: "1rem" })}>
         encodeURI()
       </Heading>
       <UriConverter placeholder={SAMPLE_URI} type="uri" />
       <Heading
-        as="h2"
-        size="lg"
+        level={2}
         class={css({ marginTop: "3rem", marginBottom: "1rem" })}
       >
         encodeURIComponent()

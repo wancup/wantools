@@ -1,4 +1,5 @@
 import { css } from "$panda/css";
+import { Dl, Section } from "@hebium-ui/solid";
 import { createSignal, type JSX } from "solid-js";
 
 function toPositionStr(e: PointerEvent | undefined, key: "page" | "client" | "offset" | "screen"): string {
@@ -14,27 +15,27 @@ export function PointerEventChecker(): JSX.Element {
 
   return (
     <>
-      <div
+      <Section
+        bg="box"
         class={css({
           width: "clamp(5rem, 20%, 10rem)",
           aspectRatio: "1/1",
-          background: "gray.10",
           margin: "0 auto 0.5rem",
         })}
         onPointerMove={(e) => {
           setPointerMoveEvent(e);
         }}
       />
-      <dl class={css({ display: "grid", gridTemplateColumns: "min-content auto", columnGap: "1rem" })}>
-        <dt>pageXY</dt>
-        <dd>{toPositionStr(mousePointerEvent(), "page")}</dd>
-        <dt>clientXY</dt>
-        <dd>{toPositionStr(mousePointerEvent(), "client")}</dd>
-        <dt>offsetXY</dt>
-        <dd>{toPositionStr(mousePointerEvent(), "offset")}</dd>
-        <dt>screenXY</dt>
-        <dd>{toPositionStr(mousePointerEvent(), "screen")}</dd>
-      </dl>
+      <Dl>
+        <Dl.Dt>pageXY</Dl.Dt>
+        <Dl.Dd>{toPositionStr(mousePointerEvent(), "page")}</Dl.Dd>
+        <Dl.Dt>clientXY</Dl.Dt>
+        <Dl.Dd>{toPositionStr(mousePointerEvent(), "client")}</Dl.Dd>
+        <Dl.Dt>offsetXY</Dl.Dt>
+        <Dl.Dd>{toPositionStr(mousePointerEvent(), "offset")}</Dl.Dd>
+        <Dl.Dt>screenXY</Dl.Dt>
+        <Dl.Dd>{toPositionStr(mousePointerEvent(), "screen")}</Dl.Dd>
+      </Dl>
     </>
   );
 }

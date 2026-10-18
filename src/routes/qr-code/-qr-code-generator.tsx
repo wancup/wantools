@@ -1,40 +1,33 @@
 import { css } from "$panda/css";
-import { FormLabel } from "$park/form-label";
-import { Input } from "$park/input";
-import { QrCode } from "$park/qr-code";
-import { createSignal, createUniqueId, type JSX, Show } from "solid-js";
+import { Input } from "@hebium-ui/solid";
+import { createMemo, createSignal, createUniqueId, type JSX, Show } from "solid-js";
+import { generateQrCodeImage } from "~/features/qr-code/logic/qr-code";
 
 export function QrCodeGenerator(): JSX.Element {
   const [text, setText] = createSignal("");
-
-  const id = createUniqueId();
-  const qrcodeInputId = `qr-code-input-${id}`;
+  const image = createMemo(() => generateQrCodeImage(text()));
+  const qrcodeInputId = `qr-code-input-${createUniqueId()}`;
 
   return (
     <>
-      <FormLabel for={qrcodeInputId}>Text to convert</FormLabel>
       <Input
         id={qrcodeInputId}
-        class={css({ marginBottom: "1rem" })}
+        label="Text to convert"
+        error={image().error}
+        classes={{ root: css({ width: "100%", marginBottom: "1rem" }) }}
         value={text()}
-        onInput={(e) => {
-          setText(e.currentTarget.value);
-        }}
+        onInput={(event) => setText(event.currentTarget.value)}
       />
-      <Show when={text()}>
-        <QrCode.Root
-          value={text()}
-          asChild={(props) => (
-            <output {...props()} for={qrcodeInputId}>
-              <QrCode.Frame
-                class={css({ background: "white" })}
-                aria-label={`The QR code image of "${text()}"`}
-              >
-                <QrCode.Pattern />
-              </QrCode.Frame>
-            </output>
-          )}
-        />
+      <Show when={image().src}>
+        {(src) => (
+          <output for={qrcodeInputId}>
+            <img
+              src={src()}
+              alt={`QR code for "${text()}"`}
+              class={css({ width: "16rem", maxWidth: "100%", height: "auto" })}
+            />
+          </output>
+        )}
       </Show>
     </>
   );
