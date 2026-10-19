@@ -2,7 +2,6 @@ import { defineConfig } from "@pandacss/dev";
 
 export default defineConfig({
   preflight: false,
-  eject: true,
   jsxFramework: "solid",
   outdir: "styled-system",
   include: ["./src/**/*.{ts,tsx}"],
