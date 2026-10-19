@@ -4,7 +4,6 @@
     "vite.config.ts",
     "vitest.config.ts",
     "src/**/*",
-    "park-ui/**/*",
     "styled-system/**/*"
   ],
   "exclude": [
@@ -26,7 +25,6 @@
     "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"],
-      "$park/*": ["./park-ui/*"],
       "$panda/*": ["./styled-system/*"]
     },
     "noImplicitOverride": true,

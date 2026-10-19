@@ -2,3 +2,6 @@ allowBuilds:
   dprint: false
   esbuild: false
 minimumReleaseAge: 4320
+minimumReleaseAgeExclude:
+  - "@hebium-ui/core"
+  - "@hebium-ui/solid"

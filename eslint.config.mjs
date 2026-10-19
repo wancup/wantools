@@ -12,7 +12,6 @@ import tseslint from "typescript-eslint";
 export default tseslint.config(
   {
     ignores: [
-      "park-ui",
       "public",
       "styled-system",
       ".tanstack",
@@ -75,24 +74,27 @@ export default tseslint.config(
     settings: {
       "jsx-a11y": {
         "polymorphicPropName": "as",
+        "attributes": {
+          "for": ["htmlFor", "for"],
+        },
         "components": {
-          "A": "a",
+          "Anchor": "a",
           "Link": "a",
-          "Text": "p",
           "Heading": "h2",
           "Button": "button",
-          "IconButton": "button",
-          "Clipbard": "button",
+          "CopyButton": "button",
+          "Label": "label",
           "Input": "input",
-          "NumberInput": "input",
+          "Select": "select",
           "Textarea": "textarea",
-          "Table.Root": "table",
+          "Table": "table",
           "Table.Caption": "caption",
-          "Table.Head": "thead",
-          "Table.Body": "tbody",
-          "Table.Record": "tr",
-          "Table.Header": "th",
-          "Table.Cell": "td",
+          "Table.Thead": "thead",
+          "Table.Tbody": "tbody",
+          "Table.Tfoot": "tfoot",
+          "Table.Tr": "tr",
+          "Table.Th": "th",
+          "Table.Td": "td",
         },
       },
     },

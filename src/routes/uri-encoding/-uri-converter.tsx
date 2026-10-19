@@ -1,6 +1,5 @@
 import { css } from "$panda/css";
-import { FormLabel } from "$park/form-label";
-import { Input } from "$park/input";
+import { Input } from "@hebium-ui/solid";
 import { ArrowDownIcon, ArrowUpIcon } from "lucide-solid";
 import { createMemo, createSignal, createUniqueId, type JSX } from "solid-js";
 
@@ -31,9 +30,10 @@ export function UriConverter(
 
   return (
     <>
-      <FormLabel for={originalId}>Original Text</FormLabel>
       <Input
         id={originalId}
+        label="Original Text"
+        classes={{ root: css({ width: "100%" }) }}
         placeholder={props.placeholder}
         value={rawText()}
         onInput={(e) => {
@@ -50,9 +50,10 @@ export function UriConverter(
         <ArrowDownIcon class={css({ marginLeft: "auto" })} />
         <ArrowUpIcon class={css({ marginRight: "auto" })} />
       </div>
-      <FormLabel for={encodedId}>Encoded Text</FormLabel>
       <Input
         id={encodedId}
+        label="Encoded Text"
+        classes={{ root: css({ width: "100%" }) }}
         placeholder={encoder().encode(props.placeholder)}
         value={encodedText()}
         onInput={(e) => {

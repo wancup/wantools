@@ -1,8 +1,8 @@
-import { Heading } from "$park/heading";
+import { Heading, HuiProvider } from "@hebium-ui/solid";
 import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/solid-router";
 import { type JSX, Suspense } from "solid-js";
 import { HydrationScript } from "solid-js/web";
-import { SITE } from "~/config";
+import { SITE, STORAGE_KEY } from "~/config";
 import { AppShell } from "~/features/app-shell";
 
 import appStyles from "~/styles/index.css?url";
@@ -27,26 +27,17 @@ export const Route = createRootRoute({
     scripts: [
       {
         children: `
-window.ThemeProvider = (() => {
-  const dark = "dark", light = "light";
-
-  let theme;
-  let storedTheme = typeof localStorage !== "undefined"
-    && localStorage.getItem("color-theme");
-  if (storedTheme === dark || storedTheme === light) {
-    theme = storedTheme;
-  }
-
-  if (typeof theme === "undefined") {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      theme = dark;
+(() => {
+  try {
+    const theme = localStorage.getItem(${JSON.stringify(STORAGE_KEY.colorTheme)});
+    if (theme === "light" || theme === "dark") {
+      document.documentElement.dataset.huiColorScheme = theme;
     } else {
-      theme = light;
+      delete document.documentElement.dataset.huiColorScheme;
     }
+  } catch {
+    // Follow the system preference when storage is unavailable.
   }
-
-  document.documentElement.classList.remove(light, dark);
-  document.documentElement.classList.add(theme);
 })();
 `,
       },
@@ -54,7 +45,7 @@ window.ThemeProvider = (() => {
   }),
   component: RootComponent,
   notFoundComponent: () => {
-    return <Heading as="h1">404 Not Found!</Heading>;
+    return <Heading level={1}>404 Not Found!</Heading>;
   },
 });
 
@@ -77,7 +68,15 @@ function RootDocument(props: Readonly<{ children: JSX.Element }>): JSX.Element {
       </head>
       <body>
         <HeadContent />
-        <Suspense>{props.children}</Suspense>
+        <Suspense>
+          <HuiProvider
+            defaultProps={{
+              DrawerContent: { closedby: "any" },
+            }}
+          >
+            {props.children}
+          </HuiProvider>
+        </Suspense>
         <Scripts />
       </body>
     </html>

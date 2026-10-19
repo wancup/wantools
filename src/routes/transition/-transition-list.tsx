@@ -1,12 +1,6 @@
 import { css } from "$panda/css";
-import { Button } from "$park/button";
-import { FormLabel } from "$park/form-label";
-import { Input } from "$park/input";
-import { NumberInput } from "$park/number-input";
-import { Select } from "$park/select";
-import { createListCollection } from "@ark-ui/solid";
-import { CheckIcon, ChevronsUpDownIcon } from "lucide-solid";
-import { createEffect, createMemo, createSignal, createUniqueId, For, type JSX, onCleanup } from "solid-js";
+import { Button, Input, Select } from "@hebium-ui/solid";
+import { createEffect, createMemo, createSignal, For, type JSX, onCleanup } from "solid-js";
 import { TransitionSwatch, type TransitionSwatchProps } from "./-transition-swatch";
 
 type MotionVariant = TransitionSwatchProps["motion"];
@@ -28,13 +22,6 @@ export function TransitionList(): JSX.Element {
   const [duration, setDuration] = createSignal("1000");
   const [customTiming, setCustomTiming] = createSignal("cubic-bezier(0.1, 0.7, 1, 0.1)");
   const [selectedMotion, setSelectedMotion] = createSignal<MotionVariant>(TRANSITION_LIST[0].value);
-
-  const id = createUniqueId();
-  const customTimingFunctionId = `custom-timing-function-${id}`;
-
-  const motionCollection = createListCollection({
-    items: TRANSITION_LIST,
-  });
 
   createEffect(() => {
     let resetTimeoutId: number;
@@ -70,57 +57,33 @@ export function TransitionList(): JSX.Element {
           },
         })}
       >
-        <Select.Root
-          class={css({ width: "10rem" })}
-          positioning={{ sameWidth: true }}
-          collection={motionCollection}
-          value={[selectedMotion()]}
-          onValueChange={(v) => {
-            const value = v.value[0];
-            if (typeof value !== "undefined") {
-              setSelectedMotion(value as MotionVariant);
-            }
+        <Select
+          label="Motion"
+          classes={{ root: css({ width: "10rem" }) }}
+          value={selectedMotion()}
+          onChange={(event) => {
+            const motion = TRANSITION_LIST.find((item) => item.value === event.currentTarget.value);
+            if (motion) setSelectedMotion(motion.value);
           }}
         >
-          <Select.Label>Motion</Select.Label>
-          <Select.Control>
-            <Select.Trigger>
-              <Select.ValueText placeholder="Select a Transition Motion" />
-              <ChevronsUpDownIcon />
-            </Select.Trigger>
-          </Select.Control>
-          <Select.Positioner>
-            <Select.Content>
-              <Select.ItemGroup>
-                <For each={motionCollection.items}>
-                  {(item) => (
-                    <Select.Item item={item}>
-                      <Select.ItemText>{item.label}</Select.ItemText>
-                      <Select.ItemIndicator>
-                        <CheckIcon />
-                      </Select.ItemIndicator>
-                    </Select.Item>
-                  )}
-                </For>
-              </Select.ItemGroup>
-            </Select.Content>
-          </Select.Positioner>
-        </Select.Root>
-        <NumberInput
-          class={css({ width: "10rem" })}
+          <For each={TRANSITION_LIST}>
+            {(item) => <option value={item.value}>{item.label}</option>}
+          </For>
+        </Select>
+        <Input
+          type="number"
+          label="Duration"
+          min={0}
+          classes={{ root: css({ width: "10rem" }) }}
           value={duration()}
-          onValueChange={(v) => setDuration(v.value)}
-        >
-          Duration
-        </NumberInput>
-        <div>
-          <FormLabel for={customTimingFunctionId}>Custom Timing Function</FormLabel>
-          <Input
-            id={customTimingFunctionId}
-            value={customTiming()}
-            onInput={(e) => setCustomTiming(e.currentTarget.value)}
-          />
-        </div>
+          onInput={(event) => setDuration(event.currentTarget.value)}
+        />
+        <Input
+          label="Custom Timing Function"
+          classes={{ root: css({ width: "100%", sm: { width: "auto", flexGrow: 1 } }) }}
+          value={customTiming()}
+          onInput={(event) => setCustomTiming(event.currentTarget.value)}
+        />
       </div>
       <Button class={css({ width: "100%", marginTop: "0.5rem" })} onClick={() => setIsStarted(true)}>Start</Button>
 
@@ -181,7 +144,7 @@ export function TransitionList(): JSX.Element {
             markerStyle={markerStyle()}
           />
         </div>
-        <div class={css({ flexGrow: "1fr" })} />
+        <div class={css({ flexGrow: 1 })} />
       </div>
     </>
   );

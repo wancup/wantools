@@ -1,6 +1,5 @@
 import { css } from "$panda/css";
-import { Button } from "$park/button";
-import { Table } from "$park/table";
+import { Button, Table, type TrProps } from "@hebium-ui/solid";
 import { createSignal, type JSX } from "solid-js";
 
 function toPointerTypeStr(e: MouseEvent | PointerEvent | undefined): string {
@@ -46,45 +45,36 @@ export function ClickEventChecker(): JSX.Element {
       >
         Click Here
       </Button>
-      <Table.Root size="sm">
-        <Table.Head>
-          <Table.Row>
-            <Table.Header>
-              Event Name
-            </Table.Header>
-            <Table.Header>
-              button
-            </Table.Header>
-            <Table.Header>
-              pointerType
-            </Table.Header>
-          </Table.Row>
-        </Table.Head>
-
-        <Table.Body>
-          <EventTableRow head="ponterdown" event={pointerDownEvent()} />
+      <Table class={css({ width: "100%" })}>
+        <Table.Thead>
+          <Table.Tr>
+            <Table.Th scope="col">Event Name</Table.Th>
+            <Table.Th scope="col">button</Table.Th>
+            <Table.Th scope="col">pointerType</Table.Th>
+          </Table.Tr>
+        </Table.Thead>
+        <Table.Tbody>
+          <EventTableRow head="pointerdown" event={pointerDownEvent()} />
           <EventTableRow head="pointerup" event={pointerUpEvent()} />
           <EventTableRow head="click" event={clickEvent()} />
           <EventTableRow head="dblclick" event={dblClickEvent()} />
-          <EventTableRow head="contextmenu" event={contextMenuEvent()} />
-        </Table.Body>
-      </Table.Root>
+          <EventTableRow head="contextmenu" event={contextMenuEvent()} border="none" />
+        </Table.Tbody>
+      </Table>
     </>
   );
 }
 
-function EventTableRow(props: { head: string; event: MouseEvent | PointerEvent | undefined }): JSX.Element {
+function EventTableRow(props: {
+  head: string;
+  event: MouseEvent | PointerEvent | undefined;
+  border?: TrProps["border"] | undefined;
+}): JSX.Element {
   return (
-    <Table.Row>
-      <Table.Cell>
-        {props.head}
-      </Table.Cell>
-      <Table.Cell>
-        {props.event?.button}
-      </Table.Cell>
-      <Table.Cell>
-        {toPointerTypeStr(props.event)}
-      </Table.Cell>
-    </Table.Row>
+    <Table.Tr border={props.border}>
+      <Table.Th scope="row">{props.head}</Table.Th>
+      <Table.Td>{props.event?.button}</Table.Td>
+      <Table.Td>{toPointerTypeStr(props.event)}</Table.Td>
+    </Table.Tr>
   );
 }

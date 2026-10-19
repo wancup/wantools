@@ -15,13 +15,14 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@ark-ui/solid": "5.27.1",
-    "@solid-primitives/mutation-observer": "1.2.4",
+    "@hebium-ui/core": "0.1.0-alpha.2",
+    "@hebium-ui/solid": "0.1.0-alpha.2",
     "@tanstack/solid-router": "1.170.38",
     "@tanstack/solid-start": "1.168.57",
     "lucide-solid": "1.52.0",
     "solid-js": "1.9.15",
     "ts-pattern": "5.9.0",
+    "uqr": "0.1.3",
     "uuid": "14.0.2",
     "vite": "8.3.2",
     "vite-plugin-solid": "2.11.14"
@@ -31,7 +32,6 @@
     "@eslint/json": "2.1.0",
     "@eslint/markdown": "8.0.3",
     "@pandacss/dev": "1.12.1",
-    "@park-ui/panda-preset": "0.43.1",
     "@vitest/eslint-plugin": "1.6.27",
     "dprint": "0.60.1",
     "eslint": "9.39.5",

@@ -1,10 +1,8 @@
 import { css } from "$panda/css";
-import { Button } from "$park/button";
-import { Clipboard } from "$park/clipboard";
-import { IconButton } from "$park/icon-button";
-import { CheckIcon, ClipboardCopyIcon } from "lucide-solid";
+import { Button } from "@hebium-ui/solid";
 import { createEffect, createMemo, createSignal, createUniqueId, type JSX } from "solid-js";
 import { v4 as uuidv4, v7 as uuidV7 } from "uuid";
+import { CopyButton } from "~/components";
 
 const UUID_GENERATOR_MAP = {
   v4: {
@@ -31,24 +29,12 @@ export function UuidGenerator(props: UuidGeneratorProps): JSX.Element {
   });
 
   return (
-    <div class={css({ display: "flex", columnGap: "1rem", alignItems: "center" })}>
+    <div class={css({ display: "flex", flexWrap: "wrap", gap: "1rem", alignItems: "center" })}>
       <span>
         {generator().label}:
       </span>
       <output for={buttonId}>{uuid()}</output>
-      <Clipboard.Root value={uuid()}>
-        <Clipboard.Control>
-          <Clipboard.Trigger
-            asChild={(triggerProps) => (
-              <IconButton variant="outline" {...triggerProps()}>
-                <Clipboard.Indicator copied={<CheckIcon />}>
-                  <ClipboardCopyIcon />
-                </Clipboard.Indicator>
-              </IconButton>
-            )}
-          />
-        </Clipboard.Control>
-      </Clipboard.Root>
+      <CopyButton value={uuid()} aria-label={`Copy ${generator().label}`} />
       <Button
         id={buttonId}
         onClick={() => {

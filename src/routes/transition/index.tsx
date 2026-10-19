@@ -1,5 +1,5 @@
 import { css } from "$panda/css";
-import { Heading } from "$park/heading";
+import { Heading } from "@hebium-ui/solid";
 import { createFileRoute } from "@tanstack/solid-router";
 import type { JSX } from "solid-js";
 import { Container } from "~/components";
@@ -20,7 +20,7 @@ export const Route = createFileRoute("/transition/")({
 function RouteComponent(): JSX.Element {
   return (
     <Container>
-      <Heading as="h1" size="xl" class={css({ marginBottom: "1rem" })}>
+      <Heading level={1} class={css({ marginBottom: "1rem" })}>
         {CURRENT_PAGE.name}
       </Heading>
       <TransitionList />

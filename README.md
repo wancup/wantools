@@ -28,4 +28,5 @@ pnpm run dev
 
 - [TanStack Start](https://tanstack.com/start/latest)
 - [Solid](https://www.solidjs.com/)
-- [Park UI](https://park-ui.com/)
+- [Hebium UI](https://www.npmjs.com/package/@hebium-ui/solid)
+- [Panda CSS](https://panda-css.com/)

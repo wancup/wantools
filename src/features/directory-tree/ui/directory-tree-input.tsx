@@ -1,6 +1,5 @@
 import { css } from "$panda/css";
-import { FormLabel } from "$park/form-label";
-import { Textarea, type TextareaProps } from "$park/textarea";
+import { Label, Textarea, type TextareaProps } from "@hebium-ui/solid";
 import { createSignal, createUniqueId, type JSX } from "solid-js";
 import { DirectoryTree } from "../logic/directory-tree";
 
@@ -56,18 +55,18 @@ export function DirectoryTreeInput(): JSX.Element {
         })}
       >
         <div class={css({ marginBottom: "0.5rem" })}>
-          <FormLabel for={mobileId.rawTextInput}>Directory Tree With Hyphen</FormLabel>
           <StyledTextarea
             id={mobileId.rawTextInput}
+            label="Directory Tree With Hyphen"
             value={rawText()}
             onInput={handleInputRawText}
             placeholder={SAMPLE_RAW_TEXT}
           />
         </div>
         <div>
-          <FormLabel for={mobileId.styledTextInput}>Styled Directory Tree</FormLabel>
           <StyledTextarea
             id={mobileId.styledTextInput}
+            label="Styled Directory Tree"
             value={styledText()}
             onInput={handleInputStyledText}
             placeholder={SAMPLE_STYLED_TEXT}
@@ -80,8 +79,8 @@ export function DirectoryTreeInput(): JSX.Element {
           md: { display: "grid", width: "100%", gridTemplateColumns: "1fr 1fr", columnGap: "1rem" },
         })}
       >
-        <FormLabel for={pcId.rawTextInput}>Directory Tree With Hyphen</FormLabel>
-        <FormLabel for={pcId.styledTextInput}>Styled Directory Tree</FormLabel>
+        <Label for={pcId.rawTextInput}>Directory Tree With Hyphen</Label>
+        <Label for={pcId.styledTextInput}>Styled Directory Tree</Label>
         <div
           class={css({
             gridColumn: "1 / 3",
@@ -110,11 +109,14 @@ export function DirectoryTreeInput(): JSX.Element {
   );
 }
 
-function StyledTextarea(props: Omit<TextareaProps, "rows" | "class">): JSX.Element {
+function StyledTextarea(props: Omit<TextareaProps, "rows" | "classes" | "styles">): JSX.Element {
   return (
     <Textarea
       rows={20}
-      class={css({ resize: "none", fontFamily: "monospace, sans-serif, system-ui" })}
+      classes={{
+        root: css({ width: "100%", height: "100%", minWidth: 0, flex: 1 }),
+        input: css({ resize: "none", height: "100%", fontFamily: "mono" }),
+      }}
       {...props}
     />
   );

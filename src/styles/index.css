@@ -1,7 +1,19 @@
-@layer reset, base, tokens, recipes, utilities;
+@layer reset, base, tokens, hebium-ui, recipes, utilities;
 
-::selection {
-  background-color: var(--colors-color-palette-default);
+@import "@hebium-ui/core/style.css" layer(hebium-ui);
+
+:root {
+  --hui-color-accent-seed: #bc00c9;
+  --hui-color-accent-0: oklch(from var(--hui-color-accent-seed) 100% c h);
+  --hui-color-accent-1: oklch(from var(--hui-color-accent-seed) 92.5% c h);
+  --hui-color-accent-2: oklch(from var(--hui-color-accent-seed) 85% c h);
+  --hui-color-accent-3: oklch(from var(--hui-color-accent-seed) 77.5% c h);
+  --hui-color-accent-4: oklch(from var(--hui-color-accent-seed) 70% c h);
+  --hui-color-accent-5: oklch(from var(--hui-color-accent-seed) 55% c h);
+  --hui-color-accent-6: oklch(from var(--hui-color-accent-seed) 47.5% c h);
+  --hui-color-accent-7: oklch(from var(--hui-color-accent-seed) 40% c h);
+  --hui-color-accent-8: oklch(from var(--hui-color-accent-seed) 32.5% c h);
+  --hui-color-accent-9: oklch(from var(--hui-color-accent-seed) 25% c h);
 }
 
 .noscript-alert {

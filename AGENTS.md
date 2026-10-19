@@ -14,7 +14,7 @@ It provides interactive tools for common development tasks.
 
 ### UI Libraries
 
-- **Park UI** - Component library
+- **Hebium UI** - Component library (`@hebium-ui/solid` and `@hebium-ui/core`)
 - **Panda CSS** - CSS-in-JS styling solution
 - **Lucide Solid** - Icon library
 
@@ -42,7 +42,6 @@ wantools/
 │   ├── assets/             # Static assets
 │   ├── router.tsx          # Router configuration
 │   └── routeTree.gen.ts    # Auto-generated route tree
-├── park-ui/                # Park UI components (generated)
 ├── styled-system/          # Panda CSS output (generated)
 ├── public/                 # Static files
 ├── panda.config.ts         # Panda CSS configuration
@@ -83,7 +82,7 @@ wantools/
 
 ```typescript
 import { css } from "$panda/css"; // styled-system/
-import { Button } from "$park/button"; // park-ui/
+import { Button } from "@hebium-ui/solid"; // Component library
 import { Component } from "~/components"; // src/
 ```
 
@@ -110,13 +109,13 @@ import { Component } from "~/components"; // src/
 
 1. **SolidJS is NOT React**: Use Solid-specific patterns (signals, createSignal, createEffect)
 2. **File-based routing**: New pages require files in `src/routes/`
-3. **Style with Panda**: Use Panda CSS utilities, not traditional CSS/Tailwind
+3. **Style with Panda**: Use Panda CSS utilities for app layouts and custom styles; use Hebium UI's built-in component styles
 4. **Type safety**: Always provide explicit types, especially for function returns
 5. **Accessibility first**: Follow jsx-a11y rules and use semantic HTML
 6. **Feature organization**: Complex features belong in `src/features/` with logic/ui/types subdirectories
 7. **Testing**: Add tests for complex logic (see `directory-tree.test.ts` for examples)
-8. **Theme support**: Ensure components work in both dark and light modes
-9. **Path aliases**: Use `~/`, `$park/`, `$panda/` for imports
+8. **Theme support**: Use `data-hui-color-scheme="light"` or `"dark"` on the HTML element; omit the attribute to follow the system preference. Persist the choice under `color-theme` in localStorage
+9. **Path aliases**: Use `~/` and `$panda/` for imports; import UI components directly from `@hebium-ui/solid`
 
 ## Common Tasks
 
