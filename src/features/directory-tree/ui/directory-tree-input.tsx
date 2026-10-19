@@ -115,7 +115,7 @@ function StyledTextarea(props: Omit<TextareaProps, "rows" | "classes" | "styles"
       rows={20}
       classes={{
         root: css({ width: "100%", height: "100%", minWidth: 0, flex: 1 }),
-        input: css({ resize: "none", height: "100%", fontFamily: "mono" }),
+        input: css({ resize: "none", height: "100%", fontFamily: "monospace" }),
       }}
       {...props}
     />
