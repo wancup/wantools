@@ -71,6 +71,7 @@ function RootDocument(props: Readonly<{ children: JSX.Element }>): JSX.Element {
         <Suspense>
           <HuiProvider
             defaultProps={{
+              Button: { type: "button" },
               DrawerContent: { closedby: "any" },
             }}
           >
