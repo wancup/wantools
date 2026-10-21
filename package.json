@@ -39,7 +39,7 @@
     "eslint-plugin-solid": "0.18.1",
     "globals": "17.13.0",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.71.0",
+    "typescript-eslint": "8.71.1",
     "vitest": "5.0.3"
   },
   "packageManager": "pnpm@12.9.1",
