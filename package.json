@@ -21,7 +21,7 @@
     "@tanstack/solid-start": "1.169.1",
     "lucide-solid": "1.57.0",
     "solid-js": "1.9.17",
-    "ts-pattern": "5.9.1",
+    "ts-pattern": "5.9.2",
     "uqr": "0.1.3",
     "uuid": "14.0.3",
     "vite": "8.3.4",
