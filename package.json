@@ -17,8 +17,8 @@
   "dependencies": {
     "@hebium-ui/core": "0.1.0-alpha.2",
     "@hebium-ui/solid": "0.1.0-alpha.2",
-    "@tanstack/solid-router": "1.170.41",
-    "@tanstack/solid-start": "1.169.2",
+    "@tanstack/solid-router": "1.170.42",
+    "@tanstack/solid-start": "1.169.3",
     "lucide-solid": "1.58.0",
     "solid-js": "1.9.17",
     "ts-pattern": "5.9.2",
