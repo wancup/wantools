@@ -32,7 +32,7 @@
     "@eslint/json": "2.1.1",
     "@eslint/markdown": "8.0.3",
     "@pandacss/dev": "2.4.0",
-    "@vitest/eslint-plugin": "1.6.27",
+    "@vitest/eslint-plugin": "1.6.28",
     "dprint": "0.64.1",
     "eslint": "9.39.5",
     "eslint-plugin-jsx-a11y": "6.10.2",
