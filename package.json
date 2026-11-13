@@ -19,7 +19,7 @@
     "@hebium-ui/solid": "0.1.0-alpha.2",
     "@tanstack/solid-router": "1.170.43",
     "@tanstack/solid-start": "1.169.4",
-    "lucide-solid": "1.64.0",
+    "lucide-solid": "1.65.0",
     "solid-js": "1.9.18",
     "ts-pattern": "5.9.2",
     "uqr": "0.1.3",
