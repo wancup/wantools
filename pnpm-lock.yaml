@@ -167,11 +167,11 @@ importers:
   .:
     dependencies:
       '@hebium-ui/core':
-        specifier: 0.1.0-alpha.2
-        version: 0.1.0-alpha.2
+        specifier: 0.1.0-alpha.3
+        version: 0.1.0-alpha.3
       '@hebium-ui/solid':
         specifier: 0.1.0-alpha.2
-        version: 0.1.0-alpha.2(@hebium-ui/core@0.1.0-alpha.2)(solid-js@1.9.18)
+        version: 0.1.0-alpha.2(@hebium-ui/core@0.1.0-alpha.3)(solid-js@1.9.18)
       '@tanstack/solid-router':
         specifier: 1.170.43
         version: 1.170.43(solid-js@1.9.18)
@@ -500,8 +500,8 @@ packages:
     resolution: {integrity: sha512-IkO+/KEUvwbVpiURZg+P7zF74z5Jxe0UgJxVni+RtoHQ6IZieXaO02kmadomap/q+l6bc/jdPGGqTjhuZnuz1Q==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
 
-  '@hebium-ui/core@0.1.0-alpha.2':
-    resolution: {integrity: sha512-85tVFVu3zPnPsS1lmfMyyRp8DKARv/+H0i4fmgN9gQhwJ7S6QqyW/R9OTO8zaHrJ+yOsY7lkV9meQtrLRZ5nmg==}
+  '@hebium-ui/core@0.1.0-alpha.3':
+    resolution: {integrity: sha512-JZpdB95SIK/QxzVXgZdi/ccEx7f+IM1m+IR9lUmqg6IdOnQyWj6fNZCeYyKbqHC078mzcIQWlvMjavNFoHt4XA==}
 
   '@hebium-ui/solid@0.1.0-alpha.2':
     resolution: {integrity: sha512-XJDHv4QM2xue3ojwakaqqUXTlNt+7sPVvK+t5mlzn8HDjwDnUc1D5I1XrUVvnG8YX9qeFv5UQ8oTsYouuJKeyA==}
@@ -3009,11 +3009,11 @@ snapshots:
       '@eslint/core': 1.2.1
       levn: 0.4.1
 
-  '@hebium-ui/core@0.1.0-alpha.2': {}
+  '@hebium-ui/core@0.1.0-alpha.3': {}
 
-  '@hebium-ui/solid@0.1.0-alpha.2(@hebium-ui/core@0.1.0-alpha.2)(solid-js@1.9.18)':
+  '@hebium-ui/solid@0.1.0-alpha.2(@hebium-ui/core@0.1.0-alpha.3)(solid-js@1.9.18)':
     dependencies:
-      '@hebium-ui/core': 0.1.0-alpha.2
+      '@hebium-ui/core': 0.1.0-alpha.3
       solid-js: 1.9.18
 
   '@humanfs/core@0.19.2':

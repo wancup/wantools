@@ -15,7 +15,7 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@hebium-ui/core": "0.1.0-alpha.2",
+    "@hebium-ui/core": "0.1.0-alpha.3",
     "@hebium-ui/solid": "0.1.0-alpha.2",
     "@tanstack/solid-router": "1.170.43",
     "@tanstack/solid-start": "1.169.4",
