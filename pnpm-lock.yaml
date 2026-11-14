@@ -170,8 +170,8 @@ importers:
         specifier: 0.1.0-alpha.2
         version: 0.1.0-alpha.2
       '@hebium-ui/solid':
-        specifier: 0.1.0-alpha.2
-        version: 0.1.0-alpha.2(@hebium-ui/core@0.1.0-alpha.2)(solid-js@1.9.18)
+        specifier: 0.1.0-alpha.3
+        version: 0.1.0-alpha.3(@hebium-ui/core@0.1.0-alpha.2)(solid-js@1.9.18)
       '@tanstack/solid-router':
         specifier: 1.170.43
         version: 1.170.43(solid-js@1.9.18)
@@ -503,10 +503,10 @@ packages:
   '@hebium-ui/core@0.1.0-alpha.2':
     resolution: {integrity: sha512-85tVFVu3zPnPsS1lmfMyyRp8DKARv/+H0i4fmgN9gQhwJ7S6QqyW/R9OTO8zaHrJ+yOsY7lkV9meQtrLRZ5nmg==}
 
-  '@hebium-ui/solid@0.1.0-alpha.2':
-    resolution: {integrity: sha512-XJDHv4QM2xue3ojwakaqqUXTlNt+7sPVvK+t5mlzn8HDjwDnUc1D5I1XrUVvnG8YX9qeFv5UQ8oTsYouuJKeyA==}
+  '@hebium-ui/solid@0.1.0-alpha.3':
+    resolution: {integrity: sha512-mb1pdKByhDlPV1GqkJQsldISAANb+iZVXZS6cY+yjMptyIGxf89F5cbmrkk6rEK7gzt0kYH2yh+YcBx2w2bHKw==}
     peerDependencies:
-      '@hebium-ui/core': 0.1.0-alpha.2
+      '@hebium-ui/core': 0.1.0-alpha.3
       solid-js: ^1.0.0
 
   '@humanfs/core@0.19.2':
@@ -3011,7 +3011,7 @@ snapshots:
 
   '@hebium-ui/core@0.1.0-alpha.2': {}
 
-  '@hebium-ui/solid@0.1.0-alpha.2(@hebium-ui/core@0.1.0-alpha.2)(solid-js@1.9.18)':
+  '@hebium-ui/solid@0.1.0-alpha.3(@hebium-ui/core@0.1.0-alpha.2)(solid-js@1.9.18)':
     dependencies:
       '@hebium-ui/core': 0.1.0-alpha.2
       solid-js: 1.9.18
