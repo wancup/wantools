@@ -35,7 +35,14 @@
     },
     {
       "matchPackageNames": [
-        "lucide-solid"
+        "lucide-solid",
+        "dprint"
+      ],
+      "automerge": true
+    },
+    {
+      "matchFileNames": [
+        "dprint.json"
       ],
       "automerge": true
     }
