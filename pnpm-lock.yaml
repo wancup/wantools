@@ -177,7 +177,7 @@ importers:
         version: 1.170.43(solid-js@1.9.18)
       '@tanstack/solid-start':
         specifier: 1.169.4
-        version: 1.169.4(rolldown@1.2.19)(solid-js@1.9.18)(supports-color@7.2.0)(vite-plugin-solid@2.11.15(solid-js@1.9.18)(supports-color@7.2.0)(vite@8.3.5(jiti@2.7.0)))(vite@8.3.5(jiti@2.7.0))
+        version: 1.169.4(rolldown@1.2.19)(solid-js@1.9.18)(supports-color@7.2.0)(vite-plugin-solid@2.11.15(solid-js@1.9.18)(supports-color@7.2.0)(vite@8.3.6(jiti@2.7.0)))(vite@8.3.6(jiti@2.7.0))
       lucide-solid:
         specifier: 1.68.0
         version: 1.68.0(solid-js@1.9.18)
@@ -194,11 +194,11 @@ importers:
         specifier: 14.0.3
         version: 14.0.3
       vite:
-        specifier: 8.3.5
-        version: 8.3.5(jiti@2.7.0)
+        specifier: 8.3.6
+        version: 8.3.6(jiti@2.7.0)
       vite-plugin-solid:
         specifier: 2.11.15
-        version: 2.11.15(solid-js@1.9.18)(supports-color@7.2.0)(vite@8.3.5(jiti@2.7.0))
+        version: 2.11.15(solid-js@1.9.18)(supports-color@7.2.0)(vite@8.3.6(jiti@2.7.0))
     devDependencies:
       '@eslint/js':
         specifier: 9.39.5
@@ -214,7 +214,7 @@ importers:
         version: 2.5.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(postcss@8.5.32)
       '@vitest/eslint-plugin':
         specifier: 1.6.28
-        version: 1.6.28(@typescript-eslint/eslint-plugin@8.72.1(@typescript-eslint/parser@8.72.1(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)(vitest@5.1.0(vite@8.3.5(jiti@2.7.0)))
+        version: 1.6.28(@typescript-eslint/eslint-plugin@8.72.1(@typescript-eslint/parser@8.72.1(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)(vitest@5.1.0(vite@8.3.6(jiti@2.7.0)))
       dprint:
         specifier: 0.64.3
         version: 0.64.3
@@ -238,7 +238,7 @@ importers:
         version: 8.72.1(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)
       vitest:
         specifier: 5.1.0
-        version: 5.1.0(vite@8.3.5(jiti@2.7.0))
+        version: 5.1.0(vite@8.3.6(jiti@2.7.0))
 
 packages:
 
@@ -2643,8 +2643,8 @@ packages:
       '@testing-library/jest-dom':
         optional: true
 
-  vite@8.3.5:
-    resolution: {integrity: sha512-z1YpjieJ9g0ebTmQpLBv/oq9E3F9EIlOe+7LahW8SrE3LTiG3udBRUXQOlYXP9b+IC2q2phHeVxj9xGlw34OEQ==}
+  vite@8.3.6:
+    resolution: {integrity: sha512-UI7dK29NnS54Fk+mmo7o+jI6U8Fp7hDl+X5Q1k45WH+d4dSlbLVUETGQ+hfkNgvLQGyoElPj837nZyv4MBc0VA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -3428,7 +3428,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@tanstack/router-plugin@1.168.48(rolldown@1.2.19)(supports-color@7.2.0)(vite-plugin-solid@2.11.15(solid-js@1.9.18)(supports-color@7.2.0)(vite@8.3.5(jiti@2.7.0)))(vite@8.3.5(jiti@2.7.0))':
+  '@tanstack/router-plugin@1.168.48(rolldown@1.2.19)(supports-color@7.2.0)(vite-plugin-solid@2.11.15(solid-js@1.9.18)(supports-color@7.2.0)(vite@8.3.6(jiti@2.7.0)))(vite@8.3.6(jiti@2.7.0))':
     dependencies:
       '@babel/core': 7.29.13(supports-color@7.2.0)
       '@babel/template': 7.29.7
@@ -3437,11 +3437,11 @@ snapshots:
       '@tanstack/router-generator': 1.167.46(supports-color@7.2.0)
       '@tanstack/router-utils': 1.162.4(supports-color@7.2.0)
       chokidar: 5.0.0
-      unplugin: 3.7.0(rolldown@1.2.19)(vite@8.3.5(jiti@2.7.0))
+      unplugin: 3.7.0(rolldown@1.2.19)(vite@8.3.6(jiti@2.7.0))
       zod: 4.6.7
     optionalDependencies:
-      vite: 8.3.5(jiti@2.7.0)
-      vite-plugin-solid: 2.11.15(solid-js@1.9.18)(supports-color@7.2.0)(vite@8.3.5(jiti@2.7.0))
+      vite: 8.3.6(jiti@2.7.0)
+      vite-plugin-solid: 2.11.15(solid-js@1.9.18)(supports-color@7.2.0)(vite@8.3.6(jiti@2.7.0))
     transitivePeerDependencies:
       - '@farmfe/core'
       - '@rspack/core'
@@ -3488,18 +3488,18 @@ snapshots:
       '@tanstack/start-server-core': 1.169.45
       solid-js: 1.9.18
 
-  '@tanstack/solid-start@1.169.4(rolldown@1.2.19)(solid-js@1.9.18)(supports-color@7.2.0)(vite-plugin-solid@2.11.15(solid-js@1.9.18)(supports-color@7.2.0)(vite@8.3.5(jiti@2.7.0)))(vite@8.3.5(jiti@2.7.0))':
+  '@tanstack/solid-start@1.169.4(rolldown@1.2.19)(solid-js@1.9.18)(supports-color@7.2.0)(vite-plugin-solid@2.11.15(solid-js@1.9.18)(supports-color@7.2.0)(vite@8.3.6(jiti@2.7.0)))(vite@8.3.6(jiti@2.7.0))':
     dependencies:
       '@tanstack/solid-router': 1.170.43(solid-js@1.9.18)
       '@tanstack/solid-start-client': 1.168.42(solid-js@1.9.18)
       '@tanstack/solid-start-server': 1.167.50(solid-js@1.9.18)
       '@tanstack/start-client-core': 1.170.39
-      '@tanstack/start-plugin-core': 1.171.55(rolldown@1.2.19)(supports-color@7.2.0)(vite-plugin-solid@2.11.15(solid-js@1.9.18)(supports-color@7.2.0)(vite@8.3.5(jiti@2.7.0)))(vite@8.3.5(jiti@2.7.0))
+      '@tanstack/start-plugin-core': 1.171.55(rolldown@1.2.19)(supports-color@7.2.0)(vite-plugin-solid@2.11.15(solid-js@1.9.18)(supports-color@7.2.0)(vite@8.3.6(jiti@2.7.0)))(vite@8.3.6(jiti@2.7.0))
       '@tanstack/start-server-core': 1.169.45
       pathe: 2.0.3
       solid-js: 1.9.18
     optionalDependencies:
-      vite: 8.3.5(jiti@2.7.0)
+      vite: 8.3.6(jiti@2.7.0)
     transitivePeerDependencies:
       - '@farmfe/core'
       - '@rspack/core'
@@ -3522,7 +3522,7 @@ snapshots:
 
   '@tanstack/start-fn-stubs@1.162.0': {}
 
-  '@tanstack/start-plugin-core@1.171.55(rolldown@1.2.19)(supports-color@7.2.0)(vite-plugin-solid@2.11.15(solid-js@1.9.18)(supports-color@7.2.0)(vite@8.3.5(jiti@2.7.0)))(vite@8.3.5(jiti@2.7.0))':
+  '@tanstack/start-plugin-core@1.171.55(rolldown@1.2.19)(supports-color@7.2.0)(vite-plugin-solid@2.11.15(solid-js@1.9.18)(supports-color@7.2.0)(vite@8.3.6(jiti@2.7.0)))(vite@8.3.6(jiti@2.7.0))':
     dependencies:
       '@babel/code-frame': 7.29.7
       '@babel/core': 7.29.13(supports-color@7.2.0)
@@ -3530,7 +3530,7 @@ snapshots:
       '@jridgewell/remapping': 2.3.5
       '@tanstack/router-core': 1.171.39
       '@tanstack/router-generator': 1.167.46(supports-color@7.2.0)
-      '@tanstack/router-plugin': 1.168.48(rolldown@1.2.19)(supports-color@7.2.0)(vite-plugin-solid@2.11.15(solid-js@1.9.18)(supports-color@7.2.0)(vite@8.3.5(jiti@2.7.0)))(vite@8.3.5(jiti@2.7.0))
+      '@tanstack/router-plugin': 1.168.48(rolldown@1.2.19)(supports-color@7.2.0)(vite-plugin-solid@2.11.15(solid-js@1.9.18)(supports-color@7.2.0)(vite@8.3.6(jiti@2.7.0)))(vite@8.3.6(jiti@2.7.0))
       '@tanstack/router-utils': 1.162.4(supports-color@7.2.0)
       '@tanstack/start-server-core': 1.169.45
       exsolve: 1.2.0
@@ -3542,11 +3542,11 @@ snapshots:
       srvx: 1.0.8
       tinyglobby: 0.2.17
       ufo: 1.6.4
-      vitefu: 1.1.3(vite@8.3.5(jiti@2.7.0))
+      vitefu: 1.1.3(vite@8.3.6(jiti@2.7.0))
       xmlbuilder2: 4.0.3
       zod: 4.6.7
     optionalDependencies:
-      vite: 8.3.5(jiti@2.7.0)
+      vite: 8.3.6(jiti@2.7.0)
     transitivePeerDependencies:
       - '@farmfe/core'
       - '@rspack/core'
@@ -3772,7 +3772,7 @@ snapshots:
       '@typescript-eslint/types': 8.72.2
       eslint-visitor-keys: 5.0.1
 
-  '@vitest/eslint-plugin@1.6.28(@typescript-eslint/eslint-plugin@8.72.1(@typescript-eslint/parser@8.72.1(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)(vitest@5.1.0(vite@8.3.5(jiti@2.7.0)))':
+  '@vitest/eslint-plugin@1.6.28(@typescript-eslint/eslint-plugin@8.72.1(@typescript-eslint/parser@8.72.1(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)(vitest@5.1.0(vite@8.3.6(jiti@2.7.0)))':
     dependencies:
       '@typescript-eslint/scope-manager': 8.72.2
       '@typescript-eslint/utils': 8.72.2(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)
@@ -3780,18 +3780,18 @@ snapshots:
     optionalDependencies:
       '@typescript-eslint/eslint-plugin': 8.72.1(@typescript-eslint/parser@8.72.1(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)
       typescript: 5.9.3
-      vitest: 5.1.0(vite@8.3.5(jiti@2.7.0))
+      vitest: 5.1.0(vite@8.3.6(jiti@2.7.0))
     transitivePeerDependencies:
       - supports-color
 
-  '@vitest/mocker@5.1.0(vite@8.3.5(jiti@2.7.0))':
+  '@vitest/mocker@5.1.0(vite@8.3.6(jiti@2.7.0))':
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       '@vitest/spy': 5.1.0
       estree-walker: 3.0.3
       magic-string: 1.4.5
     optionalDependencies:
-      vite: 8.3.5(jiti@2.7.0)
+      vite: 8.3.6(jiti@2.7.0)
 
   '@vitest/spy@5.1.0': {}
 
@@ -5481,7 +5481,7 @@ snapshots:
       unist-util-is: 6.0.1
       unist-util-visit-parents: 6.1.0
 
-  unplugin@3.7.0(rolldown@1.2.19)(vite@8.3.5(jiti@2.7.0)):
+  unplugin@3.7.0(rolldown@1.2.19)(vite@8.3.6(jiti@2.7.0)):
     dependencies:
       '@jridgewell/remapping': 2.3.5
       '@rolldown/pluginutils': 1.1.0
@@ -5489,7 +5489,7 @@ snapshots:
       webpack-virtual-modules: 0.6.2
     optionalDependencies:
       rolldown: 1.2.19
-      vite: 8.3.5(jiti@2.7.0)
+      vite: 8.3.6(jiti@2.7.0)
 
   update-browserslist-db@1.3.4(browserslist@4.29.5):
     dependencies:
@@ -5505,7 +5505,7 @@ snapshots:
 
   uuid@14.0.3: {}
 
-  vite-plugin-solid@2.11.15(solid-js@1.9.18)(supports-color@7.2.0)(vite@8.3.5(jiti@2.7.0)):
+  vite-plugin-solid@2.11.15(solid-js@1.9.18)(supports-color@7.2.0)(vite@8.3.6(jiti@2.7.0)):
     dependencies:
       '@babel/core': 7.29.13(supports-color@7.2.0)
       '@types/babel__core': 7.20.5
@@ -5513,12 +5513,12 @@ snapshots:
       merge-anything: 5.1.7
       solid-js: 1.9.18
       solid-refresh: 0.6.3(solid-js@1.9.18)(supports-color@7.2.0)
-      vite: 8.3.5(jiti@2.7.0)
-      vitefu: 1.1.3(vite@8.3.5(jiti@2.7.0))
+      vite: 8.3.6(jiti@2.7.0)
+      vitefu: 1.1.3(vite@8.3.6(jiti@2.7.0))
     transitivePeerDependencies:
       - supports-color
 
-  vite@8.3.5(jiti@2.7.0):
+  vite@8.3.6(jiti@2.7.0):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.7
@@ -5529,14 +5529,14 @@ snapshots:
       fsevents: 2.3.3
       jiti: 2.7.0
 
-  vitefu@1.1.3(vite@8.3.5(jiti@2.7.0)):
+  vitefu@1.1.3(vite@8.3.6(jiti@2.7.0)):
     optionalDependencies:
-      vite: 8.3.5(jiti@2.7.0)
+      vite: 8.3.6(jiti@2.7.0)
 
-  vitest@5.1.0(vite@8.3.5(jiti@2.7.0)):
+  vitest@5.1.0(vite@8.3.6(jiti@2.7.0)):
     dependencies:
       '@types/chai': 5.2.3
-      '@vitest/mocker': 5.1.0(vite@8.3.5(jiti@2.7.0))
+      '@vitest/mocker': 5.1.0(vite@8.3.6(jiti@2.7.0))
       chai: 6.3.0
       es-module-lexer: 2.3.2
       expect-type: 1.4.0
@@ -5547,7 +5547,7 @@ snapshots:
       tinybench: 6.2.3
       tinyexec: 1.3.1
       tinyglobby: 0.2.17
-      vite: 8.3.5(jiti@2.7.0)
+      vite: 8.3.6(jiti@2.7.0)
       why-is-node-running: 3.2.1
     transitivePeerDependencies:
       - msw
