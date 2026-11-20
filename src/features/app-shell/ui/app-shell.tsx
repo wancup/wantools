@@ -3,6 +3,7 @@ import { Drawer } from "@hebium-ui/solid";
 import { useLocation } from "@tanstack/solid-router";
 import { createEffect, type JSX, type ParentProps } from "solid-js";
 import { GlobalHeader } from "./global-header";
+import { NavigationProgress } from "./navigation-progress";
 import { SidebarContent } from "./sidebar-content";
 
 export function AppShell(props: ParentProps): JSX.Element {
@@ -17,6 +18,7 @@ export function AppShell(props: ParentProps): JSX.Element {
 
   return (
     <Drawer>
+      <NavigationProgress />
       <GlobalHeader />
       <div
         class={css({
