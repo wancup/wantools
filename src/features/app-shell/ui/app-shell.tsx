@@ -32,7 +32,9 @@ export function AppShell(props: ParentProps): JSX.Element {
           <SidebarContent />
         </div>
         <Drawer.Content
-          ref={drawer}
+          ref={(element) => {
+            drawer = element;
+          }}
           placement="inline-start"
           aria-label="Navigation menu"
           classes={{ root: css({ md: { display: "none" } }) }}

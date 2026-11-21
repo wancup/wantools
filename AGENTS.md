@@ -47,7 +47,7 @@ wantools/
 ├── panda.config.ts         # Panda CSS configuration
 ├── vite.config.ts          # Vite configuration
 ├── tsconfig.json           # TypeScript configuration
-├── eslint.config.mjs       # ESLint configuration (flat config)
+├── oxlint.config.ts        # Oxlint configuration
 ├── dprint.json             # Dprint configuration
 └── vitest.config.ts        # Vitest configuration
 ```

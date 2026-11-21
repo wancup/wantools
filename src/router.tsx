@@ -1,7 +1,7 @@
 import { createRouter } from "@tanstack/solid-router";
 import { routeTree } from "./routeTree.gen";
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+// oxlint-disable-next-line typescript/explicit-function-return-type -- Keep TanStack Router's inferred route types.
 export function getRouter() {
   const router = createRouter({
     routeTree,

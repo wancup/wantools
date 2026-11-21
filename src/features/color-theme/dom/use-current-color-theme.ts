@@ -14,6 +14,18 @@ function applyThemeOption(option: ColorThemeOption): void {
   }
 }
 
+function setColorThemeOption(value: string): ColorTheme {
+  const option = parseThemeOption(value);
+  setThemeOption(option);
+  applyThemeOption(option);
+  try {
+    localStorage.setItem(STORAGE_KEY.colorTheme, option);
+  } catch {
+    // Apply the preference even when it cannot be persisted.
+  }
+  return resolveThemeColor(option, prefersDark());
+}
+
 export function useCurrentThemeColor(): {
   colorTheme: Accessor<ColorTheme>;
   colorThemeOption: Accessor<ColorThemeOption>;
@@ -41,18 +53,6 @@ export function useCurrentThemeColor(): {
       media.removeEventListener("change", handleChange);
     });
   });
-
-  const setColorThemeOption = (value: string): ColorTheme => {
-    const option = parseThemeOption(value);
-    setThemeOption(option);
-    applyThemeOption(option);
-    try {
-      localStorage.setItem(STORAGE_KEY.colorTheme, option);
-    } catch {
-      // Apply the preference even when it cannot be persisted.
-    }
-    return resolveThemeColor(option, prefersDark());
-  };
 
   return {
     colorTheme: () => resolveThemeColor(themeOption(), prefersDark()),

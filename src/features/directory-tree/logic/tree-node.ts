@@ -1,24 +1,21 @@
 export class TreeNode {
-  private readonly _name: string;
-  private _nodes: TreeNode[] = [];
+  private readonly children: TreeNode[] = [];
 
-  constructor(name: string) {
-    this._name = name;
-  }
+  constructor(private readonly nodeName: string) {}
 
   get name(): string {
-    return this._name;
+    return this.nodeName;
   }
 
   get nodes(): TreeNode[] {
-    return this._nodes;
+    return this.children;
   }
 
   isLeaf(): boolean {
-    return this._nodes.length === 0;
+    return this.children.length === 0;
   }
 
   addNode(node: TreeNode): void {
-    this._nodes.push(node);
+    this.children.push(node);
   }
 }

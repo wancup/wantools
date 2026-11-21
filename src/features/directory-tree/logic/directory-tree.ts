@@ -22,7 +22,7 @@ interface Indent {
 }
 
 export class DirectoryTree {
-  constructor(private _nodes: TreeNode[]) {}
+  constructor(private readonly roots: TreeNode[]) {}
 
   static fromRawText(text: string): DirectoryTree {
     const lines = text.split("\n");
@@ -114,32 +114,32 @@ export class DirectoryTree {
   }
 
   toStyledText(): string {
-    return this._nodes
-      .map((n) => this._toStyledNodeText(n, []))
+    return this.roots
+      .map((node) => this.toStyledNodeText(node, []))
       .join("\n");
   }
 
   toRawText(): string {
-    return this._nodes
-      .map((n) => this._toRawNodeText(n, []))
+    return this.roots
+      .map((node) => this.toRawNodeText(node, []))
       .join("\n");
   }
 
-  private _toStyledNodeText(node: TreeNode, indents: Indent[]): string {
+  private toStyledNodeText(node: TreeNode, indents: Indent[]): string {
     const indentText = indents.length > 0
       ? indents.map((i) => INDENT_CODES[i.type]).join(INDENT_SPACER) + INDENT_SPACER
       : "";
     let lines = [indentText + node.name];
     if (!node.isLeaf()) {
-      const childLines = node.nodes.map((n, ni) => {
-        const _indents: Indent[] = indents.map((i) =>
-          match(i)
+      const childLines = node.nodes.map((child, index) => {
+        const parentIndents: Indent[] = indents.map((indent) =>
+          match(indent)
             .with({ type: "child" }, () => ({ type: "continue" } as const))
             .with({ type: "end" }, () => ({ type: "skip" } as const))
-            .otherwise((i) => i)
+            .otherwise((unchangedIndent) => unchangedIndent)
         );
-        const indentType = ni === node.nodes.length - 1 ? "end" : "child";
-        return this._toStyledNodeText(n, [..._indents, { type: indentType }]);
+        const indentType = index === node.nodes.length - 1 ? "end" : "child";
+        return this.toStyledNodeText(child, [...parentIndents, { type: indentType }]);
       });
       lines = [...lines, ...childLines];
     }
@@ -147,12 +147,12 @@ export class DirectoryTree {
     return lines.join("\n");
   }
 
-  private _toRawNodeText(node: TreeNode, indents: string[]): string {
+  private toRawNodeText(node: TreeNode, indents: string[]): string {
     const indentText = indents.length > 0 ? indents.join("") + INDENT_SPACER : "";
     let lines = [indentText + node.name];
     if (!node.isLeaf()) {
-      const childLines = node.nodes.map((n) => {
-        return this._toRawNodeText(n, [...indents, INDENT_MARKER]);
+      const childLines = node.nodes.map((child) => {
+        return this.toRawNodeText(child, [...indents, INDENT_MARKER]);
       });
       lines = [...lines, ...childLines];
     }

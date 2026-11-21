@@ -10,8 +10,8 @@
     "typecheck": "tsc --noEmit --skipLibCheck",
     "format:check": "dprint check",
     "format:fix": "dprint fmt",
-    "lint:check": "eslint --max-warnings=0 .",
-    "lint:fix": "eslint --fix .",
+    "lint:check": "oxlint --deny-warnings",
+    "lint:fix": "oxlint --fix",
     "test": "vitest"
   },
   "dependencies": {
@@ -28,18 +28,11 @@
     "vite-plugin-solid": "2.11.15"
   },
   "devDependencies": {
-    "@eslint/js": "9.39.5",
-    "@eslint/json": "2.1.1",
-    "@eslint/markdown": "8.0.3",
     "@pandacss/dev": "2.5.0",
-    "@vitest/eslint-plugin": "1.6.28",
     "dprint": "0.64.3",
-    "eslint": "9.39.5",
-    "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-solid": "0.18.1",
-    "globals": "17.14.0",
-    "typescript": "5.9.3",
-    "typescript-eslint": "8.72.1",
+    "oxlint": "1.94.0",
+    "typescript": "7.0.2",
     "vitest": "5.1.0"
   },
   "packageManager": "pnpm@12.18.0",
