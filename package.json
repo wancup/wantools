@@ -18,7 +18,7 @@
     "@hebium-ui/core": "0.1.0-alpha.3",
     "@hebium-ui/solid": "0.1.0-alpha.3",
     "@tanstack/solid-router": "1.170.43",
-    "@tanstack/solid-start": "1.169.4",
+    "@tanstack/solid-start": "1.169.5",
     "lucide-solid": "1.70.0",
     "solid-js": "1.9.18",
     "ts-pattern": "5.9.2",
