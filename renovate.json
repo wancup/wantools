@@ -37,7 +37,8 @@
       "matchPackageNames": [
         "@hebium-ui/*"
       ],
-      "groupName": "hebium-ui"
+      "groupName": "hebium-ui",
+      "minimumReleaseAge": "0 days"
     },
     {
       "matchPackageNames": [
